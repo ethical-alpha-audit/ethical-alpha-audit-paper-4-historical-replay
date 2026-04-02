@@ -1,7 +1,7 @@
 # Historical Replay Evaluation of Non-Compensatory AI Governance
 [![DOI](https://zenodo.org/badge/1194631776.svg)](https://doi.org/10.5281/zenodo.19388208)
 
-> **Paper 4** of the Ethical Alpha Audit five-paper bundle (NEJM AI)
+> **Paper 4** of the Ethical Alpha Audit five-paper bundle
 >
 > Author: Walter Brown — Ethical Alpha Audit Ltd
 > ORCID: [0000-0002-6050-8522](https://orcid.org/0000-0002-6050-8522)
