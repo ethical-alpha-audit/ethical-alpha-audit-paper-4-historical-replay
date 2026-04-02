@@ -59,6 +59,9 @@ docs/html/          Static HTML exports for reading without code
 
 For code-free reading, see `docs/html/`.
 
+## Interactive browsing
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ethical-alpha-audit/ethical-alpha-audit-paper-4-historical-replay.git/HEAD)
+
 ## Known annotations
 
 - **N7**: Mean gate failures per rejection: engine computes 2.636 (29/11); manuscript reports 2.5
