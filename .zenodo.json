@@ -1,0 +1,15 @@
+{
+  "title": "Historical Replay Evaluation of Non-Compensatory AI Governance — Reproducibility Repository",
+  "description": "Minimal reproducibility repository for the NEJM AI paper. Contains governance engine, canonical datasets, EEE triangulation overlay, 4 Jupyter notebooks, and deterministic validation harness reproducing all manuscript findings.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Brown, Walter",
+      "affiliation": "Ethical Alpha Audit Ltd",
+      "orcid": "0000-0002-6050-8522"
+    }
+  ],
+  "keywords": ["AI governance", "reproducibility", "clinical AI", "non-compensatory", "historical replay", "Jupyter"],
+  "license": "MIT",
+  "access_right": "open"
+}

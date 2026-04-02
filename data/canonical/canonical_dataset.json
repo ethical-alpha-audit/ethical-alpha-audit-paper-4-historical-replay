@@ -1,0 +1,2758 @@
+{
+  "dataset_type": "canonical_historical_replay",
+  "source": "historical-replay-governance-simulation/historical_replay/inputs/cases/",
+  "case_count": 12,
+  "feature_count_per_case": 15,
+  "structural_modifications": "NONE \u2014 verbatim copy of canonical engine input files",
+  "value_modifications": "NONE",
+  "cases": {
+    "epic_sepsis": {
+      "case_id": "epic_sepsis",
+      "display_name": "Epic Sepsis Model",
+      "sector": "healthcare",
+      "year": 2021,
+      "citation": "Wong, A., Otles, E., Donnelly, J.P., et al. (2021) External validation of a widely implemented proprietary sepsis prediction model. JAMA Internal Medicine, 181(8), 1065-1070.",
+      "in_text_citation": "(Wong et al., 2021)",
+      "source_type": "Peer-reviewed external validation study",
+      "evidence_excerpt": "*\"poor discrimination and calibration in predicting the onset of sepsis\"",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34152373/",
+      "case_summary": "Widely deployed proprietary sepsis predictor with weak external discrimination/calibration and large alert burden.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.35,
+          "value_low": 0.33,
+          "value_high": 0.37,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.6,
+          "value_low": 0.54,
+          "value_high": 0.66,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.3,
+          "value_low": 0.29,
+          "value_high": 0.31,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.2,
+          "value_low": 0.09,
+          "value_high": 0.31,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.2,
+          "value_low": -0.27,
+          "value_high": -0.13,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.6,
+          "value_low": 0.58,
+          "value_high": 0.62,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.55,
+          "value_low": 0.49,
+          "value_high": 0.61,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.35,
+          "value_low": 0.26,
+          "value_high": 0.44,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.35,
+          "value_low": 0.3,
+          "value_high": 0.4,
+          "confidence_level": 0.75,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.5,
+          "value_low": 0.42,
+          "value_high": 0.58,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.9,
+          "value_low": 0.88,
+          "value_high": 0.92,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.8,
+          "value_low": 0.76,
+          "value_high": 0.84,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.45,
+          "value_low": 0.36,
+          "value_high": 0.54,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.1,
+          "value_low": 0.0,
+          "value_high": 0.23,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.8,
+          "value_low": 0.75,
+          "value_high": 0.85,
+          "confidence_level": 0.75,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "epic_sepsis_primary"
+          ],
+          "source_refs": [
+            "(Wong et al., 2021)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "optum_health": {
+      "case_id": "optum_health",
+      "display_name": "Optum Population Health",
+      "sector": "healthcare",
+      "year": 2019,
+      "citation": "Obermeyer, Z., Powers, B., Vogeli, C., and Mullainathan, S. (2019) Dissecting racial bias in an algorithm used to manage the health of populations. Science, 366(6464), 447-453.",
+      "in_text_citation": "(Obermeyer et al., 2019)",
+      "source_type": "Peer-reviewed bias analysis",
+      "evidence_excerpt": "*\"The bias arises because the algorithm predicts health care costs rather than illness\"",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/31649194/",
+      "case_summary": "Canonical healthcare bias case where a cost proxy under-identified Black patients needing extra care.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.45,
+          "value_low": 0.39,
+          "value_high": 0.51,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.65,
+          "value_low": 0.59,
+          "value_high": 0.71,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.45,
+          "value_low": 0.36,
+          "value_high": 0.54,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.85,
+          "value_low": 0.85,
+          "value_high": 0.85,
+          "confidence_level": 0.98,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.1,
+          "value_low": -0.21,
+          "value_high": 0.01,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.7,
+          "value_low": 0.69,
+          "value_high": 0.71,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.65,
+          "value_low": 0.62,
+          "value_high": 0.68,
+          "confidence_level": 0.85,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.45,
+          "value_low": 0.37,
+          "value_high": 0.53,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.45,
+          "value_low": 0.35,
+          "value_high": 0.55,
+          "confidence_level": 0.5,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.3,
+          "value_low": 0.18,
+          "value_high": 0.42,
+          "confidence_level": 0.4,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.8,
+          "value_low": 0.76,
+          "value_high": 0.84,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.75,
+          "value_low": 0.7,
+          "value_high": 0.8,
+          "confidence_level": 0.75,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.25,
+          "value_low": 0.12,
+          "value_high": 0.38,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.15,
+          "value_low": 0.01,
+          "value_high": 0.29,
+          "confidence_level": 0.3,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.75,
+          "value_low": 0.68,
+          "value_high": 0.82,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "optum_health_primary"
+          ],
+          "source_refs": [
+            "(Obermeyer et al., 2019)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "google_dr": {
+      "case_id": "google_dr",
+      "display_name": "Google DR Thailand",
+      "sector": "healthcare",
+      "year": 2020,
+      "citation": "Beede, E., Baylor, E., Hersch, F., et al. (2020) A human-centered evaluation of a deep learning system deployed in clinics for the detection of diabetic retinopathy. CHI Conference on Human Factors in Computing Systems.",
+      "in_text_citation": "(Beede et al., 2020)",
+      "source_type": "Peer-reviewed deployment field study",
+      "evidence_excerpt": "*\"several socio-environmental factors impact model performance, nursing workflows, and the patient experience\"",
+      "source_url": "https://research.google/pubs/a-human-centered-evaluation-of-a-deep-learning-system-deployed-in-clinics-for-the-detection-of-diabetic-retinopathy/",
+      "case_summary": "Strong research model encountered image quality, workflow and implementation frictions in Thai clinics.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.55,
+          "value_low": 0.5,
+          "value_high": 0.6,
+          "confidence_level": 0.75,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.75,
+          "value_low": 0.71,
+          "value_high": 0.79,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.5,
+          "value_low": 0.4,
+          "value_high": 0.6,
+          "confidence_level": 0.5,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.25,
+          "value_low": 0.12,
+          "value_high": 0.38,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.25,
+          "value_low": -0.3,
+          "value_high": -0.2,
+          "confidence_level": 0.75,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.7,
+          "value_low": 0.68,
+          "value_high": 0.72,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.7,
+          "value_low": 0.66,
+          "value_high": 0.74,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.55,
+          "value_low": 0.48,
+          "value_high": 0.62,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.35,
+          "value_low": 0.32,
+          "value_high": 0.38,
+          "confidence_level": 0.85,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.4,
+          "value_low": 0.34,
+          "value_high": 0.46,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.55,
+          "value_low": 0.46,
+          "value_high": 0.64,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.55,
+          "value_low": 0.46,
+          "value_high": 0.64,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.6,
+          "value_low": 0.56,
+          "value_high": 0.64,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.1,
+          "value_low": 0.0,
+          "value_high": 0.25,
+          "confidence_level": 0.25,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.85,
+          "value_low": 0.8,
+          "value_high": 0.9,
+          "confidence_level": 0.75,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "google_dr_primary"
+          ],
+          "source_refs": [
+            "(Beede et al., 2020)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "ibm_watson": {
+      "case_id": "ibm_watson",
+      "display_name": "IBM Watson Oncology",
+      "sector": "healthcare",
+      "year": 2018,
+      "citation": "Ross, C. and Swetlitz, I. (2018) IBM Watson recommended unsafe and incorrect cancer treatments. STAT, 25 July 2018.",
+      "in_text_citation": "(Ross and Swetlitz, 2018)",
+      "source_type": "Investigative reporting based on internal documents",
+      "evidence_excerpt": "*\"multiple examples of unsafe and incorrect treatment recommendations\"",
+      "source_url": "https://www.statnews.com/2018/07/25/ibm-watson-recommended-unsafe-incorrect-treatments/",
+      "case_summary": "Vendor-promoted oncology recommendation system reportedly generated unsafe treatment advice in practice.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.25,
+          "value_low": 0.19,
+          "value_high": 0.31,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.6,
+          "value_low": 0.51,
+          "value_high": 0.69,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.35,
+          "value_low": 0.24,
+          "value_high": 0.46,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.2,
+          "value_low": 0.04,
+          "value_high": 0.36,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.3,
+          "value_low": -0.34,
+          "value_high": -0.26,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.35,
+          "value_low": 0.26,
+          "value_high": 0.44,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.3,
+          "value_low": 0.19,
+          "value_high": 0.41,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.2,
+          "value_low": 0.11,
+          "value_high": 0.29,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.3,
+          "value_low": 0.21,
+          "value_high": 0.39,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.4,
+          "value_low": 0.27,
+          "value_high": 0.53,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.65,
+          "value_low": 0.56,
+          "value_high": 0.74,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.9,
+          "value_low": 0.87,
+          "value_high": 0.93,
+          "confidence_level": 0.85,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.35,
+          "value_low": 0.21,
+          "value_high": 0.49,
+          "confidence_level": 0.3,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.2,
+          "value_low": 0.09,
+          "value_high": 0.31,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.9,
+          "value_low": 0.86,
+          "value_high": 0.94,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "ibm_watson_primary"
+          ],
+          "source_refs": [
+            "(Ross and Swetlitz, 2018)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "google_flu": {
+      "case_id": "google_flu",
+      "display_name": "Google Flu Trends",
+      "sector": "public_health",
+      "year": 2014,
+      "citation": "Lazer, D., Kennedy, R., King, G., and Vespignani, A. (2014) The parable of Google Flu: traps in big data analysis. Science, 343(6176), 1203-1205.",
+      "in_text_citation": "(Lazer et al., 2014)",
+      "source_type": "Peer-reviewed methodological analysis",
+      "evidence_excerpt": "*\"predicting more than double the proportion of doctor visits\"",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/24626916/",
+      "case_summary": "Canonical drift and proxy-failure case where search-query model materially overestimated influenza-like illness.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.45,
+          "value_low": 0.39,
+          "value_high": 0.51,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.7,
+          "value_low": 0.63,
+          "value_high": 0.77,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.35,
+          "value_low": 0.31,
+          "value_high": 0.39,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.1,
+          "value_low": 0.0,
+          "value_high": 0.26,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.1,
+          "value_low": -0.23,
+          "value_high": 0.03,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.7,
+          "value_low": 0.68,
+          "value_high": 0.72,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.65,
+          "value_low": 0.6,
+          "value_high": 0.7,
+          "confidence_level": 0.75,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.4,
+          "value_low": 0.28,
+          "value_high": 0.52,
+          "confidence_level": 0.4,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.2,
+          "value_low": 0.18,
+          "value_high": 0.22,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.9,
+          "value_low": 0.9,
+          "value_high": 0.9,
+          "confidence_level": 0.98,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.95,
+          "value_low": 0.93,
+          "value_high": 0.97,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.5,
+          "value_low": 0.39,
+          "value_high": 0.61,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.85,
+          "value_low": 0.84,
+          "value_high": 0.86,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.2,
+          "value_low": 0.05,
+          "value_high": 0.35,
+          "confidence_level": 0.25,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.85,
+          "value_low": 0.81,
+          "value_high": 0.89,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "google_flu_primary"
+          ],
+          "source_refs": [
+            "(Lazer et al., 2014)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "babylon": {
+      "case_id": "babylon",
+      "display_name": "Babylon Symptom Checker",
+      "sector": "healthcare",
+      "year": 2018,
+      "citation": "Fraser, H., Coiera, E., and Wong, D. (2018) Safety of patient-facing digital symptom checkers. The Lancet, 392(10161), 2263-2264.",
+      "in_text_citation": "(Fraser et al., 2018)",
+      "source_type": "Peer-reviewed Lancet correspondence / critique",
+      "evidence_excerpt": "*\"claims have been made that SC from Babylon Health is more accurate at diagnosis than physicians\"",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30413281/",
+      "case_summary": "Evidence hierarchy case: strong public performance claims challenged for lacking convincing independent substantiation.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.5,
+          "value_low": 0.39,
+          "value_high": 0.61,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.6,
+          "value_low": 0.51,
+          "value_high": 0.69,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.45,
+          "value_low": 0.32,
+          "value_high": 0.58,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.25,
+          "value_low": 0.09,
+          "value_high": 0.41,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.2,
+          "value_low": -0.29,
+          "value_high": -0.11,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.35,
+          "value_low": 0.31,
+          "value_high": 0.39,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.3,
+          "value_low": 0.23,
+          "value_high": 0.37,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.3,
+          "value_low": 0.22,
+          "value_high": 0.38,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.4,
+          "value_low": 0.27,
+          "value_high": 0.53,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.35,
+          "value_low": 0.2,
+          "value_high": 0.5,
+          "confidence_level": 0.25,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.6,
+          "value_low": 0.5,
+          "value_high": 0.7,
+          "confidence_level": 0.5,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.65,
+          "value_low": 0.57,
+          "value_high": 0.73,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.4,
+          "value_low": 0.25,
+          "value_high": 0.55,
+          "confidence_level": 0.25,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.25,
+          "value_low": 0.14,
+          "value_high": 0.36,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.85,
+          "value_low": 0.82,
+          "value_high": 0.88,
+          "confidence_level": 0.85,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "babylon_primary"
+          ],
+          "source_refs": [
+            "(Fraser et al., 2018)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "compas": {
+      "case_id": "compas",
+      "display_name": "COMPAS Risk Tool",
+      "sector": "criminal_justice",
+      "year": 2016,
+      "citation": "Angwin, J., Larson, J., Mattu, S., and Kirchner, L. (2016) Machine Bias. ProPublica.",
+      "in_text_citation": "(Angwin et al., 2016)",
+      "source_type": "Investigative data analysis / canonical fairness case",
+      "evidence_excerpt": "*\"Black defendants were still 77 percent more likely to be pegged as at higher risk\"",
+      "source_url": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing",
+      "case_summary": "Cross-sector fairness exemplar with racially disparate error rates and opaque proprietary scoring.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.4,
+          "value_low": 0.3,
+          "value_high": 0.5,
+          "confidence_level": 0.5,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.55,
+          "value_low": 0.44,
+          "value_high": 0.66,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.5,
+          "value_low": 0.38,
+          "value_high": 0.62,
+          "confidence_level": 0.4,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.85,
+          "value_low": 0.84,
+          "value_high": 0.86,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.1,
+          "value_low": -0.23,
+          "value_high": 0.03,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.55,
+          "value_low": 0.48,
+          "value_high": 0.62,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.5,
+          "value_low": 0.42,
+          "value_high": 0.58,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.25,
+          "value_low": 0.2,
+          "value_high": 0.3,
+          "confidence_level": 0.75,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.45,
+          "value_low": 0.33,
+          "value_high": 0.57,
+          "confidence_level": 0.4,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.25,
+          "value_low": 0.09,
+          "value_high": 0.41,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.75,
+          "value_low": 0.69,
+          "value_high": 0.81,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.75,
+          "value_low": 0.69,
+          "value_high": 0.81,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.2,
+          "value_low": 0.04,
+          "value_high": 0.36,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.2,
+          "value_low": 0.05,
+          "value_high": 0.35,
+          "confidence_level": 0.25,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.7,
+          "value_low": 0.62,
+          "value_high": 0.78,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "compas_primary"
+          ],
+          "source_refs": [
+            "(Angwin et al., 2016)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "amazon_recruiting": {
+      "case_id": "amazon_recruiting",
+      "display_name": "Amazon Recruiting",
+      "sector": "employment",
+      "year": 2018,
+      "citation": "Dastin, J. (2018) Amazon scraps secret AI recruiting tool that showed bias against women. Reuters, 10 October 2018.",
+      "in_text_citation": "(Dastin, 2018)",
+      "source_type": "Investigative reporting",
+      "evidence_excerpt": "*\"their new recruiting engine did not like women\"",
+      "source_url": "https://www.reuters.com/article/world/insight-amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK0AG/",
+      "case_summary": "Hiring model trained on male-dominated historical resumes learned to disadvantage women.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.45,
+          "value_low": 0.34,
+          "value_high": 0.56,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.55,
+          "value_low": 0.43,
+          "value_high": 0.67,
+          "confidence_level": 0.4,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.45,
+          "value_low": 0.3,
+          "value_high": 0.6,
+          "confidence_level": 0.25,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.75,
+          "value_low": 0.72,
+          "value_high": 0.78,
+          "confidence_level": 0.85,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.05,
+          "value_low": -0.19,
+          "value_high": 0.09,
+          "confidence_level": 0.3,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.3,
+          "value_low": 0.17,
+          "value_high": 0.43,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.25,
+          "value_low": 0.12,
+          "value_high": 0.38,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.3,
+          "value_low": 0.19,
+          "value_high": 0.41,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.4,
+          "value_low": 0.27,
+          "value_high": 0.53,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.3,
+          "value_low": 0.14,
+          "value_high": 0.46,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.5,
+          "value_low": 0.38,
+          "value_high": 0.62,
+          "confidence_level": 0.4,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.6,
+          "value_low": 0.51,
+          "value_high": 0.69,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.25,
+          "value_low": 0.09,
+          "value_high": 0.41,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.2,
+          "value_low": 0.06,
+          "value_high": 0.34,
+          "confidence_level": 0.3,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.7,
+          "value_low": 0.62,
+          "value_high": 0.78,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "amazon_recruiting_primary"
+          ],
+          "source_refs": [
+            "(Dastin, 2018)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "uk_alevels": {
+      "case_id": "uk_alevels",
+      "display_name": "UK A-level Algorithm",
+      "sector": "education",
+      "year": 2020,
+      "citation": "Office of Qualifications and Examinations Regulation (Ofqual) (2020) Awarding GCSE, AS, A level, advanced extension awards and extended project qualifications in summer 2020: interim report.",
+      "in_text_citation": "(Ofqual, 2020)",
+      "source_type": "Official report / official policy statement",
+      "evidence_excerpt": "*\"the statistical model will consider prior attainment at school or college level, not at individual student level\"",
+      "source_url": "https://ofqual.blog.gov.uk/2020/04/09/arrangements-for-summer-2020/",
+      "case_summary": "High-stakes public-sector standardisation used group-level historical performance and produced distributional unfairness.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.3,
+          "value_low": 0.22,
+          "value_high": 0.38,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.55,
+          "value_low": 0.45,
+          "value_high": 0.65,
+          "confidence_level": 0.5,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.4,
+          "value_low": 0.27,
+          "value_high": 0.53,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.75,
+          "value_low": 0.71,
+          "value_high": 0.79,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.3,
+          "value_low": -0.34,
+          "value_high": -0.26,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.55,
+          "value_low": 0.51,
+          "value_high": 0.59,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.6,
+          "value_low": 0.56,
+          "value_high": 0.64,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.45,
+          "value_low": 0.38,
+          "value_high": 0.52,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.3,
+          "value_low": 0.21,
+          "value_high": 0.39,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.2,
+          "value_low": 0.04,
+          "value_high": 0.36,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.98,
+          "value_low": 0.98,
+          "value_high": 0.98,
+          "confidence_level": 0.98,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.85,
+          "value_low": 0.83,
+          "value_high": 0.87,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.7,
+          "value_low": 0.68,
+          "value_high": 0.72,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.1,
+          "value_low": 0.0,
+          "value_high": 0.28,
+          "confidence_level": 0.1,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.75,
+          "value_low": 0.69,
+          "value_high": 0.81,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "uk_alevels_primary"
+          ],
+          "source_refs": [
+            "(Ofqual, 2020)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "microsoft_tay": {
+      "case_id": "microsoft_tay",
+      "display_name": "Microsoft Tay",
+      "sector": "social_media",
+      "year": 2016,
+      "citation": "Neff, G. and Nagy, P. (2016) Talking to bots: Symbiotic agency and the case of Tay. International Journal of Communication, 10, 4915-4931.",
+      "in_text_citation": "(Neff and Nagy, 2016)",
+      "source_type": "Peer-reviewed case analysis",
+      "evidence_excerpt": "*\"Tay was shut down after one day because of its obscene and inflammatory tweets\"",
+      "source_url": "https://ijoc.org/index.php/ijoc/article/view/6277",
+      "case_summary": "Generative chatbot rapidly exploited by users, producing harmful content after launch.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.2,
+          "value_low": 0.17,
+          "value_high": 0.23,
+          "confidence_level": 0.85,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.35,
+          "value_low": 0.21,
+          "value_high": 0.49,
+          "confidence_level": 0.3,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.3,
+          "value_low": 0.18,
+          "value_high": 0.42,
+          "confidence_level": 0.4,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.6,
+          "value_low": 0.51,
+          "value_high": 0.69,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.25,
+          "value_low": -0.32,
+          "value_high": -0.18,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.5,
+          "value_low": 0.44,
+          "value_high": 0.56,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.55,
+          "value_low": 0.49,
+          "value_high": 0.61,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.4,
+          "value_low": 0.3,
+          "value_high": 0.5,
+          "confidence_level": 0.5,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.15,
+          "value_low": 0.14,
+          "value_high": 0.16,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.55,
+          "value_low": 0.49,
+          "value_high": 0.61,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.6,
+          "value_low": 0.5,
+          "value_high": 0.7,
+          "confidence_level": 0.5,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.65,
+          "value_low": 0.58,
+          "value_high": 0.72,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.8,
+          "value_low": 0.76,
+          "value_high": 0.84,
+          "confidence_level": 0.8,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.95,
+          "value_low": 0.95,
+          "value_high": 0.95,
+          "confidence_level": 0.98,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.65,
+          "value_low": 0.54,
+          "value_high": 0.76,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "microsoft_tay_primary"
+          ],
+          "source_refs": [
+            "(Neff and Nagy, 2016)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "gender_shades": {
+      "case_id": "gender_shades",
+      "display_name": "Gender Shades (Facial Recognition)",
+      "sector": "computer_vision",
+      "year": 2018,
+      "citation": "Buolamwini, J. and Gebru, T. (2018) Gender shades: Intersectional accuracy disparities in commercial gender classification. Proceedings of Machine Learning Research, 81, 1-15.",
+      "in_text_citation": "(Buolamwini and Gebru, 2018)",
+      "source_type": "Peer-reviewed benchmark study",
+      "evidence_excerpt": "*\"darker-skinned females are the most misclassified group\"",
+      "source_url": "https://proceedings.mlr.press/v81/buolamwini18a.html",
+      "case_summary": "Canonical subgroup performance disparity case across commercial facial analysis systems.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.45,
+          "value_low": 0.35,
+          "value_high": 0.55,
+          "confidence_level": 0.5,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.55,
+          "value_low": 0.44,
+          "value_high": 0.66,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.5,
+          "value_low": 0.37,
+          "value_high": 0.63,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.9,
+          "value_low": 0.9,
+          "value_high": 0.9,
+          "confidence_level": 0.99,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.1,
+          "value_low": -0.23,
+          "value_high": 0.03,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.8,
+          "value_low": 0.79,
+          "value_high": 0.81,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.75,
+          "value_low": 0.73,
+          "value_high": 0.77,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.45,
+          "value_low": 0.36,
+          "value_high": 0.54,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.45,
+          "value_low": 0.34,
+          "value_high": 0.56,
+          "confidence_level": 0.45,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.3,
+          "value_low": 0.15,
+          "value_high": 0.45,
+          "confidence_level": 0.25,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.7,
+          "value_low": 0.62,
+          "value_high": 0.78,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 0.7,
+          "value_low": 0.63,
+          "value_high": 0.77,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.25,
+          "value_low": 0.09,
+          "value_high": 0.41,
+          "confidence_level": 0.2,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.2,
+          "value_low": 0.05,
+          "value_high": 0.35,
+          "confidence_level": 0.25,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.8,
+          "value_low": 0.73,
+          "value_high": 0.87,
+          "confidence_level": 0.65,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "gender_shades_primary"
+          ],
+          "source_refs": [
+            "(Buolamwini and Gebru, 2018)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    },
+    "uber_av": {
+      "case_id": "uber_av",
+      "display_name": "Uber AV Fatal Crash",
+      "sector": "autonomous_vehicles",
+      "year": 2018,
+      "citation": "National Transportation Safety Board (2019) Collision between vehicle controlled by developmental automated driving system and pedestrian, Tempe, Arizona, March 18, 2018. Highway Accident Report HAR-19-03.",
+      "in_text_citation": "(NTSB, 2019)",
+      "source_type": "Official accident investigation report",
+      "evidence_excerpt": "*\"an automated test vehicle struck and fatally injured a 49-year-old pedestrian\"",
+      "source_url": "https://www.ntsb.gov/investigations/accidentreports/reports/har1903.pdf",
+      "case_summary": "Safety-critical transport analogue with failure of perception, safety architecture, and human oversight.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": 0.1,
+          "value_low": 0.1,
+          "value_high": 0.1,
+          "confidence_level": 0.98,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": 0.65,
+          "value_low": 0.56,
+          "value_high": 0.74,
+          "confidence_level": 0.55,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": 0.25,
+          "value_low": 0.17,
+          "value_high": 0.33,
+          "confidence_level": 0.6,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": 0.05,
+          "value_low": 0.0,
+          "value_high": 0.22,
+          "confidence_level": 0.15,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.5,
+          "value_low": -0.51,
+          "value_high": -0.49,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": 0.75,
+          "value_low": 0.74,
+          "value_high": 0.76,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": 0.7,
+          "value_low": 0.68,
+          "value_high": 0.72,
+          "confidence_level": 0.9,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "traceability_integrity": {
+          "value_primary": 0.7,
+          "value_low": 0.68,
+          "value_high": 0.72,
+          "confidence_level": 0.92,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "stress_robustness": {
+          "value_primary": 0.1,
+          "value_low": 0.09,
+          "value_high": 0.11,
+          "confidence_level": 0.95,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": 0.35,
+          "value_low": 0.22,
+          "value_high": 0.48,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "deployment_volume": {
+          "value_primary": 0.4,
+          "value_low": 0.27,
+          "value_high": 0.53,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": 1.0,
+          "value_low": 1.0,
+          "value_high": 1.0,
+          "confidence_level": 1.0,
+          "provenance_class": "direct_evidence",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "data_shift_rate": {
+          "value_primary": 0.4,
+          "value_low": 0.27,
+          "value_high": 0.53,
+          "confidence_level": 0.35,
+          "provenance_class": "imputed_from_context",
+          "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "adversarial_gaming_capability": {
+          "value_primary": 0.1,
+          "value_low": 0.0,
+          "value_high": 0.27,
+          "confidence_level": 0.15,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        },
+        "claimed_performance": {
+          "value_primary": 0.8,
+          "value_low": 0.74,
+          "value_high": 0.86,
+          "confidence_level": 0.7,
+          "provenance_class": "rule_derived",
+          "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+          "excerpt_ids": [
+            "uber_av_primary"
+          ],
+          "source_refs": [
+            "(NTSB, 2019)"
+          ]
+        }
+      },
+      "meta": {
+        "encoding_version": "v2.0",
+        "extraction_date": "2026-03-11",
+        "feature_count": 15
+      }
+    }
+  }
+}

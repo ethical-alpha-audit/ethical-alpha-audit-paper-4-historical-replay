@@ -1,0 +1,117 @@
+{
+  "manifest_type": "engine_manifest",
+  "engine_version": "1.1",
+  "engine_file": "corrected_public_engine_v1_1.py",
+  "engine_sha256": "875f73150fae43695ecc6659581e8e25b365ad6171c9e13629fb01e923ab311c",
+  "canonical_baseline_reference": "CBS_v1",
+  "canonical_source": "historical-replay-governance-simulation/src/policy/governance_engine.py",
+  "transformation": "deterministic_port (stdlib-only Python, no numpy/pandas)",
+  "parity_verification": {
+    "replay_mode": "48/48 (12 cases \u00d7 4 profiles)",
+    "canonical_full_mode": "48/48 (12 cases \u00d7 4 profiles)",
+    "method": "Field-level comparison against canonical stored per-case results"
+  },
+  "modes": {
+    "replay_mode": {
+      "description": "5-gate non-compensatory + weighted 5-feature compensatory. For Paper 4 (historical replay).",
+      "final_verdict": "approved = all_gates_pass",
+      "abstention": false,
+      "fallback": false
+    },
+    "canonical_full_mode": {
+      "description": "5-gate + compensatory + SCM abstention + fallback override. For simulation contexts.",
+      "final_verdict": "approved = all_gates_pass AND (NOT abstention_triggered OR fallback_adequate)",
+      "abstention": true,
+      "abstention_formula": "1 / (1 + exp(-5.0 * (0.5 - uncertainty_calibration)))",
+      "abstention_trigger": "> 0.5 (strict)",
+      "fallback_check": "fallback_safety_delta >= 0.3",
+      "fallback_default": 1.0
+    }
+  },
+  "locked_compensatory_formula": {
+    "formula": "0.3*S + 0.2*E + 0.2*(1-B) + 0.15*C + 0.15*T",
+    "weights": {
+      "safety": 0.3,
+      "evidence": 0.2,
+      "bias": 0.2,
+      "calibration": 0.15,
+      "traceability": 0.15
+    },
+    "weight_sum": 1.0,
+    "bias_inversion": true,
+    "threshold_formula": "mean(safety_gate, evidence_gate, bias_gate) from profile",
+    "moderate_threshold": 0.5
+  },
+  "locked_threshold_profiles": {
+    "permissive": {
+      "safety_gate": 0.3,
+      "evidence_gate": 0.3,
+      "bias_gate": 0.7,
+      "calibration_gate": 0.3,
+      "traceability_gate": 0.3
+    },
+    "moderate": {
+      "safety_gate": 0.5,
+      "evidence_gate": 0.5,
+      "bias_gate": 0.5,
+      "calibration_gate": 0.4,
+      "traceability_gate": 0.4
+    },
+    "strict": {
+      "safety_gate": 0.7,
+      "evidence_gate": 0.7,
+      "bias_gate": 0.3,
+      "calibration_gate": 0.6,
+      "traceability_gate": 0.6
+    },
+    "very_strict": {
+      "safety_gate": 0.8,
+      "evidence_gate": 0.8,
+      "bias_gate": 0.2,
+      "calibration_gate": 0.7,
+      "traceability_gate": 0.7
+    }
+  },
+  "gate_specification": {
+    "gate_count": 5,
+    "gate_type": "non_compensatory",
+    "gates": [
+      {
+        "id": "G1",
+        "name": "Safety",
+        "feature": "intrinsic_safety",
+        "direction": ">="
+      },
+      {
+        "id": "G2",
+        "name": "Evidence",
+        "feature": "evidence_strength",
+        "direction": ">="
+      },
+      {
+        "id": "G3",
+        "name": "Bias_Equity",
+        "feature": "bias_harm_index",
+        "direction": "<="
+      },
+      {
+        "id": "G4",
+        "name": "Calibration",
+        "feature": "uncertainty_calibration",
+        "direction": ">="
+      },
+      {
+        "id": "G5",
+        "name": "Traceability",
+        "feature": "traceability_integrity",
+        "direction": ">="
+      }
+    ],
+    "rule": "ALL gates must pass; failure in ANY gate blocks deployment"
+  },
+  "supersedes": {
+    "implementation": "ethical-alpha-public-v32-main (pre-computed overlay_engine_results.json)",
+    "reason": "Compensatory formula drift (15-feature mean, no bias inversion), threshold profile drift, gate anomalies",
+    "correction_date": "2026-03-24"
+  }
+}

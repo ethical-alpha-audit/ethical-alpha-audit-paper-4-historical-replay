@@ -1,0 +1,11 @@
+name: eaa-p4-replay-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - notebook
+  - numpy
+  - matplotlib
+  - nbconvert
+  - pip

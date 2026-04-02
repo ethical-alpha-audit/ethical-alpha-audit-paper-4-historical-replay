@@ -1,0 +1,11 @@
+{
+  "repo_name": "ethical-alpha-audit-core",
+  "version": "1.0.0",
+  "paper": "Paper 4 — NEJM AI Historical Replay",
+  "manuscript_status": "pre-submission",
+  "environment_status": "pinned in requirements.txt and environment.lock",
+  "output_policy": "All deterministic artefacts generated into outputs/ and hash-locked in config/expected_outputs.json",
+  "validation_entry_point": "python reproduce_all.py",
+  "rtm_targets": 40,
+  "rtm_coverage": "39/40 exact, 1 annotated (Q14: 7 vs 8 boundary)"
+}

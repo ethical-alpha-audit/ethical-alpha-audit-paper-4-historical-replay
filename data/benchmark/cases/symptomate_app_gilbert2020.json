@@ -1,0 +1,198 @@
+{
+  "case_id": "symptomate_app_gilbert2020",
+  "display_name": "Symptomate Symptom Assessment App",
+  "sector": "healthcare",
+  "year": 2020,
+  "citation": "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269.",
+  "evidence_excerpt": "",
+  "case_summary": "Acceptable safety in provided advice but narrower coverage; useful as a bounded comparative case.",
+  "features": {
+    "intrinsic_safety": {
+      "value_primary": 0.4,
+      "value_low": 0.36,
+      "value_high": 0.44,
+      "confidence_level": 0.6,
+      "provenance_class": "rule_derived",
+      "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "clinical_utility": {
+      "value_primary": 0.45,
+      "value_low": 0.405,
+      "value_high": 0.495,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_CLINICAL_UTILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "uncertainty_calibration": {
+      "value_primary": 0.35,
+      "value_low": 0.315,
+      "value_high": 0.385,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "bias_harm_index": {
+      "value_primary": 0.4,
+      "value_low": 0.36,
+      "value_high": 0.44,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "fallback_safety_delta": {
+      "value_primary": -0.05,
+      "value_low": 0.0,
+      "value_high": -0.045,
+      "confidence_level": 0.3,
+      "provenance_class": "uncertain_estimate",
+      "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "evidence_strength": {
+      "value_primary": 0.4,
+      "value_low": 0.36,
+      "value_high": 0.44,
+      "confidence_level": 0.5,
+      "provenance_class": "rule_derived",
+      "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "evidence_visibility": {
+      "value_primary": 0.5,
+      "value_low": 0.45,
+      "value_high": 0.55,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "traceability_integrity": {
+      "value_primary": 0.35,
+      "value_low": 0.315,
+      "value_high": 0.385,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "stress_robustness": {
+      "value_primary": 0.3,
+      "value_low": 0.27,
+      "value_high": 0.33,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "drift_susceptibility": {
+      "value_primary": 0.5,
+      "value_low": 0.45,
+      "value_high": 0.55,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "data_shift_rate": {
+      "value_primary": 0.4,
+      "value_low": 0.36,
+      "value_high": 0.44,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "deployment_volume": {
+      "value_primary": 0.6,
+      "value_low": 0.54,
+      "value_high": 0.66,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "harm_severity": {
+      "value_primary": 0.6,
+      "value_low": 0.54,
+      "value_high": 0.66,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_HARM_SEVERITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "adversarial_gaming_capability": {
+      "value_primary": 0.2,
+      "value_low": 0.18,
+      "value_high": 0.22,
+      "confidence_level": 0.3,
+      "provenance_class": "uncertain_estimate",
+      "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    },
+    "claimed_performance": {
+      "value_primary": 0.5,
+      "value_low": 0.45,
+      "value_high": 0.55,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Gilbert S, Mehl A, Baluch A, et al. BMJ Open. 2020;10:e040269."
+      ]
+    }
+  },
+  "meta": {
+    "encoding_version": "v2.0",
+    "extraction_date": "2026-03-18",
+    "feature_count": 15
+  },
+  "source_url": "https://doi.org/10.1136/bmjopen-2020-040269",
+  "case_label": "failure"
+}

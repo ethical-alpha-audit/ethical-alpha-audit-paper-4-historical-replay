@@ -1,0 +1,67 @@
+{
+  "outputs/tables/dataset_inventory.csv": {
+    "notebook": "notebooks/01_dataset_intake.ipynb",
+    "rtm_targets": ["Q21", "Q22", "Q23", "Q24", "Q25", "Q26", "Q27", "Q28", "Q36"],
+    "role": "Data provenance audit"
+  },
+  "outputs/tables/replay_results.csv": {
+    "notebook": "notebooks/02_historical_replay_execution.ipynb",
+    "rtm_targets": ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8", "Q9", "Q10", "Q11", "Q12", "Q13", "Q18", "Q19", "Q20", "Q34", "Q35"],
+    "role": "All governance decisions across all layers"
+  },
+  "outputs/tables/confusion_matrix.csv": {
+    "notebook": "notebooks/02_historical_replay_execution.ipynb",
+    "rtm_targets": ["Q15", "Q16", "Q17"],
+    "role": "TP=20 confusion matrix"
+  },
+  "outputs/logs/replay_run_log.txt": {
+    "notebook": "notebooks/02_historical_replay_execution.ipynb",
+    "rtm_targets": [],
+    "role": "Execution metadata"
+  },
+  "outputs/tables/metrics_summary.csv": {
+    "notebook": "notebooks/03_metrics_and_calibration.ipynb",
+    "rtm_targets": ["Q14", "Q29", "Q30", "Q31", "Q32", "Q33", "Q37", "Q38", "Q39", "Q40"],
+    "role": "All stability and invariance metrics"
+  },
+  "outputs/figures/calibration_summary.txt": {
+    "notebook": "notebooks/03_metrics_and_calibration.ipynb",
+    "rtm_targets": ["Q29"],
+    "role": "Monte Carlo summary narrative"
+  },
+  "outputs/figures/figure1_gate_failure.png": {
+    "notebook": "notebooks/04_figures_and_tables.ipynb",
+    "rtm_targets": ["F1"],
+    "role": "Gate failure distribution + governance matrix"
+  },
+  "outputs/figures/figure2_ablation.png": {
+    "notebook": "notebooks/04_figures_and_tables.ipynb",
+    "rtm_targets": ["F2", "A1", "A2", "A3", "A4"],
+    "role": "Ablation analysis"
+  },
+  "outputs/figures/figure3_provenance_stability.png": {
+    "notebook": "notebooks/04_figures_and_tables.ipynb",
+    "rtm_targets": ["F3"],
+    "role": "Provenance + stability"
+  },
+  "outputs/figures/figure4_compensation.png": {
+    "notebook": "notebooks/04_figures_and_tables.ipynb",
+    "rtm_targets": ["F4"],
+    "role": "Non-compensatory vs compensatory comparison"
+  },
+  "outputs/tables/ablation_matrix.csv": {
+    "notebook": "notebooks/04_figures_and_tables.ipynb",
+    "rtm_targets": ["A1", "A2", "A3", "A4"],
+    "role": "Full ablation results"
+  },
+  "outputs/figures/paper4_figure_manifest.txt": {
+    "notebook": "notebooks/04_figures_and_tables.ipynb",
+    "rtm_targets": [],
+    "role": "Figure file hashes"
+  },
+  "outputs/tables/paper4_table_manifest.csv": {
+    "notebook": "notebooks/04_figures_and_tables.ipynb",
+    "rtm_targets": [],
+    "role": "Table file hashes"
+  }
+}

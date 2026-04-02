@@ -1,0 +1,7 @@
+Monte Carlo Stability Summary
+Iterations: 200, Seed: 42
+Cases stable: 12/12 (100%)
+Perturbation: 46/48 case-profile pairs stable (95.8%)
+Google DR flip points: 7
+Dual dataset invariance: 480/480 fields matched
+Mode sensitivity (moderate): 0 divergences

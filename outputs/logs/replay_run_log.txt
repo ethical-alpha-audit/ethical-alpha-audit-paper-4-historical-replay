@@ -1,0 +1,6 @@
+Paper 4 Historical Replay Execution Log
+Engine: corrected_public_engine_v1_1
+Primary profile: moderate
+Layer 1: 12 cases, 11/12 rejected
+Layer 2: TP=20, FN=0, TN=12, FP=0
+Expanded: 60/61 failures rejected, 30/30 controls approved

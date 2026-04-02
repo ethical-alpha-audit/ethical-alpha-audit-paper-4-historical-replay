@@ -1,0 +1,12 @@
+# Frozen environment — generated from validated execution.
+# Engine is stdlib-only; these pins cover harness + notebooks.
+python==3.11
+jupyterlab==4.3.*
+notebook==7.3.*
+numpy==1.26.*
+matplotlib==3.9.*
+nbformat==5.10.*
+nbclient==0.10.*
+jupyter_client==8.6.*
+ipykernel==6.29.*
+nbconvert==7.16.*

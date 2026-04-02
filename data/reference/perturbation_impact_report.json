@@ -1,0 +1,200 @@
+{
+  "report_type": "perturbation_impact_report",
+  "dataset_label": "SYNTHETIC \u2014 EXPLORATORY \u2014 NON-CANONICAL",
+  "comparison": "canonical_dataset vs perturbation_dataset",
+  "perturbation_envelope": {
+    "features": [
+      "uncertainty_calibration",
+      "bias_harm_index",
+      "traceability_integrity"
+    ],
+    "delta": 0.05,
+    "direction": "adversarial"
+  },
+  "replay_mode_impact": {
+    "total_configurations": 48,
+    "verdict_stable": 46,
+    "verdict_flips": 2,
+    "stability_rate": 95.8,
+    "gate_flips": 10,
+    "gate_flip_detail": [
+      {
+        "case_id": "epic_sepsis",
+        "profile": "permissive",
+        "gate": "gate_calibration",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "epic_sepsis",
+        "profile": "very_strict",
+        "gate": "gate_bias",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "ibm_watson",
+        "profile": "very_strict",
+        "gate": "gate_bias",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "google_flu",
+        "profile": "moderate",
+        "gate": "gate_traceability",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "babylon",
+        "profile": "permissive",
+        "gate": "gate_traceability",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "amazon_recruiting",
+        "profile": "permissive",
+        "gate": "gate_traceability",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "uk_alevels",
+        "profile": "moderate",
+        "gate": "gate_calibration",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "microsoft_tay",
+        "profile": "permissive",
+        "gate": "gate_calibration",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "microsoft_tay",
+        "profile": "moderate",
+        "gate": "gate_traceability",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      },
+      {
+        "case_id": "uber_av",
+        "profile": "very_strict",
+        "gate": "gate_traceability",
+        "canonical": 1,
+        "perturbed": 0,
+        "direction": "PASS\u2192FAIL"
+      }
+    ],
+    "compensatory_score_changes": 48,
+    "compensatory_decision_flips": 5,
+    "compensatory_decision_flip_detail": [
+      {
+        "case_id": "optum_health",
+        "profile": "permissive",
+        "canonical_score": 0.44,
+        "perturbed_score": 0.415,
+        "delta": -0.025,
+        "decision_changed": true
+      },
+      {
+        "case_id": "google_dr",
+        "profile": "very_strict",
+        "canonical_score": 0.6125,
+        "perturbed_score": 0.5875,
+        "delta": -0.025,
+        "decision_changed": true
+      },
+      {
+        "case_id": "google_flu",
+        "profile": "strict",
+        "canonical_score": 0.5675,
+        "perturbed_score": 0.5425,
+        "delta": -0.025,
+        "decision_changed": true
+      },
+      {
+        "case_id": "gender_shades",
+        "profile": "permissive",
+        "canonical_score": 0.4575,
+        "perturbed_score": 0.4325,
+        "delta": -0.025,
+        "decision_changed": true
+      },
+      {
+        "case_id": "uber_av",
+        "profile": "moderate",
+        "canonical_score": 0.5125,
+        "perturbed_score": 0.4875,
+        "delta": -0.025,
+        "decision_changed": true
+      }
+    ],
+    "verdict_flip_detail": [
+      {
+        "case_id": "epic_sepsis",
+        "profile": "permissive",
+        "mode": "replay_mode",
+        "canonical_verdict": "APPROVE",
+        "perturbed_verdict": "REJECT",
+        "canonical_gates_pass": 1,
+        "perturbed_gates_pass": 0
+      },
+      {
+        "case_id": "babylon",
+        "profile": "permissive",
+        "mode": "replay_mode",
+        "canonical_verdict": "APPROVE",
+        "perturbed_verdict": "REJECT",
+        "canonical_gates_pass": 1,
+        "perturbed_gates_pass": 0
+      }
+    ]
+  },
+  "canonical_full_mode_impact": {
+    "total_configurations": 48,
+    "verdict_stable": 46,
+    "verdict_flips": 2,
+    "stability_rate": 95.8,
+    "verdict_flip_detail": [
+      {
+        "case_id": "google_dr",
+        "profile": "permissive",
+        "mode": "canonical_full_mode",
+        "canonical_verdict": "APPROVE",
+        "perturbed_verdict": "REJECT"
+      },
+      {
+        "case_id": "google_dr",
+        "profile": "moderate",
+        "mode": "canonical_full_mode",
+        "canonical_verdict": "APPROVE",
+        "perturbed_verdict": "REJECT"
+      }
+    ]
+  },
+  "moderate_profile_focus": {
+    "verdict_flips": 0,
+    "gate_flips": 3,
+    "compensatory_decision_flips": 1,
+    "interpretation": "Moderate profile stability under \u00b10.05 adversarial perturbation"
+  },
+  "key_finding": {
+    "summary": "Under adversarial \u00b10.05 perturbation of UC/BHI/TI, 46/48 (95.8%) of replay-mode configurations are verdict-stable. 10 individual gate evaluations flipped across all profiles.",
+    "moderate_stable": true,
+    "manuscript_implications": "Perturbation results should be interpreted as robustness evidence for the \u00b10.05 adversarial envelope only."
+  }
+}

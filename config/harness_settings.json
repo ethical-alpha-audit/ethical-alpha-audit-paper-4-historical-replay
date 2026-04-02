@@ -1,0 +1,12 @@
+{
+  "project_name": "eaa-paper-04-historical-replay",
+  "random_seed": 42,
+  "python_hash_seed": "0",
+  "execution_timeout_seconds": 1800,
+  "clear_outputs_before_run": true,
+  "fail_fast": true,
+  "logs_dir": "logs",
+  "outputs_dir": "outputs",
+  "notebooks_dir": "notebooks",
+  "journal_reproducibility_mode": true
+}

@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "path": "outputs/tables/dataset_inventory.csv",
+      "sha256": "57fa4ed142470ce1037d36f593f115fe82381513ee4e0495ccd29441ef9985e4",
+      "required": true
+    },
+    {
+      "path": "outputs/tables/replay_results.csv",
+      "sha256": "29bcdd26813e97a72df05ff1342cc5fc101bc63bed9185ee8e8f762a56838186",
+      "required": true
+    },
+    {
+      "path": "outputs/tables/confusion_matrix.csv",
+      "sha256": "af6b53b5888ac7e856b86d569f185884f5303b4490c3f14f6153a629a53ea867",
+      "required": true
+    },
+    {
+      "path": "outputs/logs/replay_run_log.txt",
+      "sha256": "2a32e83d7d8d1207385bf7aee702244997854d8482490e304309dac1833a893e",
+      "required": true
+    },
+    {
+      "path": "outputs/tables/metrics_summary.csv",
+      "sha256": "2b41bd8efcb2e3e8041a6e535dd68e28766f77f4329c63bb36e507399af2b666",
+      "required": true
+    },
+    {
+      "path": "outputs/figures/calibration_summary.txt",
+      "sha256": "c2758fa8f83a39d6f478aa1bf7ccfbf7dd2a05846e1ba2dc21e4eb5c1040b2d8",
+      "required": true
+    },
+    {
+      "path": "outputs/figures/figure1_gate_failure.png",
+      "sha256": "4dd5c2db71287fffd5a6c75dc3888f50d99c59de5040a796d61e7e3a1aaa4cf5",
+      "required": true
+    },
+    {
+      "path": "outputs/figures/figure2_ablation.png",
+      "sha256": "f2ff9cdaeb01e80630cc4b381e059d62706459894e0a5188ce0442de44f1c2b0",
+      "required": true
+    },
+    {
+      "path": "outputs/figures/figure3_provenance_stability.png",
+      "sha256": "6b2d06442b2558a03b339301d7c44b2cea3c91fbb58c6248c792f18fc7d30353",
+      "required": true
+    },
+    {
+      "path": "outputs/figures/figure4_compensation.png",
+      "sha256": "c630bcada8a63f1f9b70e9fc01e8e94483908de222ef7d5c9d9636eef5706a85",
+      "required": true
+    },
+    {
+      "path": "outputs/tables/ablation_matrix.csv",
+      "sha256": "4bba5e5cb2f8f298fe042adc7a3c8713cc2eff598d0c5b377d1bfde211866acc",
+      "required": true
+    },
+    {
+      "path": "outputs/figures/paper4_figure_manifest.txt",
+      "sha256": "4c2d1af740a33abc63591f3292a80fcdc57db04ac5b345d6c56e78a1852a7d4c",
+      "required": true
+    },
+    {
+      "path": "outputs/tables/paper4_table_manifest.csv",
+      "sha256": "f4df6a230a21ab85553d441e0cb90c3557021f50d1b9b38195aecb7231d3d95b",
+      "required": true
+    }
+  ]
+}

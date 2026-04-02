@@ -1,0 +1,198 @@
+{
+  "case_id": "radiology_shortcut_bias_review_banerjee2023",
+  "display_name": "Radiology AI Shortcut Bias Review",
+  "sector": "healthcare",
+  "year": 2023,
+  "citation": "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851.",
+  "evidence_excerpt": "",
+  "case_summary": "Deployment-focused synthesis useful as a historical evidence case for shortcut-driven radiology errors.",
+  "features": {
+    "intrinsic_safety": {
+      "value_primary": 0.25,
+      "value_low": 0.225,
+      "value_high": 0.275,
+      "confidence_level": 0.7,
+      "provenance_class": "rule_derived",
+      "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "clinical_utility": {
+      "value_primary": 0.45,
+      "value_low": 0.405,
+      "value_high": 0.495,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_CLINICAL_UTILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "uncertainty_calibration": {
+      "value_primary": 0.2,
+      "value_low": 0.18,
+      "value_high": 0.22,
+      "confidence_level": 0.6,
+      "provenance_class": "rule_derived",
+      "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "bias_harm_index": {
+      "value_primary": 0.4,
+      "value_low": 0.36,
+      "value_high": 0.44,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "fallback_safety_delta": {
+      "value_primary": -0.05,
+      "value_low": 0.0,
+      "value_high": -0.045,
+      "confidence_level": 0.3,
+      "provenance_class": "uncertain_estimate",
+      "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "evidence_strength": {
+      "value_primary": 0.4,
+      "value_low": 0.36,
+      "value_high": 0.44,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "evidence_visibility": {
+      "value_primary": 0.5,
+      "value_low": 0.45,
+      "value_high": 0.55,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "traceability_integrity": {
+      "value_primary": 0.35,
+      "value_low": 0.315,
+      "value_high": 0.385,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "stress_robustness": {
+      "value_primary": 0.15,
+      "value_low": 0.135,
+      "value_high": 0.165,
+      "confidence_level": 0.85,
+      "provenance_class": "direct_evidence",
+      "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "drift_susceptibility": {
+      "value_primary": 0.5,
+      "value_low": 0.45,
+      "value_high": 0.55,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "data_shift_rate": {
+      "value_primary": 0.4,
+      "value_low": 0.36,
+      "value_high": 0.44,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "deployment_volume": {
+      "value_primary": 0.6,
+      "value_low": 0.54,
+      "value_high": 0.66,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "harm_severity": {
+      "value_primary": 0.6,
+      "value_low": 0.54,
+      "value_high": 0.66,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_HARM_SEVERITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "adversarial_gaming_capability": {
+      "value_primary": 0.2,
+      "value_low": 0.18,
+      "value_high": 0.22,
+      "confidence_level": 0.3,
+      "provenance_class": "uncertain_estimate",
+      "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    },
+    "claimed_performance": {
+      "value_primary": 0.5,
+      "value_low": 0.45,
+      "value_high": 0.55,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+      "excerpt_ids": [],
+      "source_refs": [
+        "Banerjee I, Bhattacharjee K, Burns JL, et al. Shortcuts Causing Bias in Radiology AI. J Am Coll Radiol. 2023;20(9):842-851."
+      ]
+    }
+  },
+  "meta": {
+    "encoding_version": "v2.0",
+    "extraction_date": "2026-03-18",
+    "feature_count": 15
+  },
+  "source_url": "https://doi.org/10.1016/j.jacr.2023.06.025",
+  "case_label": "failure"
+}

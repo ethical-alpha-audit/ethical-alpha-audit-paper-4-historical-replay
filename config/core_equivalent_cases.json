@@ -1,0 +1,16 @@
+{
+  "description": "8 core-equivalent cases upgraded via EEE v1.2 triangulation",
+  "source": "EEE v1.2 Upgrade Report Group B (H19-H26) with H17 replacing H25",
+  "resolved": "2026-04-01",
+  "case_ids": [
+    "covid_cxr_shortcuts_degrave2021",
+    "sex_imbalance_thoracic_larrazabal2020",
+    "hidden_stratification_oakden2020",
+    "race_recognition_medical_images_gichoya2022",
+    "dermatology_ml_disparities_adamson2018",
+    "radiology_shortcut_bias_review_banerjee2023",
+    "shortcutting_risk_imaging_hill2024",
+    "adversarial_attacks_medical_ml_finlayson2019"
+  ],
+  "eee_case_ids": ["H17", "H19", "H20", "H21", "H22", "H23", "H24", "H26"]
+}

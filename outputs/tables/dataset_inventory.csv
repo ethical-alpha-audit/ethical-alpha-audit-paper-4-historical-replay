@@ -1,0 +1,7 @@
+layer,source,cases,features_per_case,total_encodings
+canonical,canonical_dataset.json,12,15,180
+normalised,public_normalised_dataset.json,12,15,180
+perturbation,perturbation_dataset.json,12,15,180
+benchmark,cases/*.json,91,15,1365
+eee_overlay,canonicalised_v1.json,39,variable,37
+core_equivalent,core_equivalent_cases.json,8,variable,16

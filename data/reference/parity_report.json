@@ -1,0 +1,246 @@
+{
+  "report_type": "parity_report",
+  "stage": "3",
+  "engine_file": "corrected_public_engine_v1_1.py",
+  "engine_hash": "875f73150fae43695ecc6659581e8e25b365ad6171c9e13629fb01e923ab311c",
+  "run_matrix": {
+    "datasets": [
+      "canonical_dataset",
+      "public_normalised_dataset"
+    ],
+    "modes": [
+      "replay_mode",
+      "canonical_full_mode"
+    ],
+    "profiles": [
+      "permissive",
+      "moderate",
+      "strict",
+      "very_strict"
+    ],
+    "total_runs": 4,
+    "cases_per_run": 12,
+    "profiles_per_run": 4,
+    "configs_per_run": 48,
+    "total_configs": 192
+  },
+  "dataset_parity": {
+    "replay_mode": {
+      "total_comparisons": 480,
+      "mismatches": 0,
+      "parity": "IDENTICAL",
+      "mismatch_detail": []
+    },
+    "canonical_full_mode": {
+      "total_comparisons": 480,
+      "mismatches": 0,
+      "parity": "IDENTICAL",
+      "mismatch_detail": []
+    }
+  },
+  "mode_parity": {
+    "canonical": {
+      "total_comparisons": 480,
+      "mismatches": 6,
+      "parity": "DIVERGENT",
+      "mismatch_detail": [
+        {
+          "case_id": "epic_sepsis",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "epic_sepsis",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        },
+        {
+          "case_id": "google_flu",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "google_flu",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        },
+        {
+          "case_id": "babylon",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "babylon",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        }
+      ]
+    },
+    "normalised": {
+      "total_comparisons": 480,
+      "mismatches": 6,
+      "parity": "DIVERGENT",
+      "mismatch_detail": [
+        {
+          "case_id": "epic_sepsis",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "epic_sepsis",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        },
+        {
+          "case_id": "google_flu",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "google_flu",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        },
+        {
+          "case_id": "babylon",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "babylon",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        }
+      ]
+    }
+  },
+  "cross_parity": {
+    "canonical_replay_mode_vs_normalised_canonical_full_mode": {
+      "total_comparisons": 480,
+      "mismatches": 6,
+      "parity": "DIVERGENT",
+      "mismatch_detail": [
+        {
+          "case_id": "epic_sepsis",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "epic_sepsis",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        },
+        {
+          "case_id": "google_flu",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "google_flu",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        },
+        {
+          "case_id": "babylon",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "babylon",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        }
+      ]
+    },
+    "normalised_replay_mode_vs_canonical_canonical_full_mode": {
+      "total_comparisons": 480,
+      "mismatches": 6,
+      "parity": "DIVERGENT",
+      "mismatch_detail": [
+        {
+          "case_id": "epic_sepsis",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "epic_sepsis",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        },
+        {
+          "case_id": "google_flu",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "google_flu",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        },
+        {
+          "case_id": "babylon",
+          "profile": "permissive",
+          "field": "governance_outcome",
+          "run_a": "APPROVE",
+          "run_b": "REJECT"
+        },
+        {
+          "case_id": "babylon",
+          "profile": "permissive",
+          "field": "approved",
+          "run_a": 1,
+          "run_b": 0
+        }
+      ]
+    }
+  },
+  "conclusions": {
+    "dataset_parity": "IDENTICAL across both modes \u2014 structural normalisation has zero effect on outputs",
+    "mode_parity": "DIVERGENT \u2014 3 verdict flips in permissive profile (abstention override); 0 in moderate/strict/very_strict",
+    "cross_parity": "Matches mode parity pattern \u2014 dataset choice has no effect; mode choice affects permissive only"
+  }
+}

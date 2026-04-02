@@ -1,0 +1,45 @@
+{
+  "execution_order": [
+    {
+      "name": "01_dataset_intake.ipynb",
+      "path": "notebooks/01_dataset_intake.ipynb",
+      "required": true,
+      "expected_outputs": [
+        "outputs/tables/dataset_inventory.csv"
+      ]
+    },
+    {
+      "name": "02_historical_replay_execution.ipynb",
+      "path": "notebooks/02_historical_replay_execution.ipynb",
+      "required": true,
+      "expected_outputs": [
+        "outputs/tables/replay_results.csv",
+        "outputs/tables/confusion_matrix.csv",
+        "outputs/logs/replay_run_log.txt"
+      ]
+    },
+    {
+      "name": "03_metrics_and_calibration.ipynb",
+      "path": "notebooks/03_metrics_and_calibration.ipynb",
+      "required": true,
+      "expected_outputs": [
+        "outputs/tables/metrics_summary.csv",
+        "outputs/figures/calibration_summary.txt"
+      ]
+    },
+    {
+      "name": "04_figures_and_tables.ipynb",
+      "path": "notebooks/04_figures_and_tables.ipynb",
+      "required": true,
+      "expected_outputs": [
+        "outputs/figures/figure1_gate_failure.png",
+        "outputs/figures/figure2_ablation.png",
+        "outputs/figures/figure3_provenance_stability.png",
+        "outputs/figures/figure4_compensation.png",
+        "outputs/tables/ablation_matrix.csv",
+        "outputs/figures/paper4_figure_manifest.txt",
+        "outputs/tables/paper4_table_manifest.csv"
+      ]
+    }
+  ]
+}

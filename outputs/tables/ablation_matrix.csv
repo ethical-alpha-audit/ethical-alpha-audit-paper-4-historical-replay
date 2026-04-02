@@ -1,0 +1,9 @@
+removal_type,gates_removed,outcome_changes,affected_cases
+single,gate_safety,0,
+single,gate_evidence,0,
+single,gate_bias,0,
+single,gate_calibration,0,
+single,gate_traceability,0,
+pairwise,Evidence+Traceability,1,babylon
+pairwise,Safety+Bias,3,gender_shades;optum_health;uk_alevels
+pairwise,Safety+Calibration,2,google_flu;uber_av

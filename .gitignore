@@ -1,0 +1,9 @@
+__pycache__/
+.ipynb_checkpoints/
+.env
+.DS_Store
+*.pyc
+paper_submission_bundle/
+reviewer_private/
+*.docx
+*.doc

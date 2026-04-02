@@ -1,2 +1,6 @@
-# Auto detect text files and perform LF normalization
 * text=auto
+# Hash-locked deterministic artefacts: exact bytes, no LF conversion.
+outputs/**/*.csv -text
+outputs/**/*.txt -text
+outputs/**/*.png binary
+logs/actual_manifest.json -text

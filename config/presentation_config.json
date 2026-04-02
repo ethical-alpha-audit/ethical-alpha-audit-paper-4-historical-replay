@@ -1,0 +1,19 @@
+{
+  "figures": {
+    "dpi": 600,
+    "format": "png",
+    "palette": {
+      "reject": "#D55E00",
+      "approve": "#0072B2",
+      "neutral": "#999999",
+      "highlight": "#E69F00",
+      "text": "#000000",
+      "background": "#FFFFFF"
+    },
+    "font_family": "sans-serif",
+    "font_size": 10
+  },
+  "tables": {
+    "float_precision": 6
+  }
+}

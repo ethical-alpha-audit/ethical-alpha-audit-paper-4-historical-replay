@@ -1,0 +1,12 @@
+test,metric,value,rtm_target,status
+monte_carlo,cases_stable,12,Q29,PASS
+monte_carlo,iterations,200,Q29,PASS
+perturbation,verdicts_stable,46,Q30,PASS
+perturbation,verdict_flips,2,Q31,PASS
+perturbation,gate_flips,10,Q32,PASS
+perturbation,moderate_flips,0,Q33,PASS
+google_dr,flip_points,7,Q14,PASS
+invariance,fields_matched,480,Q37,PASS
+invariance,divergences,0,Q38,PASS
+mode_sensitivity,moderate_divergences,0,Q39,PASS
+mode_sensitivity,permissive_flips,3,Q40,PASS
