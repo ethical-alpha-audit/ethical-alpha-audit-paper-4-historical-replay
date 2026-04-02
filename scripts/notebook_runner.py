@@ -31,7 +31,7 @@ def run_notebook(notebook_path: Path, timeout: int, clear_outputs: bool = True):
         nb,
         timeout=timeout,
         kernel_name="python3",
-        resources={"metadata": {"path": str(notebook_path.parent)}}
+        resources={"metadata": {"path": str(BASE_DIR)}}
     )
     start = time.time()
     try:
