@@ -3,7 +3,7 @@
 
 > **Paper 4** of the Ethical Alpha Audit five-paper bundle (NEJM AI)
 >
-> Author: Walter Brown — Ethical Alpha Audit Ltd / NHS England
+> Author: Walter Brown — Ethical Alpha Audit Ltd
 > ORCID: [0000-0002-6050-8522](https://orcid.org/0000-0002-6050-8522)
 
 ## Reviewer quick validation (no execution required)
