@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GovernanceVector",
+  "type": "object",
+  "required": [
+    "vector_id",
+    "source_class",
+    "schema_version",
+    "dimensions",
+    "run_id"
+  ],
+  "properties": {
+    "vector_id": {
+      "type": "string"
+    },
+    "source_class": {
+      "type": "string",
+      "enum": [
+        "prospective",
+        "historical"
+      ]
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "experiment_id": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "calibration_reliability": {
+          "type": "number"
+        },
+        "robustness_shift_resilience": {
+          "type": "number"
+        },
+        "fairness_subgroup_performance": {
+          "type": "number"
+        },
+        "traceability_documentation": {
+          "type": "number"
+        },
+        "monitoring_maturity": {
+          "type": "number"
+        },
+        "human_oversight_recourse": {
+          "type": "number"
+        },
+        "deployment_risk": {
+          "type": "number"
+        },
+        "evidence_strength": {
+          "type": "number"
+        },
+        "encoder_agreement": {
+          "type": "number"
+        },
+        "threshold_justification_origin": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

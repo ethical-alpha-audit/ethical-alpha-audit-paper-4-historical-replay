@@ -1,0 +1,198 @@
+{
+  "case_id": "control_ultrasight_guidance",
+  "display_name": "UltraSight Guidance",
+  "sector": "healthcare",
+  "year": 2025,
+  "citation": "FDA 510(k) K251416. UltraSight Guidance. 2025.",
+  "evidence_excerpt": "",
+  "case_summary": "FDA-authorized: AI-guided cardiac ultrasound acquisition",
+  "features": {
+    "intrinsic_safety": {
+      "value_primary": 0.65,
+      "value_low": 0.585,
+      "value_high": 0.715,
+      "confidence_level": 0.5,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "clinical_utility": {
+      "value_primary": 0.6,
+      "value_low": 0.54,
+      "value_high": 0.66,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_CLINICAL_UTILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "uncertainty_calibration": {
+      "value_primary": 0.55,
+      "value_low": 0.495,
+      "value_high": 0.605,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "bias_harm_index": {
+      "value_primary": 0.3,
+      "value_low": 0.27,
+      "value_high": 0.33,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "fallback_safety_delta": {
+      "value_primary": 0.05,
+      "value_low": 0.045,
+      "value_high": 0.055,
+      "confidence_level": 0.3,
+      "provenance_class": "uncertain_estimate",
+      "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "evidence_strength": {
+      "value_primary": 0.6,
+      "value_low": 0.54,
+      "value_high": 0.66,
+      "confidence_level": 0.5,
+      "provenance_class": "rule_derived",
+      "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "evidence_visibility": {
+      "value_primary": 0.6,
+      "value_low": 0.54,
+      "value_high": 0.66,
+      "confidence_level": 0.5,
+      "provenance_class": "rule_derived",
+      "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "traceability_integrity": {
+      "value_primary": 0.55,
+      "value_low": 0.495,
+      "value_high": 0.605,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_TRACEABILITY_INTEGRITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "stress_robustness": {
+      "value_primary": 0.5,
+      "value_low": 0.45,
+      "value_high": 0.55,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "drift_susceptibility": {
+      "value_primary": 0.35,
+      "value_low": 0.315,
+      "value_high": 0.385,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "data_shift_rate": {
+      "value_primary": 0.3,
+      "value_low": 0.27,
+      "value_high": 0.33,
+      "confidence_level": 0.3,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DATA_SHIFT_RATE",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "deployment_volume": {
+      "value_primary": 0.6,
+      "value_low": 0.54,
+      "value_high": 0.66,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_DEPLOYMENT_VOLUME",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "harm_severity": {
+      "value_primary": 0.5,
+      "value_low": 0.45,
+      "value_high": 0.55,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_HARM_SEVERITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "adversarial_gaming_capability": {
+      "value_primary": 0.15,
+      "value_low": 0.135,
+      "value_high": 0.165,
+      "confidence_level": 0.3,
+      "provenance_class": "uncertain_estimate",
+      "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    },
+    "claimed_performance": {
+      "value_primary": 0.65,
+      "value_low": 0.585,
+      "value_high": 0.715,
+      "confidence_level": 0.4,
+      "provenance_class": "imputed_from_context",
+      "encoding_rule_id": "ER_CLAIMED_PERFORMANCE",
+      "excerpt_ids": [],
+      "source_refs": [
+        "FDA 510(k) K251416. UltraSight Guidance. 2025."
+      ]
+    }
+  },
+  "meta": {
+    "encoding_version": "v2.0",
+    "extraction_date": "2026-03-18",
+    "feature_count": 15
+  },
+  "source_url": "https://www.accessdata.fda.gov/cdrh_docs/pdf25/K251416.pdf",
+  "case_label": "control_approved"
+}

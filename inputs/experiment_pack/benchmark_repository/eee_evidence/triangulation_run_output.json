@@ -1,0 +1,3087 @@
+{
+  "run_metadata": {
+    "run_date": "2026-03-18T14:04:57Z",
+    "engine": "EEE_Triangulation_Confidence_Layer_v1",
+    "input_version": "1.2.0-upgraded",
+    "input_hash": "f9d181ca3859cb7e3b65c66a291c5da66eba47c95207a8c4ee01c5ae93ce8948",
+    "parent_hash": "b77e10eccb2dde7f760444093de92019dbd2e7a3e5b16cc4343d37bdcb1b98c4",
+    "total_cases": 39,
+    "cases_triangulated": 37,
+    "cases_blocked": 2,
+    "blocked_case_ids": [
+      "H34",
+      "H35"
+    ]
+  },
+  "input_metadata_snapshot": {
+    "dataset_name": "EEE Enriched AI Governance Dataset",
+    "version": "1.2.0-upgraded",
+    "status": "LOCKED",
+    "created_date": "2026-03-18",
+    "created_by": "EEE_Evidence_Robustness_Upgrade_Agent_v1",
+    "source_input": "EEE_v1.1_enriched_dataset_LOCKED.json",
+    "control_document": "EEE_Enrichment_Agent_Repair_Pack_v1 + Failure Log",
+    "total_cases": 39,
+    "hash_sha256": "f9d181ca3859cb7e3b65c66a291c5da66eba47c95207a8c4ee01c5ae93ce8948",
+    "parent_hash": "b77e10eccb2dde7f760444093de92019dbd2e7a3e5b16cc4343d37bdcb1b98c4",
+    "immutable": true,
+    "upgrade_summary": {
+      "cases_upgraded": 25,
+      "sources_added": 25,
+      "observations_added": 25,
+      "monitoring_flags_added": 2,
+      "cases_not_upgradable": [
+        "H34",
+        "H35"
+      ]
+    },
+    "provenance": {
+      "generation_method": "Targeted robustness upgrade on locked v1.1 baseline",
+      "upgrade_policy": "Additive only",
+      "retrieval_policy": "Case-specific peer-reviewed sources",
+      "hallucination_policy": "Strict no fabrication",
+      "validation_status": "37 complete, 2 insufficient with monitoring flags",
+      "parent_integrity": "Verified"
+    }
+  },
+  "per_case_summaries": [
+    {
+      "case_id": "H01",
+      "display_name": "Epic Sepsis Model",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8994,
+      "confidence_band": "high",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 4,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "triangulated_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient",
+        "partially_convergent"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H02",
+      "display_name": "Optum Population Health algorithm",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8347,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 2,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H03",
+      "display_name": "Google DR deployment in Thailand",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.826,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "ACCEPTABLE",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 4,
+      "phenomenon_coverage_count": 3,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "triangulated_mixed_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H04",
+      "display_name": "IBM Watson for Oncology",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8566,
+      "confidence_band": "high",
+      "evidence_strength_classification": "ACCEPTABLE",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 3,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H05",
+      "display_name": "Babylon symptom checker",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8166,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H06",
+      "display_name": "Semigran symptom checker audit (23 tools)",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8088,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H07",
+      "display_name": "Ada symptom assessment app",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8434,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "triangulated_mixed_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H08",
+      "display_name": "Buoy symptom assessment app",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.801,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H09",
+      "display_name": "K Health symptom assessment app",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8531,
+      "confidence_band": "high",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "triangulated_mixed_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H10",
+      "display_name": "Mediktor symptom assessment app",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8116,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H11",
+      "display_name": "Symptomate symptom assessment app",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7988,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 3,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H12",
+      "display_name": "WebMD symptom checker",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8078,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H13",
+      "display_name": "Your.MD symptom checker",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8528,
+      "confidence_band": "high",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "triangulated_mixed_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H14",
+      "display_name": "Pulse oximetry racial bias",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8804,
+      "confidence_band": "high",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 3,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H15",
+      "display_name": "Pneumonia CXR cross-site generalization failure",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7975,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "MINIMUM",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 2,
+      "observation_count": 2,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H16",
+      "display_name": "Hip fracture model confounding on radiographs",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7725,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "MINIMUM",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 2,
+      "observation_count": 2,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H17",
+      "display_name": "COVID-19 CXR shortcut learning",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.855,
+      "confidence_band": "high",
+      "evidence_strength_classification": "MINIMUM",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 2,
+      "observation_count": 2,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H18",
+      "display_name": "CXR underdiagnosis bias in under-served groups",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.89,
+      "confidence_band": "high",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 1,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "partially_convergent"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H19",
+      "display_name": "Sex imbalance in thoracic imaging datasets",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7837,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H20",
+      "display_name": "Hidden stratification in medical imaging",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7875,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H21",
+      "display_name": "Race recognition from medical images",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.78,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H22",
+      "display_name": "Dermatology ML disparities",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7806,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient",
+        "partially_convergent"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H23",
+      "display_name": "Radiology AI shortcut bias review",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7806,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H24",
+      "display_name": "Shortcutting risk in medical imaging research",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7828,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H25",
+      "display_name": "EHR process bias in observational data",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.73,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "ACCEPTABLE",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 3,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H26",
+      "display_name": "Adversarial attacks on medical ML",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7456,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "ACCEPTABLE",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_mixed_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H27",
+      "display_name": "Medical device UI software recalls",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7353,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "ACCEPTABLE",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_mixed_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H28",
+      "display_name": "FDA MAUDE safety events for ML-enabled devices",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7908,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 3,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H29",
+      "display_name": "Benefit-risk reporting gaps in FDA-cleared AI devices",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7928,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H30",
+      "display_name": "Early recalls and validation gaps in AI-enabled devices",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8892,
+      "confidence_band": "high",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 1,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "convergent"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H31",
+      "display_name": "Generalizability of FDA-approved AI-enabled devices",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7969,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H32",
+      "display_name": "da Vinci robotic surgery MAUDE analysis",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7837,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient",
+        "partially_convergent"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H33",
+      "display_name": "Robotic-assisted total hip arthroplasty MAUDE analysis",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7893,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "STRONG",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 2,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "convergent",
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H34",
+      "display_name": "Acclarent TruDi Navigation System",
+      "triangulation_ready": false,
+      "overall_confidence_score": null,
+      "confidence_band": null,
+      "evidence_strength_classification": "INSUFFICIENT",
+      "triangulation_integrity": "BLOCKED",
+      "source_count": 0,
+      "observation_count": 0,
+      "phenomenon_coverage_count": 0,
+      "dominant_provenance_classes": [],
+      "dominant_adjudication_states": [],
+      "notes": "forward_signal_flag=true; monitoring_required=true; No admissible corroboration."
+    },
+    {
+      "case_id": "H35",
+      "display_name": "Sonio Detect prenatal ultrasound allegation",
+      "triangulation_ready": false,
+      "overall_confidence_score": null,
+      "confidence_band": null,
+      "evidence_strength_classification": "INSUFFICIENT",
+      "triangulation_integrity": "BLOCKED",
+      "source_count": 0,
+      "observation_count": 0,
+      "phenomenon_coverage_count": 0,
+      "dominant_provenance_classes": [],
+      "dominant_adjudication_states": [],
+      "notes": "forward_signal_flag=true; monitoring_required=true; No admissible corroboration."
+    },
+    {
+      "case_id": "H36",
+      "display_name": "UK Equity in Medical Devices independent review",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.7792,
+      "confidence_band": "moderate",
+      "evidence_strength_classification": "IDEAL",
+      "triangulation_integrity": "FRAGILE",
+      "source_count": 3,
+      "observation_count": 3,
+      "phenomenon_coverage_count": 3,
+      "dominant_provenance_classes": [
+        "single_source_direct_evidence",
+        "uncertain_estimate"
+      ],
+      "dominant_adjudication_states": [
+        "insufficient"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H37",
+      "display_name": "COVID CXR intrinsic shortcut detection",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.9138,
+      "confidence_band": "high",
+      "evidence_strength_classification": "MINIMUM",
+      "triangulation_integrity": "STRONG",
+      "source_count": 2,
+      "observation_count": 2,
+      "phenomenon_coverage_count": 1,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "partially_convergent"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H38",
+      "display_name": "Race/demographic shortcut mitigation in imaging",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.8875,
+      "confidence_band": "high",
+      "evidence_strength_classification": "MINIMUM",
+      "triangulation_integrity": "STRONG",
+      "source_count": 2,
+      "observation_count": 2,
+      "phenomenon_coverage_count": 1,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "partially_convergent"
+      ],
+      "notes": ""
+    },
+    {
+      "case_id": "H39",
+      "display_name": "Minimal-noise adversarial attack on medical images",
+      "triangulation_ready": true,
+      "overall_confidence_score": 0.9263,
+      "confidence_band": "high",
+      "evidence_strength_classification": "MINIMUM",
+      "triangulation_integrity": "STRONG",
+      "source_count": 2,
+      "observation_count": 2,
+      "phenomenon_coverage_count": 1,
+      "dominant_provenance_classes": [
+        "triangulated_direct_evidence"
+      ],
+      "dominant_adjudication_states": [
+        "convergent"
+      ],
+      "notes": ""
+    }
+  ],
+  "per_case_feature_outputs": {
+    "H01": {
+      "feature_encodings": {
+        "uncertainty_calibration": {
+          "value_primary": -0.598,
+          "value_low": -0.6615,
+          "value_high": -0.5346,
+          "confidence_level": 0.9075,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "partially_convergent",
+          "adjudication_note": "Generated from 3 observations across 3 sources.",
+          "source_refs": [
+            "SRC_H01_001",
+            "SRC_H01_002",
+            "SRC_H01_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H01_001",
+            "OBS_H01_003",
+            "OBS_H01_004"
+          ],
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.15,
+          "effective_sample_size": 2.297,
+          "support_count": 3
+        },
+        "clinical_utility": {
+          "value_primary": -0.3,
+          "value_low": -0.53,
+          "value_high": -0.07,
+          "confidence_level": 0.8913,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H01_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H01_002"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.874,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 4 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_UNCERTAINTY_CALIBRATION"
+      ]
+    },
+    "H02": {
+      "feature_encodings": {
+        "bias_harm_index": {
+          "value_primary": -0.8273,
+          "value_low": -0.9573,
+          "value_high": -0.6973,
+          "confidence_level": 0.9719,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H02_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H02_001",
+            "OBS_H02_002"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.7419,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.6,
+          "value_low": -0.93,
+          "value_high": -0.27,
+          "confidence_level": 0.6975,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H02_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H02_003"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5214,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 2,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM",
+        "PHEN_EVIDENCE_STRENGTH"
+      ]
+    },
+    "H03": {
+      "feature_encodings": {
+        "clinical_utility": {
+          "value_primary": -0.2842,
+          "value_low": -0.5142,
+          "value_high": -0.0542,
+          "confidence_level": 0.8206,
+          "confidence_band": "moderate",
+          "provenance_class": "triangulated_mixed_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H03_001",
+            "SRC_H03_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H03_001",
+            "OBS_H03_004"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.0026,
+          "support_count": 2
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.25,
+          "value_low": -0.48,
+          "value_high": -0.02,
+          "confidence_level": 0.815,
+          "confidence_band": "moderate",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H03_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H03_002"
+          ],
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5318,
+          "support_count": 1
+        },
+        "intrinsic_safety": {
+          "value_primary": 0.4,
+          "value_low": 0.17,
+          "value_high": 0.63,
+          "confidence_level": 0.8425,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H03_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H03_003"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.6264,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 3 features from 4 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.3333,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_FALLBACK_SAFETY",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H04": {
+      "feature_encodings": {
+        "evidence_strength": {
+          "value_primary": -0.55,
+          "value_low": -0.78,
+          "value_high": -0.32,
+          "confidence_level": 0.8462,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H04_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H04_001"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5715,
+          "support_count": 1
+        },
+        "uncertainty_calibration": {
+          "value_primary": -0.3,
+          "value_low": -0.53,
+          "value_high": -0.07,
+          "confidence_level": 0.8662,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H04_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H04_002"
+          ],
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.697,
+          "support_count": 1
+        },
+        "intrinsic_safety": {
+          "value_primary": -0.35,
+          "value_low": -0.58,
+          "value_high": -0.12,
+          "confidence_level": 0.8575,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H04_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H04_003"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.64,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 3 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_INTRINSIC_SAFETY",
+        "PHEN_UNCERTAINTY_CALIBRATION"
+      ]
+    },
+    "H05": {
+      "feature_encodings": {
+        "evidence_strength": {
+          "value_primary": -0.4539,
+          "value_low": -0.5839,
+          "value_high": -0.3239,
+          "confidence_level": 0.9169,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H05_001",
+            "SRC_H05_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H05_001",
+            "OBS_H05_003"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.1795,
+          "support_count": 2
+        },
+        "intrinsic_safety": {
+          "value_primary": -0.35,
+          "value_low": -0.68,
+          "value_high": -0.02,
+          "confidence_level": 0.7163,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H05_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H05_002"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5924,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H06": {
+      "feature_encodings": {
+        "intrinsic_safety": {
+          "value_primary": -0.4739,
+          "value_low": -0.6039,
+          "value_high": -0.3439,
+          "confidence_level": 0.9363,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_06_001",
+            "SRC_H06_003"
+          ],
+          "excerpt_ids": [
+            "OBS_06_001",
+            "OBS_H06_003"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.2544,
+          "support_count": 2
+        },
+        "clinical_utility": {
+          "value_primary": -0.45,
+          "value_low": -0.78,
+          "value_high": -0.12,
+          "confidence_level": 0.6813,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_06_002"
+          ],
+          "excerpt_ids": [
+            "OBS_06_002"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.4508,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H07": {
+      "feature_encodings": {
+        "intrinsic_safety": {
+          "value_primary": -0.2,
+          "value_low": -0.43,
+          "value_high": 0.03,
+          "confidence_level": 0.8462,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_07_001"
+          ],
+          "excerpt_ids": [
+            "OBS_07_001"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.578,
+          "support_count": 1
+        },
+        "clinical_utility": {
+          "value_primary": -0.2053,
+          "value_low": -0.4353,
+          "value_high": 0.0247,
+          "confidence_level": 0.8406,
+          "confidence_band": "weak",
+          "provenance_class": "triangulated_mixed_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_07_002",
+            "SRC_H07_003"
+          ],
+          "excerpt_ids": [
+            "OBS_07_002",
+            "OBS_H07_003"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.0084,
+          "support_count": 2
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H08": {
+      "feature_encodings": {
+        "intrinsic_safety": {
+          "value_primary": -0.3761,
+          "value_low": -0.5061,
+          "value_high": -0.2461,
+          "confidence_level": 0.9206,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_08_001",
+            "SRC_H08_003"
+          ],
+          "excerpt_ids": [
+            "OBS_08_001",
+            "OBS_H08_003"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.1084,
+          "support_count": 2
+        },
+        "clinical_utility": {
+          "value_primary": -0.35,
+          "value_low": -0.68,
+          "value_high": -0.02,
+          "confidence_level": 0.6813,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_08_002"
+          ],
+          "excerpt_ids": [
+            "OBS_08_002"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.4508,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H09": {
+      "feature_encodings": {
+        "intrinsic_safety": {
+          "value_primary": -0.35,
+          "value_low": -0.58,
+          "value_high": -0.12,
+          "confidence_level": 0.8462,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_09_001"
+          ],
+          "excerpt_ids": [
+            "OBS_09_001"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.578,
+          "support_count": 1
+        },
+        "clinical_utility": {
+          "value_primary": -0.3,
+          "value_low": -0.53,
+          "value_high": -0.07,
+          "confidence_level": 0.86,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_mixed_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_09_002",
+            "SRC_H09_003"
+          ],
+          "excerpt_ids": [
+            "OBS_09_002",
+            "OBS_H09_003"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.0288,
+          "support_count": 2
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H10": {
+      "feature_encodings": {
+        "intrinsic_safety": {
+          "value_primary": -0.35,
+          "value_low": -0.48,
+          "value_high": -0.22,
+          "confidence_level": 0.9419,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_10_001",
+            "SRC_H10_003"
+          ],
+          "excerpt_ids": [
+            "OBS_10_001",
+            "OBS_H10_003"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.202,
+          "support_count": 2
+        },
+        "clinical_utility": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6813,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_10_002"
+          ],
+          "excerpt_ids": [
+            "OBS_10_002"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.4508,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H11": {
+      "feature_encodings": {
+        "intrinsic_safety": {
+          "value_primary": -0.15,
+          "value_low": -0.38,
+          "value_high": 0.08,
+          "confidence_level": 0.8462,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_11_001"
+          ],
+          "excerpt_ids": [
+            "OBS_11_001"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.578,
+          "support_count": 1
+        },
+        "clinical_utility": {
+          "value_primary": -0.1,
+          "value_low": -0.43,
+          "value_high": 0.23,
+          "confidence_level": 0.6813,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_11_002"
+          ],
+          "excerpt_ids": [
+            "OBS_11_002"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.4508,
+          "support_count": 1
+        },
+        "uncertainty_calibration": {
+          "value_primary": -0.25,
+          "value_low": -0.48,
+          "value_high": -0.02,
+          "confidence_level": 0.8688,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H11_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H11_003"
+          ],
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.697,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 3 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.3333,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_INTRINSIC_SAFETY",
+        "PHEN_UNCERTAINTY_CALIBRATION"
+      ]
+    },
+    "H12": {
+      "feature_encodings": {
+        "intrinsic_safety": {
+          "value_primary": -0.3266,
+          "value_low": -0.4566,
+          "value_high": -0.1966,
+          "confidence_level": 0.9344,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_12_001",
+            "SRC_H12_003"
+          ],
+          "excerpt_ids": [
+            "OBS_12_001",
+            "OBS_H12_003"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.234,
+          "support_count": 2
+        },
+        "clinical_utility": {
+          "value_primary": -0.25,
+          "value_low": -0.58,
+          "value_high": 0.08,
+          "confidence_level": 0.6813,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_12_002"
+          ],
+          "excerpt_ids": [
+            "OBS_12_002"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.4508,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H13": {
+      "feature_encodings": {
+        "intrinsic_safety": {
+          "value_primary": -0.3,
+          "value_low": -0.53,
+          "value_high": -0.07,
+          "confidence_level": 0.8462,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_13_001"
+          ],
+          "excerpt_ids": [
+            "OBS_13_001"
+          ],
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.578,
+          "support_count": 1
+        },
+        "clinical_utility": {
+          "value_primary": -0.25,
+          "value_low": -0.48,
+          "value_high": -0.02,
+          "confidence_level": 0.8594,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_mixed_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_13_002",
+            "SRC_H13_003"
+          ],
+          "excerpt_ids": [
+            "OBS_13_002",
+            "OBS_H13_003"
+          ],
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.9945,
+          "support_count": 2
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_CLINICAL_UTILITY",
+        "PHEN_INTRINSIC_SAFETY"
+      ]
+    },
+    "H14": {
+      "feature_encodings": {
+        "bias_harm_index": {
+          "value_primary": -0.75,
+          "value_low": -0.98,
+          "value_high": -0.52,
+          "confidence_level": 0.8975,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H14_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H14_001"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.893,
+          "support_count": 1
+        },
+        "harm_severity": {
+          "value_primary": -0.65,
+          "value_low": -0.88,
+          "value_high": -0.42,
+          "confidence_level": 0.8875,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H14_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H14_002"
+          ],
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.828,
+          "support_count": 1
+        },
+        "evidence_visibility": {
+          "value_primary": -0.5,
+          "value_low": -0.73,
+          "value_high": -0.27,
+          "confidence_level": 0.8562,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H14_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H14_003"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.6502,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 3 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM",
+        "PHEN_EVIDENCE_VISIBILITY",
+        "PHEN_HARM_SEVERITY"
+      ]
+    },
+    "H15": {
+      "feature_encodings": {
+        "stress_robustness": {
+          "value_primary": -0.6,
+          "value_low": -0.83,
+          "value_high": -0.37,
+          "confidence_level": 0.8875,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H15_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H15_001"
+          ],
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.81,
+          "support_count": 1
+        },
+        "drift_susceptibility": {
+          "value_primary": -0.45,
+          "value_low": -0.78,
+          "value_high": -0.12,
+          "confidence_level": 0.7075,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H15_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H15_002"
+          ],
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5304,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 2 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 2,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_DRIFT_SUSCEPTIBILITY",
+        "PHEN_STRESS_ROBUSTNESS"
+      ]
+    },
+    "H16": {
+      "feature_encodings": {
+        "stress_robustness": {
+          "value_primary": -0.55,
+          "value_low": -0.78,
+          "value_high": -0.32,
+          "confidence_level": 0.8575,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H16_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H16_001"
+          ],
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.6358,
+          "support_count": 1
+        },
+        "evidence_strength": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6875,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H16_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H16_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.474,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 2 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 2,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_STRESS_ROBUSTNESS"
+      ]
+    },
+    "H17": {
+      "feature_encodings": {
+        "stress_robustness": {
+          "value_primary": -0.7,
+          "value_low": -0.93,
+          "value_high": -0.47,
+          "confidence_level": 0.8675,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H17_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H17_001"
+          ],
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.7038,
+          "support_count": 1
+        },
+        "drift_susceptibility": {
+          "value_primary": -0.5,
+          "value_low": -0.73,
+          "value_high": -0.27,
+          "confidence_level": 0.8425,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H17_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H17_002"
+          ],
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5715,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 2 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 2,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_DRIFT_SUSCEPTIBILITY",
+        "PHEN_STRESS_ROBUSTNESS"
+      ]
+    },
+    "H18": {
+      "feature_encodings": {
+        "bias_harm_index": {
+          "value_primary": -0.6128,
+          "value_low": -0.6749,
+          "value_high": -0.5507,
+          "confidence_level": 0.89,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "partially_convergent",
+          "adjudication_note": "Generated from 3 observations across 3 sources.",
+          "source_refs": [
+            "SRC_H18_001",
+            "SRC_H18_002",
+            "SRC_H18_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H18_001",
+            "OBS_H18_002",
+            "OBS_H18_003"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.15,
+          "effective_sample_size": 2.0895,
+          "support_count": 3
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 1 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM"
+      ]
+    },
+    "H19": {
+      "feature_encodings": {
+        "bias_harm_index": {
+          "value_primary": -0.399,
+          "value_low": -0.529,
+          "value_high": -0.269,
+          "confidence_level": 0.9237,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H19_001",
+            "SRC_H19_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H19_001",
+            "OBS_H19_003"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.2237,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_19_002"
+          ],
+          "excerpt_ids": [
+            "OBS_19_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM",
+        "PHEN_EVIDENCE_STRENGTH"
+      ]
+    },
+    "H20": {
+      "feature_encodings": {
+        "stress_robustness": {
+          "value_primary": -0.5459,
+          "value_low": -0.6759,
+          "value_high": -0.4159,
+          "confidence_level": 0.9313,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H20_001",
+            "SRC_H20_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H20_001",
+            "OBS_H20_003"
+          ],
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.3052,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.45,
+          "value_low": -0.78,
+          "value_high": -0.12,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_20_002"
+          ],
+          "excerpt_ids": [
+            "OBS_20_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_STRESS_ROBUSTNESS"
+      ]
+    },
+    "H21": {
+      "feature_encodings": {
+        "bias_harm_index": {
+          "value_primary": -0.6018,
+          "value_low": -0.7318,
+          "value_high": -0.4718,
+          "confidence_level": 0.9163,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H21_001",
+            "SRC_H21_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H21_001",
+            "OBS_H21_003"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.1573,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.5,
+          "value_low": -0.83,
+          "value_high": -0.17,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_21_002"
+          ],
+          "excerpt_ids": [
+            "OBS_21_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM",
+        "PHEN_EVIDENCE_STRENGTH"
+      ]
+    },
+    "H22": {
+      "feature_encodings": {
+        "bias_harm_index": {
+          "value_primary": -0.5138,
+          "value_low": -0.6438,
+          "value_high": -0.3838,
+          "confidence_level": 0.9175,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "partially_convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H22_001",
+            "SRC_H22_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H22_001",
+            "OBS_H22_003"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.15,
+          "effective_sample_size": 1.3917,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.25,
+          "value_low": -0.58,
+          "value_high": 0.08,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_22_002"
+          ],
+          "excerpt_ids": [
+            "OBS_22_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM",
+        "PHEN_EVIDENCE_STRENGTH"
+      ]
+    },
+    "H23": {
+      "feature_encodings": {
+        "stress_robustness": {
+          "value_primary": -0.5302,
+          "value_low": -0.6602,
+          "value_high": -0.4002,
+          "confidence_level": 0.9175,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H23_001",
+            "SRC_H23_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H23_001",
+            "OBS_H23_003"
+          ],
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.2878,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_23_002"
+          ],
+          "excerpt_ids": [
+            "OBS_23_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_STRESS_ROBUSTNESS"
+      ]
+    },
+    "H24": {
+      "feature_encodings": {
+        "stress_robustness": {
+          "value_primary": -0.4515,
+          "value_low": -0.5815,
+          "value_high": -0.3215,
+          "confidence_level": 0.9219,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H24_001",
+            "SRC_H24_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H24_001",
+            "OBS_H24_003"
+          ],
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.2355,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.25,
+          "value_low": -0.58,
+          "value_high": 0.08,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_24_002"
+          ],
+          "excerpt_ids": [
+            "OBS_24_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_STRESS_ROBUSTNESS"
+      ]
+    },
+    "H25": {
+      "feature_encodings": {
+        "drift_susceptibility": {
+          "value_primary": -0.55,
+          "value_low": -0.78,
+          "value_high": -0.32,
+          "confidence_level": 0.85,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H25_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H25_001"
+          ],
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5997,
+          "support_count": 1
+        },
+        "evidence_strength": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_25_002"
+          ],
+          "excerpt_ids": [
+            "OBS_25_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        },
+        "bias_harm_index": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6962,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H25_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H25_003"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.4913,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 3 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.6667,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM",
+        "PHEN_DRIFT_SUSCEPTIBILITY",
+        "PHEN_EVIDENCE_STRENGTH"
+      ]
+    },
+    "H26": {
+      "feature_encodings": {
+        "adversarial_gaming_capability": {
+          "value_primary": -0.5071,
+          "value_low": -0.7371,
+          "value_high": -0.2771,
+          "confidence_level": 0.8475,
+          "confidence_band": "weak",
+          "provenance_class": "triangulated_mixed_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H26_001",
+            "SRC_H26_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H26_001",
+            "OBS_H26_003"
+          ],
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.0505,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_26_002"
+          ],
+          "excerpt_ids": [
+            "OBS_26_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 1.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_GAMING_CAPABILITY"
+      ]
+    },
+    "H27": {
+      "feature_encodings": {
+        "fallback_safety_delta": {
+          "value_primary": -0.3627,
+          "value_low": -0.5927,
+          "value_high": -0.1327,
+          "confidence_level": 0.8194,
+          "confidence_band": "moderate",
+          "provenance_class": "triangulated_mixed_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H27_001",
+            "SRC_H27_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H27_001",
+            "OBS_H27_003"
+          ],
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.8669,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6512,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_27_002"
+          ],
+          "excerpt_ids": [
+            "OBS_27_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3647,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 1.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_FALLBACK_SAFETY"
+      ]
+    },
+    "H28": {
+      "feature_encodings": {
+        "harm_severity": {
+          "value_primary": -0.55,
+          "value_low": -0.78,
+          "value_high": -0.32,
+          "confidence_level": 0.885,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H28_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H28_001"
+          ],
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.792,
+          "support_count": 1
+        },
+        "evidence_strength": {
+          "value_primary": -0.45,
+          "value_low": -0.78,
+          "value_high": -0.12,
+          "confidence_level": 0.6475,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_28_002"
+          ],
+          "excerpt_ids": [
+            "OBS_28_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3522,
+          "support_count": 1
+        },
+        "evidence_visibility": {
+          "value_primary": -0.45,
+          "value_low": -0.68,
+          "value_high": -0.22,
+          "confidence_level": 0.84,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H28_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H28_003"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5576,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 3 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.3333,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_EVIDENCE_VISIBILITY",
+        "PHEN_HARM_SEVERITY"
+      ]
+    },
+    "H29": {
+      "feature_encodings": {
+        "evidence_visibility": {
+          "value_primary": -0.4719,
+          "value_low": -0.6019,
+          "value_high": -0.3419,
+          "confidence_level": 0.9344,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H29_001",
+            "SRC_H29_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H29_001",
+            "OBS_H29_003"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.2407,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6512,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_29_002"
+          ],
+          "excerpt_ids": [
+            "OBS_29_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3647,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_EVIDENCE_VISIBILITY"
+      ]
+    },
+    "H30": {
+      "feature_encodings": {
+        "evidence_strength": {
+          "value_primary": -0.4366,
+          "value_low": -0.4866,
+          "value_high": -0.3866,
+          "confidence_level": 0.8892,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 3 observations across 3 sources.",
+          "source_refs": [
+            "SRC_30_002",
+            "SRC_H30_001",
+            "SRC_H30_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H30_001",
+            "OBS_30_002",
+            "OBS_H30_003"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.4863,
+          "support_count": 3
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 1 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH"
+      ]
+    },
+    "H31": {
+      "feature_encodings": {
+        "stress_robustness": {
+          "value_primary": -0.45,
+          "value_low": -0.58,
+          "value_high": -0.32,
+          "confidence_level": 0.9425,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H31_001",
+            "SRC_H31_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H31_001",
+            "OBS_H31_003"
+          ],
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.1997,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.35,
+          "value_low": -0.68,
+          "value_high": -0.02,
+          "confidence_level": 0.6512,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_31_002"
+          ],
+          "excerpt_ids": [
+            "OBS_31_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3647,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_STRESS_ROBUSTNESS"
+      ]
+    },
+    "H32": {
+      "feature_encodings": {
+        "harm_severity": {
+          "value_primary": -0.4347,
+          "value_low": -0.5647,
+          "value_high": -0.3047,
+          "confidence_level": 0.9163,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "partially_convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H32_001",
+            "SRC_H32_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H32_001",
+            "OBS_H32_003"
+          ],
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.15,
+          "effective_sample_size": 1.2492,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.25,
+          "value_low": -0.58,
+          "value_high": 0.08,
+          "confidence_level": 0.6512,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_32_002"
+          ],
+          "excerpt_ids": [
+            "OBS_32_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3647,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_HARM_SEVERITY"
+      ]
+    },
+    "H33": {
+      "feature_encodings": {
+        "harm_severity": {
+          "value_primary": -0.3,
+          "value_low": -0.43,
+          "value_high": -0.17,
+          "confidence_level": 0.9275,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H33_001",
+            "SRC_H33_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H33_001",
+            "OBS_H33_003"
+          ],
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.0741,
+          "support_count": 2
+        },
+        "evidence_strength": {
+          "value_primary": -0.2,
+          "value_low": -0.53,
+          "value_high": 0.13,
+          "confidence_level": 0.6512,
+          "confidence_band": "moderate",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_33_002"
+          ],
+          "excerpt_ids": [
+            "OBS_33_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3647,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 2 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.5,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_HARM_SEVERITY"
+      ]
+    },
+    "H36": {
+      "feature_encodings": {
+        "bias_harm_index": {
+          "value_primary": -0.4,
+          "value_low": -0.63,
+          "value_high": -0.17,
+          "confidence_level": 0.8538,
+          "confidence_band": "high",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H36_001"
+          ],
+          "excerpt_ids": [
+            "OBS_H36_001"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.6134,
+          "support_count": 1
+        },
+        "evidence_strength": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6437,
+          "confidence_band": "weak",
+          "provenance_class": "uncertain_estimate",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H36_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H36_002"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.3534,
+          "support_count": 1
+        },
+        "evidence_visibility": {
+          "value_primary": -0.35,
+          "value_low": -0.58,
+          "value_high": -0.12,
+          "confidence_level": 0.84,
+          "confidence_band": "weak",
+          "provenance_class": "single_source_direct_evidence",
+          "adjudication_state": "insufficient",
+          "adjudication_note": "Generated from 1 observations across 1 sources.",
+          "source_refs": [
+            "SRC_H36_003"
+          ],
+          "excerpt_ids": [
+            "OBS_H36_003"
+          ],
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 0.5437,
+          "support_count": 1
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 3 features from 3 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 3,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.3333,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM",
+        "PHEN_EVIDENCE_STRENGTH",
+        "PHEN_EVIDENCE_VISIBILITY"
+      ]
+    },
+    "H37": {
+      "feature_encodings": {
+        "stress_robustness": {
+          "value_primary": -0.5819,
+          "value_low": -0.7119,
+          "value_high": -0.4519,
+          "confidence_level": 0.9138,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "partially_convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H37_001",
+            "SRC_H37_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H37_001",
+            "OBS_H37_002"
+          ],
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.15,
+          "effective_sample_size": 1.2597,
+          "support_count": 2
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 1 features from 2 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 2,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_STRESS_ROBUSTNESS"
+      ]
+    },
+    "H38": {
+      "feature_encodings": {
+        "bias_harm_index": {
+          "value_primary": -0.4377,
+          "value_low": -0.5799,
+          "value_high": -0.2955,
+          "confidence_level": 0.8875,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "partially_convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H38_001",
+            "SRC_H38_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H38_001",
+            "OBS_H38_002"
+          ],
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.15,
+          "effective_sample_size": 1.1806,
+          "support_count": 2
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 1 features from 2 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 2,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_BIAS_HARM"
+      ]
+    },
+    "H39": {
+      "feature_encodings": {
+        "adversarial_gaming_capability": {
+          "value_primary": -0.5279,
+          "value_low": -0.6579,
+          "value_high": -0.3979,
+          "confidence_level": 0.9263,
+          "confidence_band": "high",
+          "provenance_class": "triangulated_direct_evidence",
+          "adjudication_state": "convergent",
+          "adjudication_note": "Generated from 2 observations across 2 sources.",
+          "source_refs": [
+            "SRC_H39_001",
+            "SRC_H39_002"
+          ],
+          "excerpt_ids": [
+            "OBS_H39_001",
+            "OBS_H39_002"
+          ],
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "aggregation_method": "weighted_mean",
+          "disagreement_penalty": 0.0,
+          "effective_sample_size": 1.1674,
+          "support_count": 2
+        }
+      },
+      "triangulation_summary": {
+        "summary": "Triangulated 1 features from 2 observations.",
+        "quality_gate_status": "pass",
+        "independence_sources_count": 2,
+        "primary_or_regulator_present": true,
+        "rule_derived_share": 0.0,
+        "warnings": []
+      },
+      "phenomena": [
+        "PHEN_GAMING_CAPABILITY"
+      ]
+    }
+  }
+}

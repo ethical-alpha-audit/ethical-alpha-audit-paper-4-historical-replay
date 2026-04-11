@@ -1,0 +1,30 @@
+triangulation_field,canonical_field,governance_target,transform
+per_case_summaries[].case_id,eee_case_id,N/A (reference only),Direct copy
+H_TO_GOVERNANCE[case_id],case_id,cases.case_id,Lookup via H-ID mapping table
+per_case_summaries[].display_name,display_name,cases.display_name,Direct copy
+(constant),canonical_version,N/A (layer metadata),Set to 1.0.0
+(constant),source_pipeline,N/A (layer metadata),Set to EEE
+per_case_summaries[].overall_confidence_score,triangulated_confidence,N/A (new field; extends case metadata),Direct copy; null for blocked
+per_case_summaries[].confidence_band,confidence_band,N/A (new field),Direct copy; null for blocked
+per_case_summaries[].evidence_strength_classification,evidence_grade,N/A (new field),Direct copy
+per_case_summaries[].triangulation_integrity,triangulation_integrity,N/A (new field),Direct copy
+per_case_feature_outputs[].phenomena,phenomena,N/A (new field),Direct copy from feature outputs
+(derived),deployment_risk_class,N/A (new field),Derived from confidence + integrity + grade
+(derived),audit_flags[],N/A (new field),"Derived from integrity, grade, notes"
+per_case_feature_outputs[].feature_encodings.*,eee_feature_overlay.*,cases.features.* (overlay),"EEE [-1,1] values preserved; provenance mapped"
+feature.provenance_class,eee_feature_overlay.*.provenance_class_eee,N/A (EEE native),Direct copy
+PROVENANCE_MAP[provenance_class],eee_feature_overlay.*.provenance_class_governance,evidence_items.provenance_class,Mapped: triangulated_direct→direct_evidence; single_source_direct→direct_evidence; triangulated_mixed→rule_derived; uncertain→uncertain_estimate
+feature.adjudication_state,eee_feature_overlay.*.adjudication_state,N/A (new field),Direct copy
+feature.source_refs,eee_feature_overlay.*.source_refs,evidence_items.citation (per ref),Direct copy
+feature.excerpt_ids,eee_feature_overlay.*.excerpt_ids,evidence_items.excerpt_reference,Direct copy
+feature.effective_sample_size,eee_feature_overlay.*.effective_sample_size,N/A (new field),Direct copy
+feature.support_count,eee_feature_overlay.*.support_count,N/A (new field),Direct copy
+feature.disagreement_penalty,eee_feature_overlay.*.disagreement_penalty,N/A (new field),Direct copy
+run_metadata.input_hash,evidence_provenance.input_hash,N/A (audit trail),Direct copy
+run_metadata.parent_hash,evidence_provenance.parent_hash,N/A (audit trail),Direct copy
+run_metadata.engine,evidence_provenance.triangulation_engine,N/A (audit trail),Direct copy
+run_metadata.run_date,evidence_provenance.run_timestamp,N/A (audit trail),Direct copy
+(derived),governance_mapping.risk_domains,N/A (new field),Derived from phenomena via PHENOMENON_RISK_DOMAIN map
+(derived),governance_mapping.failure_mode_class,cases.failure_mode_class (overlay),Derived from phenomena priority classification
+(derived),governance_mapping.regulatory_relevance,N/A (new field),Derived from phenomena + evidence grade
+replay_exports[case_id],replay_reference,N/A (cross-reference),"Direct copy of source_url, citation, source_type"

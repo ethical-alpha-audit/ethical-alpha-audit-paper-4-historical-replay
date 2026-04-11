@@ -1,0 +1,50 @@
+# AI Governance Benchmark Dataset — Main Configuration
+# Version: 3.0.0
+# Compatible with: Unified Dual-Mode Governance Engine v2.0
+
+schema_version: "1.0.0"
+protocol_version: "v3"
+
+database:
+  path: "benchmark_repository/governance.db"
+
+encoding:
+  rules_file: "config/encoding_rules.yaml"
+  scm_variables: 15
+  provenance_classes:
+    - direct_evidence
+    - rule_derived
+    - imputed_from_context
+    - uncertain_estimate
+
+thresholds:
+  profiles_file: "config/threshold_profiles.yaml"
+  default_profile: "moderate"
+
+validation:
+  schemas_dir: "schemas"
+  strict_mode: true
+  require_gate_features: true
+
+export:
+  output_dir: "benchmark_repository/exports"
+  formats:
+    - engine_json
+    - vectors_csv
+    - features_csv
+
+release:
+  output_dir: "benchmark_repository/releases"
+  include_hashes: true
+  include_config_snapshot: true
+
+stress_testing:
+  enabled: true
+  encoder_disagreement_simulations: 100
+  sensitivity_perturbation_range: [-0.2, 0.2, 0.05]
+  threshold_sweep_range: [0.1, 0.9, 0.05]
+  random_seed: 42
+
+pipeline:
+  verbose: true
+  fail_on_validation_error: true

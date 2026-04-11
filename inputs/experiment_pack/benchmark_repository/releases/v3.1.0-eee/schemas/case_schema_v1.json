@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GovernanceCase",
+  "type": "object",
+  "required": [
+    "case_id",
+    "source_class",
+    "empirical_status",
+    "sector_tags"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "source_class": {
+      "type": "string",
+      "enum": [
+        "historical",
+        "prospective"
+      ]
+    },
+    "empirical_status": {
+      "type": "string",
+      "enum": [
+        "empirical",
+        "reconstructed",
+        "synthetic"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "sector_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string"
+    }
+  }
+}

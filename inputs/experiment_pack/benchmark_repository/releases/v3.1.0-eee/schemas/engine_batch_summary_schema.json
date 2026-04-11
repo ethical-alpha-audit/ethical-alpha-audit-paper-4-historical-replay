@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Batch Replay Summary",
+  "type": "object",
+  "required": [
+    "n_cases",
+    "n_rejected",
+    "n_approved",
+    "results"
+  ],
+  "properties": {
+    "n_cases": {
+      "type": "integer"
+    },
+    "n_rejected": {
+      "type": "integer"
+    },
+    "n_approved": {
+      "type": "integer"
+    },
+    "results": {
+      "type": "array"
+    }
+  }
+}

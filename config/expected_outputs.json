@@ -32,22 +32,22 @@
     },
     {
       "path": "outputs/figures/figure1_gate_failure.png",
-      "sha256": "4dd5c2db71287fffd5a6c75dc3888f50d99c59de5040a796d61e7e3a1aaa4cf5",
+      "sha256": "d0bea134f05f4249ee9f52e547eba0941dbf27a4c19fdb87b96dff10744e4775",
       "required": true
     },
     {
       "path": "outputs/figures/figure2_ablation.png",
-      "sha256": "f2ff9cdaeb01e80630cc4b381e059d62706459894e0a5188ce0442de44f1c2b0",
+      "sha256": "c6f3b6ae836286dcac4f440e5f95202aa9ef2c178dd27d64719b942a42461bca",
       "required": true
     },
     {
       "path": "outputs/figures/figure3_provenance_stability.png",
-      "sha256": "6b2d06442b2558a03b339301d7c44b2cea3c91fbb58c6248c792f18fc7d30353",
+      "sha256": "6d793f993248fa2ee5e9bce95271d56e060a50c29c112ea8f1def978f59df483",
       "required": true
     },
     {
       "path": "outputs/figures/figure4_compensation.png",
-      "sha256": "c630bcada8a63f1f9b70e9fc01e8e94483908de222ef7d5c9d9636eef5706a85",
+      "sha256": "45e942cb0b7deba76e650afb98ab1fb3e5611360297042e15266c4882d595c1d",
       "required": true
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "path": "outputs/figures/paper4_figure_manifest.txt",
-      "sha256": "4c2d1af740a33abc63591f3292a80fcdc57db04ac5b345d6c56e78a1852a7d4c",
+      "sha256": "4ea9cf211cde0550df634c088f31ba88a3325cf9b92cb34cc997f320903754b9",
       "required": true
     },
     {

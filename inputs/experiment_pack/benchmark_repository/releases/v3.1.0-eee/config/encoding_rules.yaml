@@ -1,0 +1,187 @@
+# Encoding Rules — AI Governance Benchmark Dataset
+# Maps evidence conditions to SCM exogenous variable values [0.0, 1.0]
+# Authoritative source: Unified Dual-Mode Governance Engine v2.0
+
+rules:
+  ER_INTRINSIC_SAFETY:
+    variable: intrinsic_safety
+    direction: higher_is_safer
+    anchors:
+      - condition: "validated safe in external RCT or prospective trial"
+        value: 0.90
+      - condition: "strong internal validation, limited external"
+        value: 0.65
+      - condition: "internal validation only"
+        value: 0.45
+      - condition: "documented safety concern or adverse event"
+        value: 0.25
+      - condition: "documented patient harm or unsafe recommendation"
+        value: 0.10
+
+  ER_CLINICAL_UTILITY:
+    variable: clinical_utility
+    direction: higher_is_better
+    anchors:
+      - condition: "demonstrated net clinical benefit in trial"
+        value: 0.85
+      - condition: "plausible benefit, no prospective evidence"
+        value: 0.55
+      - condition: "benefit unclear or disputed"
+        value: 0.35
+      - condition: "no demonstrated clinical utility"
+        value: 0.15
+
+  ER_UNCERTAINTY_CALIBRATION:
+    variable: uncertainty_calibration
+    direction: higher_is_better
+    anchors:
+      - condition: "well-calibrated (ECE < 0.05)"
+        value: 0.90
+      - condition: "moderately calibrated (ECE 0.05–0.15)"
+        value: 0.65
+      - condition: "poorly calibrated (ECE > 0.15)"
+        value: 0.35
+      - condition: "no calibration data or grossly miscalibrated"
+        value: 0.15
+
+  ER_BIAS_HARM_INDEX:
+    variable: bias_harm_index
+    direction: higher_is_riskier
+    anchors:
+      - condition: "no significant subgroup disparity documented"
+        value: 0.10
+      - condition: "minor performance variation across subgroups"
+        value: 0.30
+      - condition: "significant subgroup harm documented"
+        value: 0.60
+      - condition: "systematic bias with clinical consequence"
+        value: 0.85
+
+  ER_FALLBACK_SAFETY_DELTA:
+    variable: fallback_safety_delta
+    direction: higher_is_safer
+    anchors:
+      - condition: "robust human fallback with net benefit"
+        value: 0.10
+      - condition: "human fallback exists but untested"
+        value: -0.05
+      - condition: "no fallback or fallback worse than AI"
+        value: -0.20
+
+  ER_EVIDENCE_STRENGTH:
+    variable: evidence_strength
+    direction: higher_is_better
+    anchors:
+      - condition: "multi-site prospective validation"
+        value: 0.90
+      - condition: "single-site prospective or multi-site retrospective"
+        value: 0.70
+      - condition: "single-site retrospective"
+        value: 0.50
+      - condition: "internal validation only"
+        value: 0.30
+      - condition: "no public validation evidence"
+        value: 0.10
+
+  ER_EVIDENCE_VISIBILITY:
+    variable: evidence_visibility
+    direction: higher_is_better
+    anchors:
+      - condition: "full public reporting, peer-reviewed"
+        value: 0.90
+      - condition: "FDA submission public but limited detail"
+        value: 0.60
+      - condition: "proprietary / no public evidence"
+        value: 0.20
+
+  ER_TRACEABILITY_INTEGRITY:
+    variable: traceability_integrity
+    direction: higher_is_better
+    anchors:
+      - condition: "full audit trail, reproducible, open methodology"
+        value: 0.90
+      - condition: "partial documentation, methodology described"
+        value: 0.60
+      - condition: "minimal documentation"
+        value: 0.35
+      - condition: "opaque / no documentation"
+        value: 0.10
+
+  ER_STRESS_ROBUSTNESS:
+    variable: stress_robustness
+    direction: higher_is_better
+    anchors:
+      - condition: "robust to distribution shift and adversarial perturbation"
+        value: 0.85
+      - condition: "some robustness testing, limited scope"
+        value: 0.55
+      - condition: "no robustness testing or known fragility"
+        value: 0.20
+
+  ER_DRIFT_SUSCEPTIBILITY:
+    variable: drift_susceptibility
+    direction: higher_is_riskier
+    anchors:
+      - condition: "low drift risk (stable inputs, monitoring in place)"
+        value: 0.15
+      - condition: "moderate drift risk"
+        value: 0.45
+      - condition: "high drift risk (EHR-based, no monitoring)"
+        value: 0.75
+
+  ER_DATA_SHIFT_RATE:
+    variable: data_shift_rate
+    direction: higher_is_riskier
+    anchors:
+      - condition: "stable data distribution"
+        value: 0.15
+      - condition: "moderate distribution shift expected"
+        value: 0.45
+      - condition: "rapid or unpredictable shift"
+        value: 0.80
+
+  ER_DEPLOYMENT_VOLUME:
+    variable: deployment_volume
+    direction: context_dependent
+    anchors:
+      - condition: "mass deployment (>100k patients)"
+        value: 0.90
+      - condition: "moderate deployment (1k–100k)"
+        value: 0.60
+      - condition: "limited or pilot deployment"
+        value: 0.30
+
+  ER_HARM_SEVERITY:
+    variable: harm_severity
+    direction: higher_is_riskier
+    anchors:
+      - condition: "life-threatening or irreversible harm possible"
+        value: 0.90
+      - condition: "significant clinical harm possible"
+        value: 0.70
+      - condition: "moderate clinical impact"
+        value: 0.50
+      - condition: "low-risk / informational"
+        value: 0.20
+
+  ER_ADVERSARIAL_GAMING_CAPABILITY:
+    variable: adversarial_gaming_capability
+    direction: higher_is_riskier
+    anchors:
+      - condition: "demonstrated adversarial vulnerability"
+        value: 0.80
+      - condition: "plausible adversarial risk, not tested"
+        value: 0.40
+      - condition: "low adversarial surface"
+        value: 0.10
+
+  ER_CLAIMED_PERFORMANCE:
+    variable: claimed_performance
+    direction: higher_is_better
+    anchors:
+      - condition: "independently verified high performance"
+        value: 0.85
+      - condition: "manufacturer-reported, not independently verified"
+        value: 0.55
+      - condition: "performance claims disputed or unsubstantiated"
+        value: 0.25

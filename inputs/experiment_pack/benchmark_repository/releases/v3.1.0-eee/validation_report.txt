@@ -1,0 +1,37 @@
+VALIDATION REPORT — v3.1.0-eee
+============================================================
+Generated: 2026-03-18T21:00:26.584098+00:00
+Overall: PASS
+============================================================
+  [PASS] Release directory exists
+  [PASS] Overlay directory exists
+  [PASS] Engine cases directory exists
+  [PASS] Config snapshot exists
+  [PASS] Schemas snapshot exists
+  [PASS] Manifest exists
+  [PASS] CHANGELOG exists
+  [PASS] EEE evidence archive exists
+  [PASS] Provenance file exists
+  [PASS] Canonical overlay file exists
+  [PASS] Replay exports file exists
+  [PASS] Overlay manifest exists
+  [PASS] Canonical case count = 39 — got 39
+  [PASS] Processed cases = 37 — got 37
+  [PASS] Blocked cases = 2 — got 2
+  [PASS] Blocked H34 has BLOCKED risk class
+  [PASS] Blocked H34 has INSUFFICIENT grade
+  [PASS] Blocked H34 has empty overlay
+  [PASS] Blocked H34 has monitoring flags
+  [PASS] Blocked H35 has BLOCKED risk class
+  [PASS] Blocked H35 has INSUFFICIENT grade
+  [PASS] Blocked H35 has empty overlay
+  [PASS] Blocked H35 has monitoring flags
+  [PASS] DB overlay table has 39 rows — got 39
+  [PASS] No FK violations — 0 orphans
+  [PASS] DB blocked case sonio_detect_prenatal_labeling_reuters2026
+  [PASS] DB blocked case acclarent_trudi_navigation_reuters2026
+  [PASS] New table eee_canonical_overlay exists
+  [PASS] All original tables still exist
+  [PASS] Base case JSONs unmodified — 0 files differ
+  [PASS] Overlay manifest enrichment hash matches
+  [PASS] Overlay manifest parent hash matches

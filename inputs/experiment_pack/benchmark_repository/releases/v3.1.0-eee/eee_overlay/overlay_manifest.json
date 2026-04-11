@@ -1,0 +1,22 @@
+{
+  "overlay_version": "1.0.0",
+  "canonical_dataset": "canonicalised_v1.json",
+  "canonical_hash": "2cab010f88a725bdd3a38454a4e7651289bd892fba201090500303d01458c788",
+  "canonical_hash_declared": "c3ed7b93d68a0a898e25e1b4ce445350160c9372f709aec9479a98292ee37927",
+  "source_pipeline": "EEE",
+  "enrichment_version": "1.2.0-upgraded",
+  "enrichment_hash": "f9d181ca3859cb7e3b65c66a291c5da66eba47c95207a8c4ee01c5ae93ce8948",
+  "parent_hash": "b77e10eccb2dde7f760444093de92019dbd2e7a3e5b16cc4343d37bdcb1b98c4",
+  "triangulation_engine": "EEE_Triangulation_Confidence_Layer_v1",
+  "triangulation_timestamp": "2026-03-18T14:04:57Z",
+  "total_cases": 39,
+  "cases_processed": 37,
+  "cases_blocked": 2,
+  "blocked_case_ids": [
+    "H34",
+    "H35"
+  ],
+  "generated_timestamp": "2026-03-18T21:00:26.304817+00:00",
+  "compatible_with_repository": "3.0.0",
+  "supersedes": null
+}

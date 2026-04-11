@@ -1,0 +1,40 @@
+case_id,display_name,overall_confidence_score,confidence_band,evidence_strength_classification,triangulation_integrity,source_count,observation_count,triangulation_ready
+H01,Epic Sepsis Model,0.8994,high,IDEAL,STRONG,3,4,True
+H02,Optum Population Health algorithm,0.8347,moderate,IDEAL,FRAGILE,3,3,True
+H03,Google DR deployment in Thailand,0.826,moderate,ACCEPTABLE,FRAGILE,3,4,True
+H04,IBM Watson for Oncology,0.8566,high,ACCEPTABLE,FRAGILE,3,3,True
+H05,Babylon symptom checker,0.8166,moderate,IDEAL,STRONG,3,3,True
+H06,Semigran symptom checker audit (23 tools),0.8088,moderate,IDEAL,STRONG,3,3,True
+H07,Ada symptom assessment app,0.8434,moderate,IDEAL,FRAGILE,3,3,True
+H08,Buoy symptom assessment app,0.801,moderate,IDEAL,STRONG,3,3,True
+H09,K Health symptom assessment app,0.8531,high,IDEAL,FRAGILE,3,3,True
+H10,Mediktor symptom assessment app,0.8116,moderate,IDEAL,STRONG,3,3,True
+H11,Symptomate symptom assessment app,0.7988,moderate,IDEAL,FRAGILE,3,3,True
+H12,WebMD symptom checker,0.8078,moderate,IDEAL,STRONG,3,3,True
+H13,Your.MD symptom checker,0.8528,high,IDEAL,FRAGILE,3,3,True
+H14,Pulse oximetry racial bias,0.8804,high,IDEAL,FRAGILE,3,3,True
+H15,Pneumonia CXR cross-site generalization failure,0.7975,moderate,MINIMUM,FRAGILE,2,2,True
+H16,Hip fracture model confounding on radiographs,0.7725,moderate,MINIMUM,FRAGILE,2,2,True
+H17,COVID-19 CXR shortcut learning,0.855,high,MINIMUM,FRAGILE,2,2,True
+H18,CXR underdiagnosis bias in under-served groups,0.89,high,IDEAL,STRONG,3,3,True
+H19,Sex imbalance in thoracic imaging datasets,0.7837,moderate,IDEAL,STRONG,3,3,True
+H20,Hidden stratification in medical imaging,0.7875,moderate,IDEAL,STRONG,3,3,True
+H21,Race recognition from medical images,0.78,moderate,IDEAL,STRONG,3,3,True
+H22,Dermatology ML disparities,0.7806,moderate,IDEAL,STRONG,3,3,True
+H23,Radiology AI shortcut bias review,0.7806,moderate,IDEAL,STRONG,3,3,True
+H24,Shortcutting risk in medical imaging research,0.7828,moderate,IDEAL,STRONG,3,3,True
+H25,EHR process bias in observational data,0.73,moderate,ACCEPTABLE,FRAGILE,3,3,True
+H26,Adversarial attacks on medical ML,0.7456,moderate,ACCEPTABLE,FRAGILE,3,3,True
+H27,Medical device UI software recalls,0.7353,moderate,ACCEPTABLE,FRAGILE,3,3,True
+H28,FDA MAUDE safety events for ML-enabled devices,0.7908,moderate,IDEAL,FRAGILE,3,3,True
+H29,Benefit-risk reporting gaps in FDA-cleared AI devices,0.7928,moderate,IDEAL,STRONG,3,3,True
+H30,Early recalls and validation gaps in AI-enabled devices,0.8892,high,IDEAL,STRONG,3,3,True
+H31,Generalizability of FDA-approved AI-enabled devices,0.7969,moderate,IDEAL,STRONG,3,3,True
+H32,da Vinci robotic surgery MAUDE analysis,0.7837,moderate,IDEAL,STRONG,3,3,True
+H33,Robotic-assisted total hip arthroplasty MAUDE analysis,0.7893,moderate,IDEAL,STRONG,3,3,True
+H34,Acclarent TruDi Navigation System,,,INSUFFICIENT,BLOCKED,0,0,False
+H35,Sonio Detect prenatal ultrasound allegation,,,INSUFFICIENT,BLOCKED,0,0,False
+H36,UK Equity in Medical Devices independent review,0.7792,moderate,IDEAL,FRAGILE,3,3,True
+H37,COVID CXR intrinsic shortcut detection,0.9138,high,MINIMUM,STRONG,2,2,True
+H38,Race/demographic shortcut mitigation in imaging,0.8875,high,MINIMUM,STRONG,2,2,True
+H39,Minimal-noise adversarial attack on medical images,0.9263,high,MINIMUM,STRONG,2,2,True

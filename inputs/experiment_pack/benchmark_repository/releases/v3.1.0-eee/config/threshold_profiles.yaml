@@ -1,0 +1,39 @@
+# Threshold Profiles — AI Governance Benchmark Dataset
+# Defines non-compensatory gate thresholds per governance stringency level
+# Compatible with: Unified Dual-Mode Governance Engine v2.0
+#
+# Gate directions:
+#   safety_gate:       intrinsic_safety >= threshold  (higher is safer)
+#   evidence_gate:     evidence_strength >= threshold  (higher is better)
+#   bias_gate:         bias_harm_index <= threshold    (lower is safer)
+#   calibration_gate:  uncertainty_calibration >= threshold  (higher is better)
+#   traceability_gate: traceability_integrity >= threshold  (higher is better)
+
+profiles:
+  permissive:
+    safety_gate: 0.30
+    evidence_gate: 0.30
+    bias_gate: 0.70
+    calibration_gate: 0.25
+    traceability_gate: 0.25
+
+  moderate:
+    safety_gate: 0.50
+    evidence_gate: 0.50
+    bias_gate: 0.50
+    calibration_gate: 0.40
+    traceability_gate: 0.40
+
+  strict:
+    safety_gate: 0.65
+    evidence_gate: 0.65
+    bias_gate: 0.35
+    calibration_gate: 0.55
+    traceability_gate: 0.55
+
+  very_strict:
+    safety_gate: 0.75
+    evidence_gate: 0.75
+    bias_gate: 0.25
+    calibration_gate: 0.65
+    traceability_gate: 0.65

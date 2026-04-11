@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Historical Replay Case Result",
+  "type": "object",
+  "required": [
+    "case_id",
+    "governance_outcome",
+    "gate_results"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "governance_outcome": {
+      "type": "string",
+      "enum": [
+        "REJECT",
+        "APPROVE",
+        "CONDITIONAL"
+      ]
+    },
+    "gate_results": {
+      "type": "object"
+    },
+    "binding_constraints": {
+      "type": "array"
+    },
+    "threshold_breaches": {
+      "type": "array"
+    },
+    "provenance_summary": {
+      "type": "object"
+    },
+    "sensitivity_outcomes": {
+      "type": "object"
+    }
+  }
+}

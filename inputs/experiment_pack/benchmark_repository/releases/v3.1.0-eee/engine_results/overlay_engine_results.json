@@ -1,0 +1,4650 @@
+{
+  "run_id": "eee_overlay_20260318_210026",
+  "timestamp": "2026-03-18T21:00:26.424986+00:00",
+  "overlay_version": "1.0.0",
+  "total_cases": 91,
+  "overlay_cases": 37,
+  "results": {
+    "acclarent_trudi_navigation_reuters2026": {
+      "case_id": "acclarent_trudi_navigation_reuters2026",
+      "has_overlay": false,
+      "overlay_eee_case_id": "H34",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "ada_symptom_app_gilbert2020": {
+      "case_id": "ada_symptom_app_gilbert2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H07",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3965,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3965,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3965,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3965,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "adversarial_attacks_medical_ml_finlayson2019": {
+      "case_id": "adversarial_attacks_medical_ml_finlayson2019",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H26",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4136,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4136,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4136,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4136,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "ai_ecg_atrial_fib_attia2019": {
+      "case_id": "ai_ecg_atrial_fib_attia2019",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "aki_prediction_model_tomasev2019": {
+      "case_id": "aki_prediction_model_tomasev2019",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.42,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.42,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.42,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.42,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "amazon_recruiting": {
+      "case_id": "amazon_recruiting",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.43,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.43,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.43,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.43,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "babylon": {
+      "case_id": "babylon",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H05",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3799,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3799,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3799,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3799,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "benefit_risk_reporting_fda_ai_2024": {
+      "case_id": "benefit_risk_reporting_fda_ai_2024",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H29",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3709,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3709,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3709,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3709,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "buoy_symptom_app_gilbert2020": {
+      "case_id": "buoy_symptom_app_gilbert2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H08",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3825,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3825,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3825,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3825,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "chest_xray_external_val_kim2020": {
+      "case_id": "chest_xray_external_val_kim2020",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "compas": {
+      "case_id": "compas",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4333,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4333,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4333,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4333,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_accipioix": {
+      "case_id": "control_accipioix",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_ai_cvd": {
+      "case_id": "control_ai_cvd",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_aidoc_briefcase": {
+      "case_id": "control_aidoc_briefcase",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_air_recon_dl": {
+      "case_id": "control_air_recon_dl",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_alzevita": {
+      "case_id": "control_alzevita",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_art_plan_plus": {
+      "case_id": "control_art_plan_plus",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_arterys_cardio_ai": {
+      "case_id": "control_arterys_cardio_ai",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_bioticsai": {
+      "case_id": "control_bioticsai",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_caption_guidance": {
+      "case_id": "control_caption_guidance",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_cognet_ai_mt": {
+      "case_id": "control_cognet_ai_mt",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_emurmur": {
+      "case_id": "control_emurmur",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_endoscreener": {
+      "case_id": "control_endoscreener",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_gi_genius": {
+      "case_id": "control_gi_genius",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_guardian_connect_medtronic": {
+      "case_id": "control_guardian_connect_medtronic",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_heartflow_ffrct": {
+      "case_id": "control_heartflow_ffrct",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_idx_dr_lumineticscore": {
+      "case_id": "control_idx_dr_lumineticscore",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_lumify": {
+      "case_id": "control_lumify",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_neosoma_brain_mets": {
+      "case_id": "control_neosoma_brain_mets",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_osteodetect": {
+      "case_id": "control_osteodetect",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_paige_prostate": {
+      "case_id": "control_paige_prostate",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_peekmed": {
+      "case_id": "control_peekmed",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_pvad_iq": {
+      "case_id": "control_pvad_iq",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_qure_ai_qxr": {
+      "case_id": "control_qure_ai_qxr",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_rapid_lio": {
+      "case_id": "control_rapid_lio",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_skout": {
+      "case_id": "control_skout",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_tempus_ecg": {
+      "case_id": "control_tempus_ecg",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_truspect": {
+      "case_id": "control_truspect",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_ultrasight_guidance": {
+      "case_id": "control_ultrasight_guidance",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_viz_lvo": {
+      "case_id": "control_viz_lvo",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "control_zebra_medical_healthpnx": {
+      "case_id": "control_zebra_medical_healthpnx",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "covid_cxr_intrinsic_shortcuts_zhang2023": {
+      "case_id": "covid_cxr_intrinsic_shortcuts_zhang2023",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H37",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3673,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3673,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3673,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3673,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "covid_cxr_shortcuts_degrave2021": {
+      "case_id": "covid_cxr_shortcuts_degrave2021",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H17",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.38,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.38,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.38,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.38,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "cxr_underdiagnosis_bias_seyyed2021": {
+      "case_id": "cxr_underdiagnosis_bias_seyyed2021",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H18",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4138,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4138,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4138,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4138,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "davinci_robotic_surgery_maude_2026": {
+      "case_id": "davinci_robotic_surgery_maude_2026",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H32",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3928,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3928,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3928,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3928,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "dermatology_ml_disparities_adamson2018": {
+      "case_id": "dermatology_ml_disparities_adamson2018",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H22",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4255,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4255,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4255,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4255,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "early_recalls_ai_devices_lee2025": {
+      "case_id": "early_recalls_ai_devices_lee2025",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H30",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3854,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3854,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3854,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3854,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "ehr_mortality_prediction_avati2018": {
+      "case_id": "ehr_mortality_prediction_avati2018",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "ehr_process_bias_agniel2018": {
+      "case_id": "ehr_process_bias_agniel2018",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H25",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4183,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4183,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4183,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4183,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "epic_sepsis": {
+      "case_id": "epic_sepsis",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H01",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3801,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3801,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3801,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3801,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "fda_ai_device_evidence_gaps_wu2021": {
+      "case_id": "fda_ai_device_evidence_gaps_wu2021",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3633,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3633,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3633,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3633,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "fda_maude_ml_safety_events_2023": {
+      "case_id": "fda_maude_ml_safety_events_2023",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H28",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3817,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3817,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3817,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3817,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "fdg_pet_ai_false_positives_chen2022": {
+      "case_id": "fdg_pet_ai_false_positives_chen2022",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "gender_shades": {
+      "case_id": "gender_shades",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.42,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.42,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.42,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.42,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "generalizability_fda_ai_windecker2025": {
+      "case_id": "generalizability_fda_ai_windecker2025",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H31",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "google_dr": {
+      "case_id": "google_dr",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H03",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4422,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4422,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4422,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4422,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "google_flu": {
+      "case_id": "google_flu",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4033,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4033,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4033,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4033,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "hidden_stratification_oakden2020": {
+      "case_id": "hidden_stratification_oakden2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H20",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3868,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3868,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3868,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3868,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "hip_fracture_confounding_badgeley2019": {
+      "case_id": "hip_fracture_confounding_badgeley2019",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H16",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3617,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3617,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3617,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3617,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "ibm_watson": {
+      "case_id": "ibm_watson",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H04",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "icu_deterioration_prediction_futoma2020": {
+      "case_id": "icu_deterioration_prediction_futoma2020",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4167,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4167,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4167,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4167,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "khealth_symptom_app_gilbert2020": {
+      "case_id": "khealth_symptom_app_gilbert2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H09",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.385,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.385,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.385,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.385,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "mammography_ai_disparities_yala2022": {
+      "case_id": "mammography_ai_disparities_yala2022",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "medical_device_ui_recalls_zhang2019": {
+      "case_id": "medical_device_ui_recalls_zhang2019",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H27",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4079,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4079,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4079,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4079,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "mediktor_symptom_app_gilbert2020": {
+      "case_id": "mediktor_symptom_app_gilbert2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H10",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.385,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.385,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.385,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.385,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "microsoft_tay": {
+      "case_id": "microsoft_tay",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "minimal_noise_adversarial_medical_wang2024": {
+      "case_id": "minimal_noise_adversarial_medical_wang2024",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H39",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4209,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4209,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4209,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4209,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "nlp_clinical_notes_bias_zhang2020": {
+      "case_id": "nlp_clinical_notes_bias_zhang2020",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "optum_health": {
+      "case_id": "optum_health",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H02",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4076,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4076,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4076,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4076,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "pathology_ai_generalization_campanella2019": {
+      "case_id": "pathology_ai_generalization_campanella2019",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "pneumonia_cxr_generalization_zech2018": {
+      "case_id": "pneumonia_cxr_generalization_zech2018",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H15",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4083,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4083,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4083,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4083,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "pulse_oximetry_racial_bias_sjoding2020": {
+      "case_id": "pulse_oximetry_racial_bias_sjoding2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H14",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "race_recognition_medical_images_gichoya2022": {
+      "case_id": "race_recognition_medical_images_gichoya2022",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H21",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "race_shortcut_mitigation_imaging_wang2024": {
+      "case_id": "race_shortcut_mitigation_imaging_wang2024",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H38",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4113,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4113,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4113,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4113,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "radiology_ai_real_world_gap_van_leeuwen2021": {
+      "case_id": "radiology_ai_real_world_gap_van_leeuwen2021",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "radiology_shortcut_bias_review_banerjee2023": {
+      "case_id": "radiology_shortcut_bias_review_banerjee2023",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H23",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3657,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3657,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3657,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3657,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "retinal_oct_external_val_lee2017": {
+      "case_id": "retinal_oct_external_val_lee2017",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4067,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "robotic_hip_arthroplasty_maude_2024": {
+      "case_id": "robotic_hip_arthroplasty_maude_2024",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H33",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "sepsis_early_warning_sendak2020": {
+      "case_id": "sepsis_early_warning_sendak2020",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.39,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "sex_imbalance_thoracic_larrazabal2020": {
+      "case_id": "sex_imbalance_thoracic_larrazabal2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H19",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.41,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.41,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.41,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.41,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "shortcutting_risk_imaging_hill2024": {
+      "case_id": "shortcutting_risk_imaging_hill2024",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H24",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.37,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.37,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.37,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.37,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "skin_cancer_ai_equity_daneshjou2022": {
+      "case_id": "skin_cancer_ai_equity_daneshjou2022",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4233,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "sonio_detect_prenatal_labeling_reuters2026": {
+      "case_id": "sonio_detect_prenatal_labeling_reuters2026",
+      "has_overlay": false,
+      "overlay_eee_case_id": "H35",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3867,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "surgical_ai_alerts_wong2023": {
+      "case_id": "surgical_ai_alerts_wong2023",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "symptom_checker_audit_semigran2015": {
+      "case_id": "symptom_checker_audit_semigran2015",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H06",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3692,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3692,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3692,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3692,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "symptomate_app_gilbert2020": {
+      "case_id": "symptomate_app_gilbert2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H11",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3967,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3967,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3967,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3967,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "uber_av": {
+      "case_id": "uber_av",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 0,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3933,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "uk_alevels": {
+      "case_id": "uk_alevels",
+      "has_overlay": false,
+      "overlay_eee_case_id": null,
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.4133,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4133,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4133,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.4133,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "uk_equity_medical_devices_review_2024": {
+      "case_id": "uk_equity_medical_devices_review_2024",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H36",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3983,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3983,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3983,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3983,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "webmd_symptom_checker_gilbert2020": {
+      "case_id": "webmd_symptom_checker_gilbert2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H12",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3808,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3808,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3808,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3808,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    },
+    "yourmd_symptom_checker_gilbert2020": {
+      "case_id": "yourmd_symptom_checker_gilbert2020",
+      "has_overlay": true,
+      "overlay_eee_case_id": "H13",
+      "profiles": {
+        "permissive": {
+          "gate_safety": 1,
+          "gate_evidence": 1,
+          "gate_bias": 1,
+          "gate_calibration": 1,
+          "gate_traceability": 1,
+          "all_gates_pass": 1,
+          "compensatory_score": 0.3817,
+          "compensatory_approved": 0,
+          "threshold_profile": "permissive"
+        },
+        "moderate": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 1,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3817,
+          "compensatory_approved": 0,
+          "threshold_profile": "moderate"
+        },
+        "strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3817,
+          "compensatory_approved": 0,
+          "threshold_profile": "strict"
+        },
+        "very_strict": {
+          "gate_safety": 0,
+          "gate_evidence": 0,
+          "gate_bias": 0,
+          "gate_calibration": 0,
+          "gate_traceability": 0,
+          "all_gates_pass": 0,
+          "compensatory_score": 0.3817,
+          "compensatory_approved": 0,
+          "threshold_profile": "very_strict"
+        }
+      }
+    }
+  }
+}

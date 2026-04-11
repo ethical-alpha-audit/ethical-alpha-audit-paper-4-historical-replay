@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ThresholdJustification",
+  "type": "object",
+  "required": [
+    "threshold_id",
+    "origin_type",
+    "rationale"
+  ],
+  "properties": {
+    "threshold_id": {
+      "type": "string"
+    },
+    "origin_type": {
+      "type": "string",
+      "enum": [
+        "regulation",
+        "empirical_calibration",
+        "expert_elicitation",
+        "simulated_assumption"
+      ]
+    },
+    "rationale": {
+      "type": "string"
+    },
+    "source_reference": {
+      "type": "string"
+    }
+  }
+}

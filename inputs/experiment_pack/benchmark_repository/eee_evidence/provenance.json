@@ -1,0 +1,39 @@
+{
+  "hash_chain": {
+    "level_0_enrichment_v1_1": {
+      "hash": "b77e10eccb2dde7f760444093de92019dbd2e7a3e5b16cc4343d37bdcb1b98c4",
+      "algorithm": "SHA-256",
+      "status": "LOCKED"
+    },
+    "level_1_enrichment_v1_2": {
+      "hash": "f9d181ca3859cb7e3b65c66a291c5da66eba47c95207a8c4ee01c5ae93ce8948",
+      "algorithm": "SHA-256",
+      "parent": "b77e10eccb2dde7f760444093de92019dbd2e7a3e5b16cc4343d37bdcb1b98c4",
+      "status": "LOCKED"
+    },
+    "level_2_triangulation_run": {
+      "input_hash": "f9d181ca3859cb7e3b65c66a291c5da66eba47c95207a8c4ee01c5ae93ce8948",
+      "engine": "EEE_Triangulation_Confidence_Layer_v1",
+      "timestamp": "2026-03-18T14:04:57Z",
+      "status": "EXECUTED"
+    },
+    "level_3_canonical_dataset": {
+      "hash_declared": "c3ed7b93d68a0a898e25e1b4ce445350160c9372f709aec9479a98292ee37927",
+      "hash_actual": "2cab010f88a725bdd3a38454a4e7651289bd892fba201090500303d01458c788",
+      "input_hash": "f9d181ca3859cb7e3b65c66a291c5da66eba47c95207a8c4ee01c5ae93ce8948",
+      "parent_hash": "b77e10eccb2dde7f760444093de92019dbd2e7a3e5b16cc4343d37bdcb1b98c4",
+      "status": "VALIDATED"
+    },
+    "level_4_release_manifest": {
+      "status": "PENDING",
+      "note": "Computed at release packaging stage"
+    }
+  },
+  "version_compatibility": {
+    "canonical_version": "1.0.0",
+    "requires_enrichment": ">=1.2.0",
+    "requires_triangulation_engine": ">=1.1",
+    "compatible_with_repo": ">=3.0.0"
+  },
+  "generated_at": "2026-03-18T21:00:26.339627+00:00"
+}

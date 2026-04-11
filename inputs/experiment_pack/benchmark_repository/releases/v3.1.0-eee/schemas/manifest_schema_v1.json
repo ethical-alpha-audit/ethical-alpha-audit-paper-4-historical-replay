@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunManifest",
+  "type": "object",
+  "required": [
+    "run_id",
+    "schema_version",
+    "config_hash",
+    "timestamp"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "config_hash": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "protocol_version": {
+      "type": "string"
+    }
+  }
+}

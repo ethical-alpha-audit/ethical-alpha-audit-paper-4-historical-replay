@@ -1,0 +1,1508 @@
+{
+  "replay_metadata": {
+    "source_run": "EEE_v1.2_triangulation_run",
+    "export_date": "2026-03-18T14:04:57Z",
+    "cases_exported": 37,
+    "cases_skipped_blocked": [
+      "H34",
+      "H35"
+    ]
+  },
+  "exports": {
+    "H01": {
+      "case_id": "H01",
+      "display_name": "Epic Sepsis Model",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34152373/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "uncertainty_calibration": {
+          "value_primary": -0.598,
+          "value_low": -0.6615,
+          "value_high": -0.5346,
+          "confidence_level": 0.9075,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "OBS_H01_001",
+            "OBS_H01_003",
+            "OBS_H01_004"
+          ],
+          "source_refs": [
+            "SRC_H01_001",
+            "SRC_H01_002",
+            "SRC_H01_003"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.3,
+          "value_low": -0.53,
+          "value_high": -0.07,
+          "confidence_level": 0.8913,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_H01_002"
+          ],
+          "source_refs": [
+            "SRC_H01_001"
+          ]
+        }
+      }
+    },
+    "H02": {
+      "case_id": "H02",
+      "display_name": "Optum Population Health algorithm",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/31649194/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "bias_harm_index": {
+          "value_primary": -0.8273,
+          "value_low": -0.9573,
+          "value_high": -0.6973,
+          "confidence_level": 0.9719,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H02_001",
+            "OBS_H02_002"
+          ],
+          "source_refs": [
+            "SRC_H02_001"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.6,
+          "value_low": -0.93,
+          "value_high": -0.27,
+          "confidence_level": 0.6975,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_H02_003"
+          ],
+          "source_refs": [
+            "SRC_H02_002"
+          ]
+        }
+      }
+    },
+    "H03": {
+      "case_id": "H03",
+      "display_name": "Google DR deployment in Thailand",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://dl.acm.org/doi/fullHtml/10.1145/3313831.3376718",
+      "case_summary": "Triangulated 3 features.",
+      "features": {
+        "clinical_utility": {
+          "value_primary": -0.2842,
+          "value_low": -0.5142,
+          "value_high": -0.0542,
+          "confidence_level": 0.8206,
+          "provenance_class": "triangulated_mixed_evidence",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_H03_001",
+            "OBS_H03_004"
+          ],
+          "source_refs": [
+            "SRC_H03_001",
+            "SRC_H03_003"
+          ]
+        },
+        "fallback_safety_delta": {
+          "value_primary": -0.25,
+          "value_low": -0.48,
+          "value_high": -0.02,
+          "confidence_level": 0.815,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "OBS_H03_002"
+          ],
+          "source_refs": [
+            "SRC_H03_001"
+          ]
+        },
+        "intrinsic_safety": {
+          "value_primary": 0.4,
+          "value_low": 0.17,
+          "value_high": 0.63,
+          "confidence_level": 0.8425,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_H03_003"
+          ],
+          "source_refs": [
+            "SRC_H03_002"
+          ]
+        }
+      }
+    },
+    "H04": {
+      "case_id": "H04",
+      "display_name": "IBM Watson for Oncology",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://link.springer.com/article/10.1007/s00146-020-00945-9",
+      "case_summary": "Triangulated 3 features.",
+      "features": {
+        "evidence_strength": {
+          "value_primary": -0.55,
+          "value_low": -0.78,
+          "value_high": -0.32,
+          "confidence_level": 0.8462,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_H04_001"
+          ],
+          "source_refs": [
+            "SRC_H04_001"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": -0.3,
+          "value_low": -0.53,
+          "value_high": -0.07,
+          "confidence_level": 0.8662,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "OBS_H04_002"
+          ],
+          "source_refs": [
+            "SRC_H04_002"
+          ]
+        },
+        "intrinsic_safety": {
+          "value_primary": -0.35,
+          "value_low": -0.58,
+          "value_high": -0.12,
+          "confidence_level": 0.8575,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_H04_003"
+          ],
+          "source_refs": [
+            "SRC_H04_003"
+          ]
+        }
+      }
+    },
+    "H05": {
+      "case_id": "H05",
+      "display_name": "Babylon symptom checker",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30413281/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "evidence_strength": {
+          "value_primary": -0.4539,
+          "value_low": -0.5839,
+          "value_high": -0.3239,
+          "confidence_level": 0.9169,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_H05_001",
+            "OBS_H05_003"
+          ],
+          "source_refs": [
+            "SRC_H05_001",
+            "SRC_H05_003"
+          ]
+        },
+        "intrinsic_safety": {
+          "value_primary": -0.35,
+          "value_low": -0.68,
+          "value_high": -0.02,
+          "confidence_level": 0.7163,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_H05_002"
+          ],
+          "source_refs": [
+            "SRC_H05_002"
+          ]
+        }
+      }
+    },
+    "H06": {
+      "case_id": "H06",
+      "display_name": "Semigran symptom checker audit (23 tools)",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/26157077/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": -0.4739,
+          "value_low": -0.6039,
+          "value_high": -0.3439,
+          "confidence_level": 0.9363,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_06_001",
+            "OBS_H06_003"
+          ],
+          "source_refs": [
+            "SRC_06_001",
+            "SRC_H06_003"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.45,
+          "value_low": -0.78,
+          "value_high": -0.12,
+          "confidence_level": 0.6813,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_06_002"
+          ],
+          "source_refs": [
+            "SRC_06_002"
+          ]
+        }
+      }
+    },
+    "H07": {
+      "case_id": "H07",
+      "display_name": "Ada symptom assessment app",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33328258/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": -0.2,
+          "value_low": -0.43,
+          "value_high": 0.03,
+          "confidence_level": 0.8462,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_07_001"
+          ],
+          "source_refs": [
+            "SRC_07_001"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.2053,
+          "value_low": -0.4353,
+          "value_high": 0.0247,
+          "confidence_level": 0.8406,
+          "provenance_class": "triangulated_mixed_evidence",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_07_002",
+            "OBS_H07_003"
+          ],
+          "source_refs": [
+            "SRC_07_002",
+            "SRC_H07_003"
+          ]
+        }
+      }
+    },
+    "H08": {
+      "case_id": "H08",
+      "display_name": "Buoy symptom assessment app",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33328258/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": -0.3761,
+          "value_low": -0.5061,
+          "value_high": -0.2461,
+          "confidence_level": 0.9206,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_08_001",
+            "OBS_H08_003"
+          ],
+          "source_refs": [
+            "SRC_08_001",
+            "SRC_H08_003"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.35,
+          "value_low": -0.68,
+          "value_high": -0.02,
+          "confidence_level": 0.6813,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_08_002"
+          ],
+          "source_refs": [
+            "SRC_08_002"
+          ]
+        }
+      }
+    },
+    "H09": {
+      "case_id": "H09",
+      "display_name": "K Health symptom assessment app",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33328258/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": -0.35,
+          "value_low": -0.58,
+          "value_high": -0.12,
+          "confidence_level": 0.8462,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_09_001"
+          ],
+          "source_refs": [
+            "SRC_09_001"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.3,
+          "value_low": -0.53,
+          "value_high": -0.07,
+          "confidence_level": 0.86,
+          "provenance_class": "triangulated_mixed_evidence",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_09_002",
+            "OBS_H09_003"
+          ],
+          "source_refs": [
+            "SRC_09_002",
+            "SRC_H09_003"
+          ]
+        }
+      }
+    },
+    "H10": {
+      "case_id": "H10",
+      "display_name": "Mediktor symptom assessment app",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33328258/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": -0.35,
+          "value_low": -0.48,
+          "value_high": -0.22,
+          "confidence_level": 0.9419,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_10_001",
+            "OBS_H10_003"
+          ],
+          "source_refs": [
+            "SRC_10_001",
+            "SRC_H10_003"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6813,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_10_002"
+          ],
+          "source_refs": [
+            "SRC_10_002"
+          ]
+        }
+      }
+    },
+    "H11": {
+      "case_id": "H11",
+      "display_name": "Symptomate symptom assessment app",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33328258/",
+      "case_summary": "Triangulated 3 features.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": -0.15,
+          "value_low": -0.38,
+          "value_high": 0.08,
+          "confidence_level": 0.8462,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_11_001"
+          ],
+          "source_refs": [
+            "SRC_11_001"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.1,
+          "value_low": -0.43,
+          "value_high": 0.23,
+          "confidence_level": 0.6813,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_11_002"
+          ],
+          "source_refs": [
+            "SRC_11_002"
+          ]
+        },
+        "uncertainty_calibration": {
+          "value_primary": -0.25,
+          "value_low": -0.48,
+          "value_high": -0.02,
+          "confidence_level": 0.8688,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_UNCERTAINTY_CALIBRATION",
+          "excerpt_ids": [
+            "OBS_H11_003"
+          ],
+          "source_refs": [
+            "SRC_H11_003"
+          ]
+        }
+      }
+    },
+    "H12": {
+      "case_id": "H12",
+      "display_name": "WebMD symptom checker",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33328258/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": -0.3266,
+          "value_low": -0.4566,
+          "value_high": -0.1966,
+          "confidence_level": 0.9344,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_12_001",
+            "OBS_H12_003"
+          ],
+          "source_refs": [
+            "SRC_12_001",
+            "SRC_H12_003"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.25,
+          "value_low": -0.58,
+          "value_high": 0.08,
+          "confidence_level": 0.6813,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_12_002"
+          ],
+          "source_refs": [
+            "SRC_12_002"
+          ]
+        }
+      }
+    },
+    "H13": {
+      "case_id": "H13",
+      "display_name": "Your.MD symptom checker",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33328258/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "intrinsic_safety": {
+          "value_primary": -0.3,
+          "value_low": -0.53,
+          "value_high": -0.07,
+          "confidence_level": 0.8462,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_INTRINSIC_SAFETY",
+          "excerpt_ids": [
+            "OBS_13_001"
+          ],
+          "source_refs": [
+            "SRC_13_001"
+          ]
+        },
+        "clinical_utility": {
+          "value_primary": -0.25,
+          "value_low": -0.48,
+          "value_high": -0.02,
+          "confidence_level": 0.8594,
+          "provenance_class": "triangulated_mixed_evidence",
+          "encoding_rule_id": "ER_CLINICAL_UTILITY",
+          "excerpt_ids": [
+            "OBS_13_002",
+            "OBS_H13_003"
+          ],
+          "source_refs": [
+            "SRC_13_002",
+            "SRC_H13_003"
+          ]
+        }
+      }
+    },
+    "H14": {
+      "case_id": "H14",
+      "display_name": "Pulse oximetry racial bias",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/33326721/",
+      "case_summary": "Triangulated 3 features.",
+      "features": {
+        "bias_harm_index": {
+          "value_primary": -0.75,
+          "value_low": -0.98,
+          "value_high": -0.52,
+          "confidence_level": 0.8975,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H14_001"
+          ],
+          "source_refs": [
+            "SRC_H14_001"
+          ]
+        },
+        "harm_severity": {
+          "value_primary": -0.65,
+          "value_low": -0.88,
+          "value_high": -0.42,
+          "confidence_level": 0.8875,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "OBS_H14_002"
+          ],
+          "source_refs": [
+            "SRC_H14_002"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": -0.5,
+          "value_low": -0.73,
+          "value_high": -0.27,
+          "confidence_level": 0.8562,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "OBS_H14_003"
+          ],
+          "source_refs": [
+            "SRC_H14_003"
+          ]
+        }
+      }
+    },
+    "H15": {
+      "case_id": "H15",
+      "display_name": "Pneumonia CXR cross-site generalization failure",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30399157/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "stress_robustness": {
+          "value_primary": -0.6,
+          "value_low": -0.83,
+          "value_high": -0.37,
+          "confidence_level": 0.8875,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "OBS_H15_001"
+          ],
+          "source_refs": [
+            "SRC_H15_001"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": -0.45,
+          "value_low": -0.78,
+          "value_high": -0.12,
+          "confidence_level": 0.7075,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "OBS_H15_002"
+          ],
+          "source_refs": [
+            "SRC_H15_002"
+          ]
+        }
+      }
+    },
+    "H16": {
+      "case_id": "H16",
+      "display_name": "Hip fracture model confounding on radiographs",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/31304378/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "stress_robustness": {
+          "value_primary": -0.55,
+          "value_low": -0.78,
+          "value_high": -0.32,
+          "confidence_level": 0.8575,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "OBS_H16_001"
+          ],
+          "source_refs": [
+            "SRC_H16_001"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6875,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_H16_002"
+          ],
+          "source_refs": [
+            "SRC_H16_002"
+          ]
+        }
+      }
+    },
+    "H17": {
+      "case_id": "H17",
+      "display_name": "COVID-19 CXR shortcut learning",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34368743/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "stress_robustness": {
+          "value_primary": -0.7,
+          "value_low": -0.93,
+          "value_high": -0.47,
+          "confidence_level": 0.8675,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "OBS_H17_001"
+          ],
+          "source_refs": [
+            "SRC_H17_001"
+          ]
+        },
+        "drift_susceptibility": {
+          "value_primary": -0.5,
+          "value_low": -0.73,
+          "value_high": -0.27,
+          "confidence_level": 0.8425,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "OBS_H17_002"
+          ],
+          "source_refs": [
+            "SRC_H17_002"
+          ]
+        }
+      }
+    },
+    "H18": {
+      "case_id": "H18",
+      "display_name": "CXR underdiagnosis bias in under-served groups",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/34893776/",
+      "case_summary": "Triangulated 1 features.",
+      "features": {
+        "bias_harm_index": {
+          "value_primary": -0.6128,
+          "value_low": -0.6749,
+          "value_high": -0.5507,
+          "confidence_level": 0.89,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H18_001",
+            "OBS_H18_002",
+            "OBS_H18_003"
+          ],
+          "source_refs": [
+            "SRC_H18_001",
+            "SRC_H18_002",
+            "SRC_H18_003"
+          ]
+        }
+      }
+    },
+    "H19": {
+      "case_id": "H19",
+      "display_name": "Sex imbalance in thoracic imaging datasets",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32457147/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "bias_harm_index": {
+          "value_primary": -0.399,
+          "value_low": -0.529,
+          "value_high": -0.269,
+          "confidence_level": 0.9237,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H19_001",
+            "OBS_H19_003"
+          ],
+          "source_refs": [
+            "SRC_H19_001",
+            "SRC_H19_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_19_002"
+          ],
+          "source_refs": [
+            "SRC_19_002"
+          ]
+        }
+      }
+    },
+    "H20": {
+      "case_id": "H20",
+      "display_name": "Hidden stratification in medical imaging",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/32417929/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "stress_robustness": {
+          "value_primary": -0.5459,
+          "value_low": -0.6759,
+          "value_high": -0.4159,
+          "confidence_level": 0.9313,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "OBS_H20_001",
+            "OBS_H20_003"
+          ],
+          "source_refs": [
+            "SRC_H20_001",
+            "SRC_H20_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.45,
+          "value_low": -0.78,
+          "value_high": -0.12,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_20_002"
+          ],
+          "source_refs": [
+            "SRC_20_002"
+          ]
+        }
+      }
+    },
+    "H21": {
+      "case_id": "H21",
+      "display_name": "Race recognition from medical images",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/35568690/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "bias_harm_index": {
+          "value_primary": -0.6018,
+          "value_low": -0.7318,
+          "value_high": -0.4718,
+          "confidence_level": 0.9163,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H21_001",
+            "OBS_H21_003"
+          ],
+          "source_refs": [
+            "SRC_H21_001",
+            "SRC_H21_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.5,
+          "value_low": -0.83,
+          "value_high": -0.17,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_21_002"
+          ],
+          "source_refs": [
+            "SRC_21_002"
+          ]
+        }
+      }
+    },
+    "H22": {
+      "case_id": "H22",
+      "display_name": "Dermatology ML disparities",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30073260/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "bias_harm_index": {
+          "value_primary": -0.5138,
+          "value_low": -0.6438,
+          "value_high": -0.3838,
+          "confidence_level": 0.9175,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H22_001",
+            "OBS_H22_003"
+          ],
+          "source_refs": [
+            "SRC_H22_001",
+            "SRC_H22_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.25,
+          "value_low": -0.58,
+          "value_high": 0.08,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_22_002"
+          ],
+          "source_refs": [
+            "SRC_22_002"
+          ]
+        }
+      }
+    },
+    "H23": {
+      "case_id": "H23",
+      "display_name": "Radiology AI shortcut bias review",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/37517782/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "stress_robustness": {
+          "value_primary": -0.5302,
+          "value_low": -0.6602,
+          "value_high": -0.4002,
+          "confidence_level": 0.9175,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "OBS_H23_001",
+            "OBS_H23_003"
+          ],
+          "source_refs": [
+            "SRC_H23_001",
+            "SRC_H23_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_23_002"
+          ],
+          "source_refs": [
+            "SRC_23_002"
+          ]
+        }
+      }
+    },
+    "H24": {
+      "case_id": "H24",
+      "display_name": "Shortcutting risk in medical imaging research",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "stress_robustness": {
+          "value_primary": -0.4515,
+          "value_low": -0.5815,
+          "value_high": -0.3215,
+          "confidence_level": 0.9219,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "OBS_H24_001",
+            "OBS_H24_003"
+          ],
+          "source_refs": [
+            "SRC_H24_001",
+            "SRC_H24_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.25,
+          "value_low": -0.58,
+          "value_high": 0.08,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_24_002"
+          ],
+          "source_refs": [
+            "SRC_24_002"
+          ]
+        }
+      }
+    },
+    "H25": {
+      "case_id": "H25",
+      "display_name": "EHR process bias in observational data",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/29712648/",
+      "case_summary": "Triangulated 3 features.",
+      "features": {
+        "drift_susceptibility": {
+          "value_primary": -0.55,
+          "value_low": -0.78,
+          "value_high": -0.32,
+          "confidence_level": 0.85,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_DRIFT_SUSCEPTIBILITY",
+          "excerpt_ids": [
+            "OBS_H25_001"
+          ],
+          "source_refs": [
+            "SRC_H25_001"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_25_002"
+          ],
+          "source_refs": [
+            "SRC_25_002"
+          ]
+        },
+        "bias_harm_index": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6962,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H25_003"
+          ],
+          "source_refs": [
+            "SRC_H25_003"
+          ]
+        }
+      }
+    },
+    "H26": {
+      "case_id": "H26",
+      "display_name": "Adversarial attacks on medical ML",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/30898923/",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "adversarial_gaming_capability": {
+          "value_primary": -0.5071,
+          "value_low": -0.7371,
+          "value_high": -0.2771,
+          "confidence_level": 0.8475,
+          "provenance_class": "triangulated_mixed_evidence",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "OBS_H26_001",
+            "OBS_H26_003"
+          ],
+          "source_refs": [
+            "SRC_H26_001",
+            "SRC_H26_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_26_002"
+          ],
+          "source_refs": [
+            "SRC_26_002"
+          ]
+        }
+      }
+    },
+    "H27": {
+      "case_id": "H27",
+      "display_name": "Medical device UI software recalls",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "fallback_safety_delta": {
+          "value_primary": -0.3627,
+          "value_low": -0.5927,
+          "value_high": -0.1327,
+          "confidence_level": 0.8194,
+          "provenance_class": "triangulated_mixed_evidence",
+          "encoding_rule_id": "ER_FALLBACK_SAFETY_DELTA",
+          "excerpt_ids": [
+            "OBS_H27_001",
+            "OBS_H27_003"
+          ],
+          "source_refs": [
+            "SRC_H27_001",
+            "SRC_H27_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6512,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_27_002"
+          ],
+          "source_refs": [
+            "SRC_27_002"
+          ]
+        }
+      }
+    },
+    "H28": {
+      "case_id": "H28",
+      "display_name": "FDA MAUDE safety events for ML-enabled devices",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/37071804/",
+      "case_summary": "Triangulated 3 features.",
+      "features": {
+        "harm_severity": {
+          "value_primary": -0.55,
+          "value_low": -0.78,
+          "value_high": -0.32,
+          "confidence_level": 0.885,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "OBS_H28_001"
+          ],
+          "source_refs": [
+            "SRC_H28_001"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.45,
+          "value_low": -0.78,
+          "value_high": -0.12,
+          "confidence_level": 0.6475,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_28_002"
+          ],
+          "source_refs": [
+            "SRC_28_002"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": -0.45,
+          "value_low": -0.68,
+          "value_high": -0.22,
+          "confidence_level": 0.84,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "OBS_H28_003"
+          ],
+          "source_refs": [
+            "SRC_H28_003"
+          ]
+        }
+      }
+    },
+    "H29": {
+      "case_id": "H29",
+      "display_name": "Benefit-risk reporting gaps in FDA-cleared AI devices",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "evidence_visibility": {
+          "value_primary": -0.4719,
+          "value_low": -0.6019,
+          "value_high": -0.3419,
+          "confidence_level": 0.9344,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "OBS_H29_001",
+            "OBS_H29_003"
+          ],
+          "source_refs": [
+            "SRC_H29_001",
+            "SRC_H29_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.4,
+          "value_low": -0.73,
+          "value_high": -0.07,
+          "confidence_level": 0.6512,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_29_002"
+          ],
+          "source_refs": [
+            "SRC_29_002"
+          ]
+        }
+      }
+    },
+    "H30": {
+      "case_id": "H30",
+      "display_name": "Early recalls and validation gaps in AI-enabled devices",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 1 features.",
+      "features": {
+        "evidence_strength": {
+          "value_primary": -0.4366,
+          "value_low": -0.4866,
+          "value_high": -0.3866,
+          "confidence_level": 0.8892,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_H30_001",
+            "OBS_30_002",
+            "OBS_H30_003"
+          ],
+          "source_refs": [
+            "SRC_30_002",
+            "SRC_H30_001",
+            "SRC_H30_003"
+          ]
+        }
+      }
+    },
+    "H31": {
+      "case_id": "H31",
+      "display_name": "Generalizability of FDA-approved AI-enabled devices",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "stress_robustness": {
+          "value_primary": -0.45,
+          "value_low": -0.58,
+          "value_high": -0.32,
+          "confidence_level": 0.9425,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "OBS_H31_001",
+            "OBS_H31_003"
+          ],
+          "source_refs": [
+            "SRC_H31_001",
+            "SRC_H31_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.35,
+          "value_low": -0.68,
+          "value_high": -0.02,
+          "confidence_level": 0.6512,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_31_002"
+          ],
+          "source_refs": [
+            "SRC_31_002"
+          ]
+        }
+      }
+    },
+    "H32": {
+      "case_id": "H32",
+      "display_name": "da Vinci robotic surgery MAUDE analysis",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "harm_severity": {
+          "value_primary": -0.4347,
+          "value_low": -0.5647,
+          "value_high": -0.3047,
+          "confidence_level": 0.9163,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "OBS_H32_001",
+            "OBS_H32_003"
+          ],
+          "source_refs": [
+            "SRC_H32_001",
+            "SRC_H32_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.25,
+          "value_low": -0.58,
+          "value_high": 0.08,
+          "confidence_level": 0.6512,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_32_002"
+          ],
+          "source_refs": [
+            "SRC_32_002"
+          ]
+        }
+      }
+    },
+    "H33": {
+      "case_id": "H33",
+      "display_name": "Robotic-assisted total hip arthroplasty MAUDE analysis",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 2 features.",
+      "features": {
+        "harm_severity": {
+          "value_primary": -0.3,
+          "value_low": -0.43,
+          "value_high": -0.17,
+          "confidence_level": 0.9275,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_HARM_SEVERITY",
+          "excerpt_ids": [
+            "OBS_H33_001",
+            "OBS_H33_003"
+          ],
+          "source_refs": [
+            "SRC_H33_001",
+            "SRC_H33_003"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.2,
+          "value_low": -0.53,
+          "value_high": 0.13,
+          "confidence_level": 0.6512,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_33_002"
+          ],
+          "source_refs": [
+            "SRC_33_002"
+          ]
+        }
+      }
+    },
+    "H36": {
+      "case_id": "H36",
+      "display_name": "UK Equity in Medical Devices independent review",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 3 features.",
+      "features": {
+        "bias_harm_index": {
+          "value_primary": -0.4,
+          "value_low": -0.63,
+          "value_high": -0.17,
+          "confidence_level": 0.8538,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H36_001"
+          ],
+          "source_refs": [
+            "SRC_H36_001"
+          ]
+        },
+        "evidence_strength": {
+          "value_primary": -0.3,
+          "value_low": -0.63,
+          "value_high": 0.03,
+          "confidence_level": 0.6437,
+          "provenance_class": "uncertain_estimate",
+          "encoding_rule_id": "ER_EVIDENCE_STRENGTH",
+          "excerpt_ids": [
+            "OBS_H36_002"
+          ],
+          "source_refs": [
+            "SRC_H36_002"
+          ]
+        },
+        "evidence_visibility": {
+          "value_primary": -0.35,
+          "value_low": -0.58,
+          "value_high": -0.12,
+          "confidence_level": 0.84,
+          "provenance_class": "single_source_direct_evidence",
+          "encoding_rule_id": "ER_EVIDENCE_VISIBILITY",
+          "excerpt_ids": [
+            "OBS_H36_003"
+          ],
+          "source_refs": [
+            "SRC_H36_003"
+          ]
+        }
+      }
+    },
+    "H37": {
+      "case_id": "H37",
+      "display_name": "COVID CXR intrinsic shortcut detection",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "https://www.nature.com/articles/s41598-023-39855-3",
+      "case_summary": "Triangulated 1 features.",
+      "features": {
+        "stress_robustness": {
+          "value_primary": -0.5819,
+          "value_low": -0.7119,
+          "value_high": -0.4519,
+          "confidence_level": 0.9138,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_STRESS_ROBUSTNESS",
+          "excerpt_ids": [
+            "OBS_H37_001",
+            "OBS_H37_002"
+          ],
+          "source_refs": [
+            "SRC_H37_001",
+            "SRC_H37_002"
+          ]
+        }
+      }
+    },
+    "H38": {
+      "case_id": "H38",
+      "display_name": "Race/demographic shortcut mitigation in imaging",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 1 features.",
+      "features": {
+        "bias_harm_index": {
+          "value_primary": -0.4377,
+          "value_low": -0.5799,
+          "value_high": -0.2955,
+          "confidence_level": 0.8875,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_BIAS_HARM_INDEX",
+          "excerpt_ids": [
+            "OBS_H38_001",
+            "OBS_H38_002"
+          ],
+          "source_refs": [
+            "SRC_H38_001",
+            "SRC_H38_002"
+          ]
+        }
+      }
+    },
+    "H39": {
+      "case_id": "H39",
+      "display_name": "Minimal-noise adversarial attack on medical images",
+      "citation": "EEE v1.1 triangulated dossier",
+      "source_type": "triangulated multi-source dossier",
+      "source_url": "",
+      "case_summary": "Triangulated 1 features.",
+      "features": {
+        "adversarial_gaming_capability": {
+          "value_primary": -0.5279,
+          "value_low": -0.6579,
+          "value_high": -0.3979,
+          "confidence_level": 0.9263,
+          "provenance_class": "triangulated_direct_evidence",
+          "encoding_rule_id": "ER_ADVERSARIAL_GAMING_CAPABILITY",
+          "excerpt_ids": [
+            "OBS_H39_001",
+            "OBS_H39_002"
+          ],
+          "source_refs": [
+            "SRC_H39_001",
+            "SRC_H39_002"
+          ]
+        }
+      }
+    }
+  }
+}
