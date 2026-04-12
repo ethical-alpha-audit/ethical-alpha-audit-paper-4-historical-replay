@@ -1,0 +1,6 @@
+{
+  "upstream_repo": "ethical-alpha-audit-shared-repro-core",
+  "system_snapshot_shared_core_commit": "9cd8aea24f1d9d1daf1bc992349716ef2f6a523a",
+  "p4_engine_location": "engine/corrected_public_engine_v1_1.py",
+  "note": "Reference only: P4 ships a vendored replay engine and does not declare a pip/git dependency on shared-core. Validate portfolio alignment against eaa_system/system_snapshot.json."
+}

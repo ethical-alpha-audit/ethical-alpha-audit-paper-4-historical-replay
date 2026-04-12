@@ -1,8 +1,17 @@
-
+import asyncio
 import json
 import os
+import sys
 import time
+import warnings
 from pathlib import Path
+
+# Jupyter/ipykernel on Windows defaults to ProactorEventLoop; zmq/tornado expect add_reader.
+# Python 3.14+ deprecates WindowsSelectorEventLoopPolicy(); suppress that warning until upstream settles.
+if sys.platform == "win32":
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", DeprecationWarning)
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 import nbformat
 from nbclient import NotebookClient
 
