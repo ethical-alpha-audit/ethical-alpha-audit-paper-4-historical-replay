@@ -1,4 +1,5 @@
 {
+  "doi": "10.5281/zenodo.19388835",
   "title": "Historical Replay Evaluation of Non-Compensatory AI Governance — Reproducibility Repository",
   "description": "Minimal reproducibility repository for the NEJM AI paper. Contains governance engine, canonical datasets, EEE triangulation overlay, 4 Jupyter notebooks, and deterministic validation harness reproducing all manuscript findings.",
   "upload_type": "software",

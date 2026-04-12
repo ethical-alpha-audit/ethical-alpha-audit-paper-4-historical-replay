@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 title: "Paper 4: Historical Replay Evaluation of Non-Compensatory AI Governance"
 version: "1.0.0"
-doi: "PLACEHOLDER"
+doi: 10.5281/zenodo.19388835
 message: "If you use this repository, please cite the accompanying NEJM AI paper."
 type: software
 authors:
