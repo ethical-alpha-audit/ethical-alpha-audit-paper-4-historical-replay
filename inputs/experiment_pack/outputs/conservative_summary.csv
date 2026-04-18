@@ -1,0 +1,13 @@
+case_id,original_verdict,conservative_verdict,flipped,original_gates_failed,conservative_gates_failed,binding_gate_original,binding_gate_conservative
+amazon_recruiting,REJECT,REJECT,False,4,5,,
+babylon,REJECT,REJECT,False,2,4,,
+compas,REJECT,REJECT,False,3,5,,
+epic_sepsis,REJECT,REJECT,False,3,3,,
+gender_shades,REJECT,REJECT,False,2,4,,
+google_dr,APPROVE,APPROVE,False,0,0,,
+google_flu,REJECT,REJECT,False,2,3,,
+ibm_watson,REJECT,REJECT,False,4,4,,
+microsoft_tay,REJECT,REJECT,False,3,5,,
+optum_health,REJECT,REJECT,False,2,4,,
+uber_av,REJECT,REJECT,False,2,2,,
+uk_alevels,REJECT,REJECT,False,2,4,,

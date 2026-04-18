@@ -1,0 +1,201 @@
+{
+  "experiment_id": "A04",
+  "engine_hash": "875f73150fae43695ecc6659581e8e25b365ad6171c9e13629fb01e923ab311c",
+  "profile": "moderate",
+  "start_time": "2026-04-14T17:17:59.494123+00:00",
+  "end_time": "2026-04-14T17:18:01.378518+00:00",
+  "cases": [
+    {
+      "case_id": "amazon_recruiting",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 4,
+      "conservative_gates_failed": 5,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.34,
+        "evidence_strength": 0.17,
+        "bias_harm_index": 0.78,
+        "uncertainty_calibration": 0.3,
+        "traceability_integrity": 0.19
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "babylon",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 2,
+      "conservative_gates_failed": 4,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.39,
+        "evidence_strength": 0.31,
+        "bias_harm_index": 0.41,
+        "uncertainty_calibration": 0.32,
+        "traceability_integrity": 0.22
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "compas",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 3,
+      "conservative_gates_failed": 5,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.3,
+        "evidence_strength": 0.48,
+        "bias_harm_index": 0.86,
+        "uncertainty_calibration": 0.38,
+        "traceability_integrity": 0.2
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "epic_sepsis",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 3,
+      "conservative_gates_failed": 3,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.33,
+        "evidence_strength": 0.58,
+        "bias_harm_index": 0.31,
+        "uncertainty_calibration": 0.29,
+        "traceability_integrity": 0.26
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "gender_shades",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 2,
+      "conservative_gates_failed": 4,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.35,
+        "evidence_strength": 0.79,
+        "bias_harm_index": 0.9,
+        "uncertainty_calibration": 0.37,
+        "traceability_integrity": 0.36
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "google_dr",
+      "original_verdict": "APPROVE",
+      "conservative_verdict": "APPROVE",
+      "flipped": false,
+      "original_gates_failed": 0,
+      "conservative_gates_failed": 0,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.5,
+        "evidence_strength": 0.68,
+        "bias_harm_index": 0.38,
+        "uncertainty_calibration": 0.4,
+        "traceability_integrity": 0.48
+      },
+      "boundary_note": "Safety: conservative=0.5, threshold=0.50, gate_pass=1. Calibration: conservative=0.4, threshold=0.40, gate_pass=1."
+    },
+    {
+      "case_id": "google_flu",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 2,
+      "conservative_gates_failed": 3,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.39,
+        "evidence_strength": 0.68,
+        "bias_harm_index": 0.26,
+        "uncertainty_calibration": 0.31,
+        "traceability_integrity": 0.28
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "ibm_watson",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 4,
+      "conservative_gates_failed": 4,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.19,
+        "evidence_strength": 0.26,
+        "bias_harm_index": 0.36,
+        "uncertainty_calibration": 0.24,
+        "traceability_integrity": 0.11
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "microsoft_tay",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 3,
+      "conservative_gates_failed": 5,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.17,
+        "evidence_strength": 0.44,
+        "bias_harm_index": 0.69,
+        "uncertainty_calibration": 0.18,
+        "traceability_integrity": 0.3
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "optum_health",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 2,
+      "conservative_gates_failed": 4,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.39,
+        "evidence_strength": 0.69,
+        "bias_harm_index": 0.85,
+        "uncertainty_calibration": 0.36,
+        "traceability_integrity": 0.37
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "uber_av",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 2,
+      "conservative_gates_failed": 2,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.1,
+        "evidence_strength": 0.74,
+        "bias_harm_index": 0.22,
+        "uncertainty_calibration": 0.17,
+        "traceability_integrity": 0.68
+      },
+      "boundary_note": null
+    },
+    {
+      "case_id": "uk_alevels",
+      "original_verdict": "REJECT",
+      "conservative_verdict": "REJECT",
+      "flipped": false,
+      "original_gates_failed": 2,
+      "conservative_gates_failed": 4,
+      "conservative_feature_values": {
+        "intrinsic_safety": 0.22,
+        "evidence_strength": 0.51,
+        "bias_harm_index": 0.79,
+        "uncertainty_calibration": 0.27,
+        "traceability_integrity": 0.38
+      },
+      "boundary_note": null
+    }
+  ]
+}

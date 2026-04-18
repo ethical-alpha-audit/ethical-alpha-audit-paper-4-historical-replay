@@ -1,0 +1,4 @@
+A01: deltas=[-0.10,-0.05,0.00,+0.05,+0.10], profile=moderate, single-feature-at-a-time
+A03: Tier 1 stats from canonical_dataset.json; Tier 2/3 from benchmark/cases
+A04: Conservative direction: value_low (safety/evidence/calibration/traceability), value_high (bias)
+Engine: corrected_public_engine_v1_1.py (SHA256: 875f7315...)
