@@ -1,66 +1,87 @@
-# Claim Traceability Matrix (P4)
+# Paper 4 — Claim traceability (historical replay)
 
-**Repo:** ethical-alpha-audit-paper-4-historical-replay  
-**Source manuscript:** `inputs/manuscript.docx` (plain-text extraction used for claim identification)  
-**Supplementary:** `inputs/supplementary.pdf`, `inputs/supplementary.docx`  
-**Updated:** 2026-04-12 (engineer remediation pass; QA session 2026-04-12)  
-**CLAIM EXTRACTION COMPLETE: 40 claims identified for P4** (P4-C01–P4-C40)
+This register maps manuscript statements in `inputs/manuscript.docx` (and overlapping supplementary context in `inputs/supplementary.pdf`) to computational artefacts in this repository. It supports RTM-style audit without altering locked engine logic.
 
-This matrix maps manuscript claims to executable artefacts. Status values are descriptive; formal verification is via `python reproduce_all.py` and structural tests under `tests/`. **`VERIFIED (QA 2026-04-12)`** indicates a claim checked against outputs produced in that independent QA run (pytest + `reproduce_all.py` + fresh notebook execution).
+**CLAIM EXTRACTION COMPLETE: 58 claims identified for P4.**
 
-| Claim ID | Claim (paraphrase) | Code | Notebook | Output / path | Status |
-|----------|-------------------|------|----------|---------------|--------|
-| P4-C01 | Institutional frameworks (NIST AI RMF, EU AI Act, ISO/IEC 23894) guide process but do not operationalise deterministic threshold gate logic. | N/A (background) | 01 (narrative) | — | narrative |
-| P4-C02 | Historical replay applies a **pre-specified** five-gate non-compensatory engine; engine not modified for this analysis. | `engine/corrected_public_engine_v1_1.py` | 02 | `outputs/logs/replay_run_log.txt` | implemented |
-| P4-C03 | **12** documented failure cases (2014–2021), seven sectors, **convenience** sample from strong documentary evidence. | `data/canonical/canonical_dataset.json` | 01 | `outputs/tables/dataset_inventory.csv` | implemented |
-| P4-C04 | **64** independent documentary sources; **15** SCM features per case; rubric-based encoding with provenance classes. | canonical + EEE overlay | 01 | `outputs/tables/dataset_inventory.csv` | implemented |
-| P4-C05 | Triangulation yields **57** triangulated and **123** passthrough features; timing: **4** pre-deployment vs **60** post-incident sources. | EEE / provenance JSON | 01 | notebook stdout / inventory | implemented |
-| P4-C06 | **20** declared feature-dependency overlaps (consistent with dependency matrix). | provenance artefacts | 01 | `docs/provenance.md` | documented |
-| P4-C07 | Five non-compensatory gates + four threshold profiles + parallel compensatory comparator. | `corrected_public_engine_v1_1.py` | 02–04 | `outputs/tables/replay_results.csv` | implemented |
-| P4-C08 | **Eight** core-equivalent failures upgraded via EEE overlay (v1.2.0): **16** features upgraded, **8** imputations removed, **16** confidence uplifts; two cases LOW→MODERATE. | `engine/eee_overlay_adapter.py`, overlay JSON | 01–02 | `config/core_equivalent_cases.json` | implemented |
-| P4-C09 | **12** FDA-cleared control devices for specificity (Extended Data 5). | benchmark cases | 02 | `outputs/tables/replay_results.csv` (layer rows) | implemented |
-| P4-C10 | Manuscript headline **12 failures + 12 controls** under moderate: **TP=11, FN=1, TN=12, FP=0**; sensitivity **0.917**, specificity **1.000**. **Repo:** Layer 1 (12 failures) matches **11/12** rejections and sole approve **google_dr**; **12** FDA controls **all approve** in notebook Layer 2 block. **`confusion_matrix.csv` encodes Layer 2 only (20 failures + 12 controls): TP=20, FN=0, TN=12, FP=0** — not the 12+12 headline matrix. | engine | 02 | `notebooks/02_historical_replay_execution.ipynb` (§2.2, §2.6); `outputs/tables/confusion_matrix.csv` (Layer 2) | implemented; **VERIFIED (QA 2026-04-12)** — layer split / artefact scope |
-| P4-C11 | Sole **false negative**: **google_dr** (narrow margins; safety margin **0.05**). | engine | 02–03 | `notebooks/02_historical_replay_execution.ipynb` (assertions + stdout) | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C12 | **Safety gate** binding most often: **10/12 (83%)** failures under moderate. | engine | 02, 04 | `outputs/figures/figure1_gate_failure.png`; notebook 02 stdout | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C13 | **Bias** gate **6/12**; **calibration** and **traceability** each **5/12**; **evidence** gate **3/12**. | engine | 04 | `figure1_gate_failure.png`; notebook 02 stdout | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C14 | Rejected cases average **2.6** gate failures each (**29** total across **11** rejections). | engine | 03–04 | notebook 02 stdout (mean **2.636**, total **29**) | implemented; **VERIFIED (QA 2026-04-12)** (mean rounded in manuscript) |
-| P4-C15 | **Ablation:** removing **any single** gate does **not** flip a rejection to approval (12 cases). | engine | 04 | `figure2_ablation.png`, `ablation_matrix.csv` | implemented |
-| P4-C16 | **Pairwise** ablation: **safety+bias** flips Optum, Gender Shades, UK A-levels; **safety+calibration** flips Google Flu & Uber AV; **evidence+traceability** flips Babylon. | engine | 04 | `figure2_ablation.png` | implemented |
-| P4-C17 | Non-compensatory vs compensatory **agree on 10/12**; **two** divergences (**google_flu**, **uber_av**) where compensatory would approve. | engine | 02–04 | `figure4_compensation.png`; notebook 02 stdout / assertions | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C18 | Compensatory scores at divergence: Google Flu **~0.57** (threshold **0.50**); Uber AV **~0.51** (threshold **0.50**). | engine | 02 | notebook 02 stdout (**0.5675**, **0.5125**) | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C19 | Provenance mix across **180** encodings: **27.2%** direct, **37.8%** rule-derived, **28.3%** imputed, **6.7%** uncertain; **mean confidence 0.591**. | canonical features | 01, 04 | `figure3_provenance_stability.png` | implemented |
-| P4-C20 | Monte Carlo on **[low, high]** bands: **200** iterations, seed **42** → **12/12** outcome-stable under moderate. | engine | 03 | `outputs/figures/calibration_summary.txt`; `outputs/tables/metrics_summary.csv` | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C21 | **±0.20** sensitivity: only **google_dr** shows flip points (**8** across **4** features); **11** rejections robust. | engine | 03 | `metrics_summary.csv`; `calibration_summary.txt` | implemented; **partially verified (QA 2026-04-12)** — flip-point count **7** in `calibration_summary.txt` / metrics vs manuscript **8** |
-| P4-C22 | Expanded benchmark **91** cases (**61** failures, **30** controls): **100%** sensitivity & specificity; **no** misclassifications under moderate. | benchmark dir + engine | 02 | `replay_results.csv`; `outputs/logs/replay_run_log.txt` | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C23 | Tier 2 (**49** cases): lower mean confidence (**~0.383**), **4.0** mean gate failures, safety binding **100%**. | benchmark metadata | 01–02 | dataset inventory / replay | implemented |
-| P4-C24 | Tier 3 (**30** FDA-authorised devices): all **APPROVE** under moderate (specificity controls). | benchmark | 02 | replay_results expanded rows | implemented |
-| P4-C25 | Perfect separation on expanded set is a **structural** consequence of encoding + non-compensatory logic, **not** prospective validation. | N/A (interpretive) | 02 (markdown) | — | narrative |
-| P4-C26 | **Dual dataset** structural invariance: normalised public schema vs canonical → **480/480** field comparisons identical (12×4×10). | engine | 03 | `outputs/tables/metrics_summary.csv` (`invariance,fields_matched,480`) | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C27 | **Replay vs canonical full** mode: under **moderate**, **zero** verdict change on **12** cases. | engine modes | 03 | `metrics_summary.csv` (`mode_sensitivity,moderate_divergences,0`) | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C28 | Controlled **±0.05** perturbation on calibration/bias/traceability: **46/48** verdict-stable in replay; **2** flips **permissive only** (Epic Sepsis, Babylon). | `data/canonical/perturbation_dataset.json` | 03 | `metrics_summary.csv` (`perturbation,verdicts_stable,46`; `verdict_flips,2`) | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C29 | **Moderate** profile: **zero** verdict flips under that perturbation regime; compensatory Uber AV can flip near **0.50**. | engine | 03 | `metrics_summary.csv` (`moderate_flips,0`); Uber AV score in notebook 02 | implemented; **VERIFIED (QA 2026-04-12)** (compensatory clause via 02) |
-| P4-C30 | Three primary discriminative gates under expanded + core scopes: **G1, G4, G5** (manuscript framing). | engine | 02–04 | gate failure charts | implemented |
-| P4-C31 | Contribution: reproducible deterministic pipeline, historical replay methodology, empirical defence-in-depth via redundant gates. | N/A | all notebooks | `reproduce_all.py` | process |
-| P4-C32 | Limitations: convenience sample, tiered provenance heterogeneity, selection/survivorship bias, not representative of all deployments. | N/A | 01–02 text | — | narrative |
-| P4-C33 | Ethics: retrospective computational study on public cases; no human subjects; no ethics approval required. | N/A | — | manuscript only | narrative |
-| P4-C34 | Data/code availability: Zenodo DOI placeholder; GitHub URLs cited (external). | N/A | `repro_manifest.json` | inputs/ | external |
-| P4-C35 | AI disclosure: Claude used for code/docs assistance; author retains scientific decisions. | N/A | — | manuscript only | narrative |
-| P4-C36 | Figure 1: gate failure counts (**83%** safety, **50%** bias, **42%** cal/trace, **25%** evidence). | engine | 04 | `outputs/figures/figure1_gate_failure.png`; notebook 02 gate stdout | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C37 | Figure 2: single-gate removal stable; pairwise removals as specified. | engine | 04 | `outputs/figures/figure2_ablation.png`; `outputs/tables/ablation_matrix.csv` | implemented; **VERIFIED (QA 2026-04-12)** (artefacts present + pipeline PASS) |
-| P4-C38 | Figure 3: provenance distribution + MC stability + ±0.20 sensitivity summary. | notebooks | 04 | `outputs/figures/figure3_provenance_stability.png` | implemented; **VERIFIED (QA 2026-04-12)** (figure + validation PASS) |
-| P4-C39 | Figure 4: compensation effect highlighting **google_flu** and **uber_av**. | engine | 04 | `outputs/figures/figure4_compensation.png` | implemented; **VERIFIED (QA 2026-04-12)** |
-| P4-C40 | PhysioNet / extended analyses referenced as **Extended Data** (not re-proven in-repo here). | external | 03 (refs) | `docs/provenance.md` | out-of-notebook scope |
+## Traceability legend
 
-## Validation commands
+| Column | Meaning |
+| --- | --- |
+| **ID** | Stable claim handle for cross-repo references (`P4-Cxx`). |
+| **Artefacts** | Notebooks, tables, figures, datasets, or config entries that materially support the claim. |
+| **Status** | `verified` = asserted directly in executed notebook checks or pinned outputs; `contextual` = narrative framing or citation-backed; `external` = depends on cited literature or out-of-repo archives. |
 
-```text
-python -m pytest tests/ -q
-python reproduce_all.py
-```
+## Claim register
 
-## Escalations / notes
+| ID | Claim summary | Manuscript anchor | Primary artefacts | Status |
+| --- | --- | --- | --- | --- |
+| P4-C01 | Institutional frameworks (NIST AI RMF, EU AI Act, ISO/IEC 23894) provide procedural guidance but not deterministic threshold gate logic (“operationalisation gap”). | Abstract; Introduction | Narrative | contextual |
+| P4-C02 | Whether conjunctive (non-compensatory) minimum thresholds would have flagged documented deployment failures is an open empirical question addressed here. | Abstract; Introduction | `notebooks/02_historical_replay_execution.ipynb` | contextual |
+| P4-C03 | The evaluation system comprises a five-gate engine, structured encoding with provenance, and deterministic benchmark infrastructure with hash validation. | Abstract; Methods | `engine/corrected_public_engine_v1_1.py`, `scripts/validate_outputs.py`, `config/expected_outputs.json` | verified |
+| P4-C04 | Twelve documented governance failures (multi-sector) were encoded from structured evidence. | Abstract; Methods | `data/canonical/canonical_dataset.json`, `notebooks/01_dataset_intake.ipynb` | verified |
+| P4-C05 | Evidence was drawn from 64 independent documentary objects across the 12 cases. | Methods | `data/canonical/canonical_dataset.json` (source graph) | verified |
+| P4-C06 | Feature vectors use a transparent numeric rubric with confidence-weighted provenance classes. | Methods | `notebooks/01_dataset_intake.ipynb`, `outputs/tables/dataset_inventory.csv` | verified |
+| P4-C07 | Parallel analyses include ablation, Monte Carlo perturbation within confidence bounds, and compensatory scoring comparison. | Abstract; Methods | `notebooks/02_historical_replay_execution.ipynb`, `notebooks/03_metrics_and_calibration.ipynb` | verified |
+| P4-C08 | An expanded provenance-tiered benchmark (91 cases) assesses scale generalisability. | Abstract; Methods | `data/benchmark/cases/*.json`, `notebooks/02_historical_replay_execution.ipynb` | verified |
+| P4-C09 | Under the **moderate** profile, the framework rejected **11/12** failures (retrospective sensitivity **91.7%** in this sample). | Abstract; Results | `notebooks/02_historical_replay_execution.ipynb` (Q1), `outputs/tables/replay_results.csv` | verified |
+| P4-C10 | The **safety** gate was the most frequently binding constraint (**10/12**, **83%**) under moderate replay. | Abstract; Results | `notebooks/02_historical_replay_execution.ipynb` (Q2), Figure 1 | verified |
+| P4-C11 | Every rejected case failed **≥2** independent gates; mean gate failures per rejection **≈2.6**. | Abstract; Results | `notebooks/02_historical_replay_execution.ipynb` (Q8, mean print) | verified |
+| P4-C12 | **Google Flu** and **Uber AV** are rejected by non-compensatory gates but would be approved under compensatory scoring (masking critical deficiencies). | Abstract; Results | `notebooks/02_historical_replay_execution.ipynb` (Q10–Q13), Figure 4 | verified |
+| P4-C13 | Monte Carlo sampling within documented confidence bounds (**200** iterations, seed **42**) yields **12/12** stable moderate-profile outcomes. | Abstract; Results | `notebooks/03_metrics_and_calibration.ipynb` (Q29), `p4_replay/run_config.py` | verified |
+| P4-C14 | Expanded benchmark: **61/61** failures rejected and **30/30** controls approved under tiered routing reported in the notebook harness. | Abstract; Conclusions | `notebooks/02_historical_replay_execution.ipynb` (Q34–Q35) | verified |
+| P4-C15 | Provenance tiers make evidential weight explicit (Tier 1 core vs Tier 2 bulk failures vs Tier 3 controls). | Results | `notebooks/02_historical_replay_execution.ipynb`, `outputs/tables/replay_results.csv` | verified |
+| P4-C16 | Core confusion matrix vs **12** FDA-encoded controls: **TP=11, FN=1, TN=12, FP=0**; sensitivity **0.917**, specificity **1.000** (structured retrospective framing). | Abstract; Results | `notebooks/02_historical_replay_execution.ipynb`, `outputs/tables/confusion_matrix.csv` | verified |
+| P4-C17 | Expanded **91-case** confusion: **TP=61, FN=0, TN=30, FP=0**; sensitivity/specificity **1.000** under the stated tiered encoding policy. | Abstract; Results | `notebooks/02_historical_replay_execution.ipynb` | verified |
+| P4-C18 | Tier mean confidences reported in text (**Tier 1 ≈0.591; Tier 2 ≈0.383; Tier 3 ≈0.380**) encode an explicit quality gradient. | Results | `notebooks/01_dataset_intake.ipynb`, benchmark metadata | verified |
+| P4-C19 | The **canonical 11/12** result remains the authoritative primary metric; expanded results provide scale evidence at lower confidence. | Conclusions | `notebooks/02_historical_replay_execution.ipynb`, `repro_manifest.json` | contextual |
+| P4-C20 | Findings are **not** prospective real-world validation. | Abstract; Discussion | Narrative | contextual |
+| P4-C21 | “Perfect separation” under expanded conditions is a **structural** consequence of the architecture applied to encoded cohorts, not a generalised safety claim for all devices. | Results; Discussion | Narrative + `notebooks/02_historical_replay_execution.ipynb` | contextual |
+| P4-C22 | Case selection spans **2014–2021** convenience sample of well-documented failures (not population representative). | Methods | `data/canonical/canonical_dataset.json` | contextual |
+| P4-C23 | Five healthcare failures plus seven cross-sector cases test domain generality of multi-gate deficiency patterns. | Methods | Case list in `notebooks/01_dataset_intake.ipynb` | verified |
+| P4-C24 | Triangulation yields **57** triangulated features and **123** passthrough features (single-source) as reported. | Methods | `notebooks/01_dataset_intake.ipynb` | verified |
+| P4-C25 | Evidence timing split (**pre-deployment vs post-incident** counts) supports deployment-time vs forensic framing. | Methods | `notebooks/01_dataset_intake.ipynb` | verified |
+| P4-C26 | Dependency audit flags **20** declared overlaps consistent with the engine dependency matrix. | Methods | `notebooks/01_dataset_intake.ipynb` | verified |
+| P4-C27 | Provenance class mix across **180** encodings: **27.2% / 37.8% / 28.3% / 6.7%** direct/rule-derived/imputed/uncertain. | Results | `notebooks/01_dataset_intake.ipynb`, Figure 3 | verified |
+| P4-C28 | Mean encoding confidence **0.591** (median **0.600**) across the **180** encodings. | Results | `notebooks/01_dataset_intake.ipynb`, `notebooks/03_metrics_and_calibration.ipynb` | verified |
+| P4-C29 | Four threshold profiles evaluated: permissive, moderate, strict, very strict. | Methods | `p4_replay/datasets.py` (`STANDARD_PROFILES`), notebooks | verified |
+| P4-C30 | Permissive profile rejects **8/12**; strict and very strict reject **12/12** under replay mode. | Results | `notebooks/02_historical_replay_execution.ipynb` (Q18–Q20) | verified |
+| P4-C31 | **Google DR** is the sole moderate-profile approval; safety margin **0.05** vs **0.50** threshold. | Results | `notebooks/02_historical_replay_execution.ipynb` (Q9) | verified |
+| P4-C32 | Gate failure incidence: bias **6/12**, calibration **5/12**, traceability **5/12**, evidence **3/12** (moderate, full cohort statistics as printed). | Results | `notebooks/02_historical_replay_execution.ipynb` (Q3–Q6) | verified |
+| P4-C33 | Layer-2 core-equivalent confusion matrix: **TP=20, FN=0, TN=12, FP=0** using **20** failures (12+8) with EEE overlay routing. | Results | `notebooks/02_historical_replay_execution.ipynb` (Q15–Q17) | verified |
+| P4-C34 | Non-compensatory vs compensatory agreement on **10/12** cases with **2** structured divergences. | Results | `notebooks/02_historical_replay_execution.ipynb` (Q11) | verified |
+| P4-C35 | Compensatory scores at divergence: Google Flu **≈0.5675**, Uber AV **≈0.5125** (engine-reported). | Results | `notebooks/02_historical_replay_execution.ipynb` (Q12–Q13) | verified |
+| P4-C36 | Ablation: **no** single-gate removal flips any outcome; pairwise removals flip specific subsets (safety+bias; safety+calibration; evidence+traceability). | Results | `outputs/tables/ablation_matrix.csv`, Figure 2, `notebooks/04_figures_and_tables.ipynb` | verified |
+| P4-C37 | Dual-dataset structural invariance: normalised public schema variant yields **480/480** identical comparisons across profiles/modes as asserted. | Results | `notebooks/03_metrics_and_calibration.ipynb`, `data/canonical/public_normalised_dataset.json` | verified |
+| P4-C38 | Replay vs canonical full mode: **moderate** outcomes invariant for all **12**; **permissive** shows documented abstention-related flips for three cases in full mode. | Results | `notebooks/03_metrics_and_calibration.ipynb` | verified |
+| P4-C39 | Perturbation protocol: **±0.05** on **UC/BHI/TI** with safety/evidence held fixed; **46/48** configurations verdict-stable in evaluated sweep. | Results | `notebooks/03_metrics_and_calibration.ipynb`, `data/canonical/perturbation_dataset.json` | verified |
+| P4-C40 | Permissive-only perturbation verdict flips (**Epic Sepsis**, **Babylon**) match manuscript narrative. | Results | `notebooks/03_metrics_and_calibration.ipynb` | verified |
+| P4-C41 | Moderate-profile perturbation stability (**0** verdict flips across cases) supports robustness framing. | Results | `notebooks/03_metrics_and_calibration.ipynb` | verified |
+| P4-C42 | Conservative simultaneous bound analysis preserves all **12** moderate verdicts (including boundary **Google DR**). | Results | `notebooks/03_metrics_and_calibration.ipynb` | verified |
+| P4-C43 | Sensitivity perturbation **±0.20** highlights **Google DR** as the only outcome-sensitive approved case (**8** flip points / **4** features). | Results | `notebooks/03_metrics_and_calibration.ipynb` | verified |
+| P4-C44 | PhysioNet external benchmark behaviour (both models fail safety under moderate profile) is reported in supplementary extended data, not recomputed in core notebooks. | Results pointer | `inputs/supplementary.pdf` | external |
+| P4-C45 | Eight healthcare failures upgraded to core-equivalent methodological parity with documented feature uplift counts. | Methods | `config/core_equivalent_cases.json`, `notebooks/01_dataset_intake.ipynb` | verified |
+| P4-C46 | Engine is **replay_mode** for primary claims; compensatory formula and threshold profiles are version-locked in `engine/engine_manifest.json`. | Methods | `engine/engine_manifest.json`, `engine/corrected_public_engine_v1_1.py` | verified |
+| P4-C47 | Forensic correction narrative (intermediate public engine drift vs canonical) is methodological provenance, not recomputed here. | Discussion | `docs/provenance.md`, Zenodo README | contextual |
+| P4-C48 | Validation hierarchy positioning (Tier 4 simulation + Tier 3 retrospective replay; Tier 2/1 outstanding) is epistemic framing. | Discussion | Narrative | contextual |
+| P4-C49 | Operational feasibility timing estimates (**45–90** min primary; **10–25** min secondary) are indicative decomposition, not measured wall times from this repo. | Discussion | Narrative | contextual |
+| P4-C50 | Relationship to EU AI Act Articles **9**/**17** and FDA **Jan 2025** AI device software guidance is interpretive positioning. | Discussion | Narrative | external |
+| P4-C51 | DECIDE-AI reporting alignment is declared for manuscript reporting discipline. | Reporting | Manuscript | contextual |
+| P4-C52 | Data/code availability points to Zenodo DOI **10.5281/zenodo.19388835** and GitHub repository URL in manuscript. | Data availability | `CITATION.cff`, `README.md` | contextual |
+| P4-C53 | AI assistance disclosure (Claude for code/docs support; author retains scientific decisions) is governance transparency, not a numerical claim. | AI use | Manuscript | contextual |
+| P4-C54 | Competing interests / NHS England employment disclaimer is administrative. | Competing interests | Manuscript | contextual |
+| P4-C55 | Single-author encoding limitation; inter-rater reliability outstanding — acknowledged limitation. | Limitations | Manuscript | contextual |
+| P4-C56 | Tier-2/Tier-3 encodings rely on lower direct-evidence rates; expanded metrics must be read with provenance transparency. | Limitations | `notebooks/01_dataset_intake.ipynb` | contextual |
+| P4-C57 | EEE enrichment pipeline statistics (**39** processed, **37** triangulated, **2** blocked) are archival/supplementary claims tied to Zenodo packaging. | Supplement | `inputs/supplementary.pdf`, `inputs/experiment_pack/` | external |
+| P4-C58 | Repro execution contract: `python reproduce_all.py` runs notebooks, regenerates manifest, validates pinned digests, exports HTML. | Reproducibility | `reproduce_all.py`, `repro_manifest.json`, `scripts/validate_outputs.py` | verified |
 
-- **QA 2026-04-12 (independent):** `pytest` 8 passed; `reproduce_all.py` ALL STEPS PASSED (notebooks 01–04, manifest, `validate_outputs.py`, HTML export). **P4-C10:** prior traceability pointed `confusion_matrix.csv` at the 12+12 headline; file is **Layer 2 (20+12)** — row above corrected. **P4-C21:** manuscript **8** flip points vs `calibration_summary.txt` / metrics **7** — reconcile manuscript or code (non-blocking unless that number is contractual).
-- **Working tree:** after `reproduce_all.py`, expect modified notebooks, `logs/actual_manifest.json`, and `docs/html/*.html`; commit or reset per release policy. `inputs/supplementary.pdf` must remain tracked for attachment compliance.
-- **system_snapshot.json:** portfolio snapshot lists P4 `commit: null`; update after P4 hardening commit is registered upstream.
-- **Shared-core:** no pip lockfile; see `config/shared_core_reference.json` for portfolio commit reference. Engine code is **vendored** under `engine/`.
+## Escalations / out-of-repo dependencies
+
+- **Literature and regulatory citations** (references 1–21, FDA/NTSB/Ofqual sources): evidence basis for case narratives; not recomputed in code (`external`).
+- **PhysioNet benchmark** and some **extended data** paragraphs: supplementary PDF; confirm separately if promoted to executable pipeline (`external` → future work).
+- **Zenodo “to be provided” placeholders** in supplementary: require publication-time DOI binding per portfolio website rules (`contextual` / governance).
+
+## Maintenance notes
+
+- When manuscript numbering or threshold copy changes, update this table and the notebook RTM print tags (`Qxx`) together.
+- Keep `config/expected_outputs.json` aligned with any newly pinned artefacts before claiming `verified` status for new rows.

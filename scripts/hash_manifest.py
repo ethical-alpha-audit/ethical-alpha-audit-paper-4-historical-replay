@@ -1,6 +1,6 @@
-
 import hashlib
 import json
+import os
 from pathlib import Path
 from datetime import datetime, UTC
 
@@ -25,8 +25,12 @@ def build_manifest():
         else:
             manifest["files"].append({"path": item["path"], "sha256": "", "exists": False})
     out_path = BASE_DIR / "logs" / "actual_manifest.json"
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, indent=2)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = out_path.with_suffix(out_path.suffix + ".tmp")
+    payload = json.dumps(manifest, indent=2, ensure_ascii=False) + "\n"
+    with open(tmp_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(payload)
+    os.replace(tmp_path, out_path)
     return out_path
 
 if __name__ == "__main__":

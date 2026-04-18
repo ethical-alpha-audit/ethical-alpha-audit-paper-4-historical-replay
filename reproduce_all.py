@@ -1,3 +1,4 @@
+"""Deterministic end-to-end replay: notebooks, manifest, validation, HTML export."""
 
 import json
 import os
@@ -6,6 +7,7 @@ import sys
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
+
 
 def run_step(label, cmd):
     print(f"=== {label} ===")
