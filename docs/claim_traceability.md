@@ -81,6 +81,10 @@ This register maps manuscript statements in `inputs/manuscript.docx` (and overla
 - **PhysioNet benchmark** and some **extended data** paragraphs: supplementary PDF; confirm separately if promoted to executable pipeline (`external` → future work).
 - **Zenodo “to be provided” placeholders** in supplementary: require publication-time DOI binding per portfolio website rules (`contextual` / governance).
 
+## QA session record (2026-04-18, P4)
+
+Fresh-kernel notebook execution **did not** complete successfully under repeated `nbclient` runs on this host (Python 3.14 / Windows): `Kernel didn't respond in 60 seconds` for `notebooks/02_historical_replay_execution.ipynb`; a repeat attempt on `notebooks/01_dataset_intake.ipynb` hit the same failure mode. `python scripts/validate_outputs.py` **passed** against `config/expected_outputs.json` (pinned artefact digests unchanged). Until notebooks execute cleanly end-to-end, rows marked `verified` that rely primarily on notebook execution are **not** re-grounded by this session — see `logs/violations/2026-04-18_p4_qa_halt_notebook_execution.md`. Additionally, `scripts/notebook_runner.py` currently exits zero even when a notebook returns `status: error`, so `python reproduce_all.py` can print `ALL STEPS PASSED` while a notebook step failed.
+
 ## Maintenance notes
 
 - When manuscript numbering or threshold copy changes, update this table and the notebook RTM print tags (`Qxx`) together.
