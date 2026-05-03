@@ -1,10 +1,10 @@
 # A03 Provenance-Tier Sensitivity Report
 
-Replay source hash: 74ba177ab488fa87...
-Canonical source hash: 5f3cac67f18e0ea5...
+Verdict source: outputs/tables/replay_results.csv (layer=expanded, profile=moderate; sha256: 29bcdd26813e97a7...)
+Canonical source: data/canonical/canonical_dataset.json (sha256: 5f3cac67f18e0ea5...)
 
-## Tier 1: Expert-triangulated core (n=12)
-- Sensitivity: 1.000
+## Tier 1: Expert-triangulated core (canonical-source verdicts) (n=12)
+- Sensitivity: 0.917
 - Mean confidence: 0.591
 - Direct evidence: 27.2%
 - Rule-derived: 37.8%

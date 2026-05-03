@@ -2,26 +2,49 @@
   "bundle": "Paper4_Experiments",
   "generated": "2026-04-15T21:02:40+00:00",
   "files": [
-    {"path": "README.txt", "sha256": "f4348c9ffe9ef6a14bc957e2f496ecd82f1be0856d67e9b131204785a0c85f16"}
-    ,
-    {"path": "configs/parameters.txt", "sha256": "0aa481ccb434ecbf5887eeb64aa27b6bc993e59a4afdc101af1e8c664558b809"}
-    ,
-    {"path": "outputs/conservative_results.json", "sha256": "664d554fd240414429ae6f4de93b8dc880269aeaf963d2dd9ac00c4e0d9c98ad"}
-    ,
-    {"path": "outputs/conservative_summary.csv", "sha256": "933704f3872f77c8ee71ceb297016e1ac7b527bf58bb00e718b27700df0720cb"}
-    ,
-    {"path": "outputs/perturbation_results.json", "sha256": "654db590c21447d9c2243f79bfb96df6974681c95db2b6c83dacd2f6688685b5"}
-    ,
-    {"path": "outputs/perturbation_summary.csv", "sha256": "abf7e6e630a5b6f0af54ea415ffe508da10da6185c6609b722e8cd0c0fa9feee"}
-    ,
-    {"path": "outputs/tier_report.md", "sha256": "33e95cac3cad6b960f06d527307a79094316ea85cb25ffce8ad1dc7066df3619"}
-    ,
-    {"path": "outputs/tier_stratified_results.csv", "sha256": "548dd9c6d154749c99b94db0ae10b4a69d5b43f9206ae3d90b961c70c28536aa"}
-    ,
-    {"path": "scripts/provenance_tier_analysis.py", "sha256": "bf31ac5a85132a38bcc75ad9eea23709624ec5c7df24ef092507a50dedcd7a0b"}
-    ,
-    {"path": "scripts/run_conservative.py", "sha256": "5584293976161f0739b61a4c0d7d8a5f6732bc057ac42ff26edba103c673ae6e"}
-    ,
-    {"path": "scripts/run_perturbation.py", "sha256": "d7b0475e3320d97a6c390525bbf3937dd84e3addea7f5ef6ea493cc4f15a0787"}
+    {
+      "path": "README.txt",
+      "sha256": "f4348c9ffe9ef6a14bc957e2f496ecd82f1be0856d67e9b131204785a0c85f16"
+    },
+    {
+      "path": "configs/parameters.txt",
+      "sha256": "0aa481ccb434ecbf5887eeb64aa27b6bc993e59a4afdc101af1e8c664558b809"
+    },
+    {
+      "path": "outputs/conservative_results.json",
+      "sha256": "664d554fd240414429ae6f4de93b8dc880269aeaf963d2dd9ac00c4e0d9c98ad"
+    },
+    {
+      "path": "outputs/conservative_summary.csv",
+      "sha256": "933704f3872f77c8ee71ceb297016e1ac7b527bf58bb00e718b27700df0720cb"
+    },
+    {
+      "path": "outputs/perturbation_results.json",
+      "sha256": "654db590c21447d9c2243f79bfb96df6974681c95db2b6c83dacd2f6688685b5"
+    },
+    {
+      "path": "outputs/perturbation_summary.csv",
+      "sha256": "abf7e6e630a5b6f0af54ea415ffe508da10da6185c6609b722e8cd0c0fa9feee"
+    },
+    {
+      "path": "outputs/tier_report.md",
+      "sha256": "5ad588205362b4c36451abaa35a613ccd2a20f93528b4dac447472f8c7643646"
+    },
+    {
+      "path": "outputs/tier_stratified_results.csv",
+      "sha256": "d27c2cc9b88688c5065f127ff73e73b106dd9c6bd440703612294238f73266d2"
+    },
+    {
+      "path": "scripts/provenance_tier_analysis.py",
+      "sha256": "47dca9fa34a962e74238f6b687b9b685195e2b5845f20da5a519e7e4ad54b8e6"
+    },
+    {
+      "path": "scripts/run_conservative.py",
+      "sha256": "fa3403ae09a6ad4fd4ece8c87b28c6e3af2004623fdc664031cc12f734eda85b"
+    },
+    {
+      "path": "scripts/run_perturbation.py",
+      "sha256": "acbd6fb87b654d3668fc110dfa0e707a5ad85e903f9e00434df6d7dfff39f33d"
+    }
   ]
 }

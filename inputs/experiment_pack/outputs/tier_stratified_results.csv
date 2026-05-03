@@ -1,4 +1,4 @@
 tier,tier_label,n_cases,n_reject,n_approve,sensitivity_or_specificity,mean_confidence,pct_direct_evidence,pct_rule_derived,pct_imputed,pct_uncertain
-1,Expert-triangulated core,12,12,0,1.000,0.591,27.2,37.8,28.3,6.7
+1,Expert-triangulated core (canonical-source verdicts),12,11,1,0.917,0.591,27.2,37.8,28.3,6.7
 2,Additional documented failures,49,49,0,1.000,0.383,1.9,11.7,73.3,13.1
 3,FDA-cleared controls,30,0,30,1.000,0.380,0.0,13.3,73.3,13.3

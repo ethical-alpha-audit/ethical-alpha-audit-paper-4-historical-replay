@@ -1,6 +1,7 @@
 Paper 4 Historical Replay Execution Log
 Engine: corrected_public_engine_v1_1
 Primary profile: moderate
-Layer 1: 12 cases, 11/12 rejected
-Layer 2: TP=20, FN=0, TN=12, FP=0
-Expanded: 60/61 failures rejected, 30/30 controls approved
+Primary 12+12: TP=11, FN=1, TN=12, FP=0; sensitivity 0.917, specificity 1.000 (authoritative)
+Layer 1 (canonical 12 failures, moderate): 11/12 rejected
+Core-extended 12+8 vs 12 controls: TP=20, FN=0, TN=12, FP=0 (secondary)
+Expanded 91-case benchmark: 60/61 failures rejected, 30/30 controls approved

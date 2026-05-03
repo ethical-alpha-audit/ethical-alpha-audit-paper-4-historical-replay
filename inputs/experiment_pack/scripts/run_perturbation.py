@@ -1,21 +1,42 @@
 #!/usr/bin/env python3
-"""A01: Encoding Perturbation Analysis — Stage 3 Execution.
+"""A01: Encoding Perturbation Analysis — canonical-source verification.
 
-Evaluates governance verdict sensitivity to ±0.10 single-feature perturbation
-across the 12 canonical historical replay cases.
+Recomputes governance verdicts under +/-0.10 single-feature perturbation across
+the 12 canonical historical replay cases and verifies that the recomputed
+evaluations match the locked output `perturbation_summary.csv` byte-identically.
 
-Protocol: Stage 2 locked. No parameter modification permitted.
+This is a verification script. It does NOT overwrite the locked outputs; it
+exists so a reviewer can confirm that the locked perturbation results can be
+reproduced from the committed canonical inputs and the committed engine.
+
+Inputs (committed, repository-relative):
+  data/canonical/canonical_dataset.json     -- 12 canonical cases (canonical encoding)
+  engine/corrected_public_engine_v1_1.py    -- governance engine (stdlib-only)
+
+Reference outputs (locked):
+  inputs/experiment_pack/outputs/perturbation_summary.csv     (DNT-16; byte-identical to recomputation)
+  inputs/experiment_pack/outputs/perturbation_results.json    (DNT-17; numerical content verified excluding timestamps)
+
+Run from any working directory; paths are derived from this script's location.
 """
-import json
-import os
-import sys
-import hashlib
-import subprocess
-import tempfile
-import shutil
-from datetime import datetime, timezone
+from __future__ import annotations
 
-# === LOCKED PARAMETERS ===
+import csv
+import hashlib
+import io
+import json
+import sys
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[3]
+CANONICAL_PATH = REPO_ROOT / "data" / "canonical" / "canonical_dataset.json"
+ENGINE_PATH = REPO_ROOT / "engine" / "corrected_public_engine_v1_1.py"
+LOCKED_CSV = REPO_ROOT / "inputs" / "experiment_pack" / "outputs" / "perturbation_summary.csv"
+LOCKED_JSON = REPO_ROOT / "inputs" / "experiment_pack" / "outputs" / "perturbation_results.json"
+
+LOCKED_ENGINE_HASH = "875f73150fae43695ecc6659581e8e25b365ad6171c9e13629fb01e923ab311c"
+PROFILE = "moderate"
+
 DELTAS = [-0.10, -0.05, 0.00, +0.05, +0.10]
 GATE_FEATURES = [
     "intrinsic_safety",
@@ -24,198 +45,159 @@ GATE_FEATURES = [
     "uncertainty_calibration",
     "traceability_integrity",
 ]
-PROFILE = "moderate"
-MODE = "replay_mode"
-ENGINE_PATH = "/home/claude/evidence/engine_patch/engine/corrected_public_engine_v1_1.py"
-CASES_DIR = "/home/claude/canonical_cases"
-OUTPUT_DIR = "/home/claude/experiments/A01_encoding_perturbation"
-LOCKED_ENGINE_HASH = "875f73150fae43695ecc6659581e8e25b365ad6171c9e13629fb01e923ab311c"
+EXPECTED_BASELINE = {
+    "epic_sepsis": "REJECT", "google_dr": "APPROVE", "google_flu": "REJECT",
+    "optum_health": "REJECT", "compas": "REJECT", "amazon_recruiting": "REJECT",
+    "uk_alevels": "REJECT", "microsoft_tay": "REJECT", "gender_shades": "REJECT",
+    "uber_av": "REJECT", "ibm_watson": "REJECT", "babylon": "REJECT",
+}
 
-def sha256_file(path):
+
+def sha256_file(path: Path) -> str:
     h = hashlib.sha256()
     with open(path, "rb") as f:
         for chunk in iter(lambda: f.read(8192), b""):
             h.update(chunk)
     return h.hexdigest()
 
-def run_engine(cases_dir, output_path):
-    """Run the corrected engine and return parsed results."""
-    result = subprocess.run(
-        [sys.executable, ENGINE_PATH,
-         "--cases-dir", cases_dir,
-         "--profiles", PROFILE,
-         "--mode", MODE,
-         "--output", output_path],
-        capture_output=True, text=True
-    )
-    if result.returncode != 0:
-        raise RuntimeError(f"Engine failed: {result.stderr}")
-    return json.load(open(output_path))
 
-def clamp(val, lo=0.0, hi=1.0):
+def clamp(val: float, lo: float = 0.0, hi: float = 1.0) -> float:
     return max(lo, min(hi, val))
 
-def main():
-    start_time = datetime.now(timezone.utc).isoformat()
-    
-    # --- Input verification ---
+
+def evaluate_one(engine_module, case_data: dict, profile: str) -> dict:
+    """Evaluate one case under the moderate profile in replay mode."""
+    flat = {k: float(v["value_primary"]) for k, v in case_data["features"].items()}
+    return engine_module.evaluate_case(
+        {"case_id": case_data["case_id"], "features": flat},
+        profile_name=profile,
+        mode=engine_module.MODE_REPLAY,
+    )
+
+
+def main() -> int:
+    # 1. Engine integrity check
     engine_hash = sha256_file(ENGINE_PATH)
-    assert engine_hash == LOCKED_ENGINE_HASH, f"HALT H8: Engine hash mismatch: {engine_hash}"
-    
-    case_files = sorted([f for f in os.listdir(CASES_DIR) if f.endswith(".json")])
-    assert len(case_files) == 12, f"Expected 12 cases, got {len(case_files)}"
-    
-    # Load all cases
-    cases = {}
-    for fn in case_files:
-        d = json.load(open(os.path.join(CASES_DIR, fn)))
-        cases[d["case_id"]] = d
-    
-    # --- Baseline verification ---
-    baseline_output = os.path.join(OUTPUT_DIR, "_baseline_check.json")
-    baseline = run_engine(CASES_DIR, baseline_output)
-    
-    expected_verdicts = {
-        "epic_sepsis": "REJECT", "google_dr": "APPROVE", "google_flu": "REJECT",
-        "optum_health": "REJECT", "compas": "REJECT", "amazon_recruiting": "REJECT",
-        "uk_alevels": "REJECT", "microsoft_tay": "REJECT", "gender_shades": "REJECT",
-        "uber_av": "REJECT", "ibm_watson": "REJECT", "babylon": "REJECT"
-    }
-    
-    for cid, expected in expected_verdicts.items():
-        actual = baseline["results"][cid]["profiles"][PROFILE]["governance_outcome"]
-        assert actual == expected, f"HALT H1: Baseline mismatch for {cid}: expected {expected}, got {actual}"
-    
+    if engine_hash != LOCKED_ENGINE_HASH:
+        print(f"HALT: engine hash mismatch: {engine_hash}")
+        return 1
+
+    # 2. Import engine via path manipulation (repo-relative; no env-specific paths)
+    sys.path.insert(0, str(REPO_ROOT))
+    from engine import corrected_public_engine_v1_1 as engine
+
+    # 3. Load canonical cases
+    canonical = json.loads(CANONICAL_PATH.read_text(encoding="utf-8"))
+    cases = canonical["cases"]
+    if len(cases) != 12:
+        print(f"HALT: expected 12 canonical cases, got {len(cases)}")
+        return 1
+
+    # Reformat each case to the engine's expected shape (case_id at top level)
+    cases_normalised = {}
+    for cid, case_data in cases.items():
+        rec = dict(case_data)
+        rec["case_id"] = cid
+        cases_normalised[cid] = rec
+
+    # 4. Baseline verification
+    for cid in sorted(cases_normalised.keys()):
+        r = evaluate_one(engine, cases_normalised[cid], PROFILE)
+        actual = "APPROVE" if r["approved"] else "REJECT"
+        if actual != EXPECTED_BASELINE[cid]:
+            print(f"HALT: baseline mismatch for {cid}: expected "
+                  f"{EXPECTED_BASELINE[cid]}, got {actual}")
+            return 1
     print("Baseline verification: PASS (11 REJECT, 1 APPROVE)")
-    
-    # --- Perturbation execution ---
+
+    # 5. Perturbation execution
     evaluations = []
-    n_executed = 0
-    
-    tmpdir = tempfile.mkdtemp()
-    
-    try:
-        for cid, case_data in sorted(cases.items()):
-            original_verdict = expected_verdicts[cid]
-            
-            for feature in GATE_FEATURES:
-                original_value = case_data["features"][feature]["value_primary"]
-                
-                for delta in DELTAS:
-                    perturbed_value = clamp(original_value + delta)
-                    was_clamped = (original_value + delta) != perturbed_value
-                    
-                    # Create perturbed case
-                    perturbed_case = json.loads(json.dumps(case_data))
-                    perturbed_case["features"][feature]["value_primary"] = perturbed_value
-                    
-                    # Write to temp dir (single case)
-                    single_dir = os.path.join(tmpdir, "single")
-                    os.makedirs(single_dir, exist_ok=True)
-                    
-                    # Clear directory
-                    for f in os.listdir(single_dir):
-                        os.remove(os.path.join(single_dir, f))
-                    
-                    case_path = os.path.join(single_dir, f"{cid}.json")
-                    with open(case_path, "w") as f:
-                        json.dump(perturbed_case, f)
-                    
-                    # Run engine
-                    out_path = os.path.join(tmpdir, "result.json")
-                    result = run_engine(single_dir, out_path)
-                    
-                    mod = result["results"][cid]["profiles"][PROFILE]
-                    perturbed_verdict = mod["governance_outcome"]
-                    
-                    evaluations.append({
-                        "case_id": cid,
-                        "feature": feature,
-                        "delta": delta,
-                        "original_value": original_value,
-                        "perturbed_value": round(perturbed_value, 10),
-                        "clamped": was_clamped,
-                        "original_verdict": original_verdict,
-                        "perturbed_verdict": perturbed_verdict,
-                        "flipped": perturbed_verdict != original_verdict,
-                        "gate_safety": mod["gate_safety"],
-                        "gate_evidence": mod["gate_evidence"],
-                        "gate_bias": mod["gate_bias"],
-                        "gate_calibration": mod["gate_calibration"],
-                        "gate_traceability": mod["gate_traceability"],
-                        "compensatory_score": mod["compensatory_score"],
-                    })
-                    n_executed += 1
-    finally:
-        shutil.rmtree(tmpdir)
-    
-    end_time = datetime.now(timezone.utc).isoformat()
-    
-    # --- Results compilation ---
-    n_flips = sum(1 for e in evaluations if e["flipped"])
-    n_baseline = sum(1 for e in evaluations if e["delta"] == 0.0)
-    n_perturbed = n_executed - n_baseline
-    stability_rate = (n_perturbed - n_flips + n_baseline) / n_executed  # excluding baseline from flip count
-    # More precisely: among the 240 non-baseline evaluations, how many flipped?
-    non_baseline = [e for e in evaluations if e["delta"] != 0.0]
-    n_flips_nonbaseline = sum(1 for e in non_baseline if e["flipped"])
-    verdict_stability = (len(non_baseline) - n_flips_nonbaseline) / len(non_baseline)
-    
-    # --- Write outputs ---
-    results_json = {
-        "experiment_id": "A01",
-        "engine_hash": engine_hash,
-        "profile": PROFILE,
-        "mode": MODE,
-        "n_cases": 12,
-        "n_features": 5,
-        "n_deltas": 5,
-        "total_evaluations": n_executed,
-        "start_time": start_time,
-        "end_time": end_time,
-        "baseline_verification": "PASS",
-        "total_flips": n_flips_nonbaseline,
-        "verdict_stability_rate": round(verdict_stability, 4),
-        "evaluations": evaluations,
-    }
-    
-    with open(os.path.join(OUTPUT_DIR, "perturbation_results.json"), "w") as f:
-        json.dump(results_json, f, indent=2)
-    
-    # Write CSV summary
-    with open(os.path.join(OUTPUT_DIR, "perturbation_summary.csv"), "w") as f:
-        f.write("case_id,feature,delta,original_value,perturbed_value,clamped,original_verdict,perturbed_verdict,flipped\n")
-        for e in evaluations:
-            f.write(f"{e['case_id']},{e['feature']},{e['delta']},{e['original_value']},{e['perturbed_value']},{e['clamped']},{e['original_verdict']},{e['perturbed_verdict']},{e['flipped']}\n")
-    
-    # Print summary
-    print(f"\n=== A01 EXECUTION COMPLETE ===")
-    print(f"Total evaluations: {n_executed}")
-    print(f"Baseline checks: {n_baseline} (all delta=0.00)")
-    print(f"Perturbation evaluations: {len(non_baseline)}")
-    print(f"Verdict flips (non-baseline): {n_flips_nonbaseline}")
-    print(f"Verdict stability rate: {verdict_stability:.4f} ({(len(non_baseline)-n_flips_nonbaseline)}/{len(non_baseline)})")
-    print()
-    
-    # Flip detail
-    flipped = [e for e in evaluations if e["flipped"] and e["delta"] != 0.0]
-    if flipped:
-        print("=== FLIP DETAILS ===")
-        for e in flipped:
-            print(f"  {e['case_id']}.{e['feature']} delta={e['delta']:+.2f}: {e['original_verdict']}→{e['perturbed_verdict']} (value: {e['original_value']}→{e['perturbed_value']})")
-    else:
-        print("No verdict flips detected.")
-    
-    # Boundary cases
-    print("\n=== BOUNDARY CASES (any flip at any delta) ===")
-    boundary_pairs = set()
-    for e in flipped:
-        boundary_pairs.add((e["case_id"], e["feature"]))
-    if boundary_pairs:
-        for cid, feat in sorted(boundary_pairs):
-            print(f"  {cid}.{feat}")
-    else:
-        print("  None")
+    for cid in sorted(cases_normalised.keys()):
+        original_verdict = EXPECTED_BASELINE[cid]
+        for feature in GATE_FEATURES:
+            original_value = float(
+                cases_normalised[cid]["features"][feature]["value_primary"]
+            )
+            for delta in DELTAS:
+                perturbed_value = clamp(original_value + delta)
+                was_clamped = (original_value + delta) != perturbed_value
+
+                # Build perturbed case
+                perturbed = json.loads(json.dumps(cases_normalised[cid]))
+                perturbed["features"][feature]["value_primary"] = perturbed_value
+
+                r = evaluate_one(engine, perturbed, PROFILE)
+                perturbed_verdict = "APPROVE" if r["approved"] else "REJECT"
+
+                evaluations.append({
+                    "case_id": cid,
+                    "feature": feature,
+                    "delta": delta,
+                    "original_value": original_value,
+                    "perturbed_value": round(perturbed_value, 10),
+                    "clamped": was_clamped,
+                    "original_verdict": original_verdict,
+                    "perturbed_verdict": perturbed_verdict,
+                    "flipped": perturbed_verdict != original_verdict,
+                })
+
+    # 6. Build CSV in memory and verify byte-identity to locked artefact
+    buf = io.StringIO()
+    buf.write("case_id,feature,delta,original_value,perturbed_value,clamped,"
+              "original_verdict,perturbed_verdict,flipped\n")
+    for e in evaluations:
+        buf.write(f"{e['case_id']},{e['feature']},{e['delta']},"
+                  f"{e['original_value']},{e['perturbed_value']},{e['clamped']},"
+                  f"{e['original_verdict']},{e['perturbed_verdict']},{e['flipped']}\n")
+    new_csv_bytes = buf.getvalue().encode("utf-8")
+    new_csv_sha = hashlib.sha256(new_csv_bytes).hexdigest()
+    locked_csv_sha = sha256_file(LOCKED_CSV)
+
+    if new_csv_sha != locked_csv_sha:
+        print(f"HALT: recomputed perturbation_summary.csv sha mismatch")
+        print(f"  Recomputed: {new_csv_sha}")
+        print(f"  Locked:     {locked_csv_sha}")
+        return 1
+    print(f"perturbation_summary.csv byte-identical: PASS (sha {new_csv_sha[:16]}...)")
+
+    # 7. Verify numerical content of locked JSON matches recomputation (excluding timestamps)
+    locked_json = json.loads(LOCKED_JSON.read_text(encoding="utf-8"))
+    locked_evals = locked_json["evaluations"]
+    if len(locked_evals) != len(evaluations):
+        print(f"HALT: evaluation count mismatch "
+              f"(locked={len(locked_evals)}, recomputed={len(evaluations)})")
+        return 1
+    # Compare each evaluation's numerical fields
+    cmp_keys = ["case_id", "feature", "delta", "original_value", "perturbed_value",
+                "clamped", "original_verdict", "perturbed_verdict", "flipped"]
+    for i, (a, b) in enumerate(zip(locked_evals, evaluations)):
+        for k in cmp_keys:
+            if a.get(k) != b.get(k):
+                print(f"HALT: evaluation[{i}].{k} mismatch: "
+                      f"locked={a.get(k)} vs recomputed={b.get(k)}")
+                return 1
+    # Aggregate cross-checks
+    n_flips_nb = sum(1 for e in evaluations if e["delta"] != 0.0 and e["flipped"])
+    if locked_json["total_flips"] != n_flips_nb:
+        print(f"HALT: total_flips mismatch")
+        return 1
+    nb = [e for e in evaluations if e["delta"] != 0.0]
+    stability = (len(nb) - n_flips_nb) / len(nb)
+    if abs(locked_json["verdict_stability_rate"] - round(stability, 4)) > 1e-4:
+        print(f"HALT: verdict_stability_rate mismatch")
+        return 1
+    print(f"perturbation_results.json numerical content: PASS "
+          f"({len(evaluations)} evaluations, {n_flips_nb} flips, stability {stability:.4f})")
+
+    print("\n=== A01 verification COMPLETE ===")
+    print(f"Total evaluations: {len(evaluations)}")
+    print(f"Non-baseline evaluations: {len(nb)}")
+    print(f"Verdict flips: {n_flips_nb}")
+    print(f"Verdict stability rate: {stability:.4f} "
+          f"({len(nb) - n_flips_nb}/{len(nb)})")
+    print(f"\nAll outputs reproduce from canonical inputs.")
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

@@ -1,0 +1,7 @@
+metric,value
+TP,11
+FN,1
+TN,12
+FP,0
+sensitivity,0.917
+specificity,1.000

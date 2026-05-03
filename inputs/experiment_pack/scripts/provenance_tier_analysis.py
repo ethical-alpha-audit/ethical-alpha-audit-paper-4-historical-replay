@@ -1,40 +1,69 @@
 #!/usr/bin/env python3
-"""A03: Provenance-Tier Sensitivity Analysis — Stage 3 Execution.
+"""A03: Provenance-Tier Sensitivity Analysis — canonical-source edition.
 
 Reports governance outcomes separately by provenance tier.
-Uses benchmark/cases replay output for verdicts.
-Uses canonical_dataset.json for Tier 1 confidence stats (authoritative).
-Uses benchmark/cases for Tier 2/3 confidence stats.
 
-Protocol: Stage 2 locked.
+Verdict source (canonical): outputs/tables/replay_results.csv (layer=expanded, profile=moderate).
+Confidence/provenance source (Tier 1): data/canonical/canonical_dataset.json.
+Confidence/provenance source (Tier 2/3): data/benchmark/cases/*.json.
+
+This is a canonical re-execution. The previous artefact used a non-committed intermediate
+replay artefact whose verdicts diverged from the locked replay_results.csv on Tier 1
+(Google DR). The canonical pipeline (this script) produces Tier 1 sensitivity = 0.917,
+in agreement with the manuscript primary metric.
+
+All paths are repository-relative; reviewers can re-execute from the repo root with no
+environment-specific configuration.
 """
-import json
-import os
-import hashlib
-from datetime import datetime, timezone
+from __future__ import annotations
 
-REPLAY_PATH = "/home/claude/test_output/full_replay.json"
-CANONICAL_PATH = "/home/claude/evidence/historical_replay/ethical-alpha-audit-paper-4-historical-replay-main/data/canonical/canonical_dataset.json"
-BENCHMARK_DIR = "/home/claude/evidence/historical_replay/ethical-alpha-audit-paper-4-historical-replay-main/data/benchmark/cases"
-OUTPUT_DIR = "/home/claude/experiments/A03_provenance_tier"
+import csv
+import hashlib
+import json
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[3]
+CANONICAL_PATH = REPO_ROOT / "data" / "canonical" / "canonical_dataset.json"
+BENCHMARK_DIR = REPO_ROOT / "data" / "benchmark" / "cases"
+REPLAY_CSV = REPO_ROOT / "outputs" / "tables" / "replay_results.csv"
+OUTPUT_DIR = REPO_ROOT / "inputs" / "experiment_pack" / "outputs"
 PROFILE = "moderate"
 
-CORE_12 = ['epic_sepsis','google_dr','google_flu','optum_health','compas','amazon_recruiting',
-           'uk_alevels','microsoft_tay','gender_shades','uber_av','ibm_watson','babylon']
+CORE_12 = ['epic_sepsis', 'google_dr', 'google_flu', 'optum_health', 'compas',
+           'amazon_recruiting', 'uk_alevels', 'microsoft_tay', 'gender_shades',
+           'uber_av', 'ibm_watson', 'babylon']
 
-def sha256_file(path):
+
+def sha256_file(path: Path) -> str:
     h = hashlib.sha256()
     with open(path, "rb") as f:
         for chunk in iter(lambda: f.read(8192), b""):
             h.update(chunk)
     return h.hexdigest()
 
-def compute_confidence_stats(features_dict):
-    """Compute confidence and provenance stats from a dict of features."""
-    confs = []
-    prov = {"direct_evidence": 0, "rule_derived": 0, "imputed_from_context": 0, "uncertain_estimate": 0}
+
+def load_verdicts_from_csv(csv_path: Path, profile: str) -> dict[str, str]:
+    """Build {case_id: 'REJECT'|'APPROVE'} from replay_results.csv (layer=expanded)."""
+    verdicts: dict[str, str] = {}
+    with open(csv_path, "r", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if row["layer"] != "expanded":
+                continue
+            if row["profile"] != profile:
+                continue
+            verdicts[row["case_id"]] = "REJECT" if row["approved"] == "0" else "APPROVE"
+    return verdicts
+
+
+def confidence_stats(features: dict) -> tuple[float, int, dict[str, int]]:
+    """Return (mean_confidence, total_features, provenance_counts)."""
+    confs: list[float] = []
+    prov = {"direct_evidence": 0, "rule_derived": 0,
+            "imputed_from_context": 0, "uncertain_estimate": 0}
     total = 0
-    for fk, fv in features_dict.items():
+    for fk, fv in features.items():
         if isinstance(fv, dict) and "confidence_level" in fv:
             cl = fv["confidence_level"]
             pc = fv.get("provenance_class", "unknown")
@@ -43,163 +72,126 @@ def compute_confidence_stats(features_dict):
             if pc in prov:
                 prov[pc] += 1
             total += 1
-    mean_conf = sum(confs) / len(confs) if confs else 0
-    pcts = {k: (v / total * 100 if total > 0 else 0) for k, v in prov.items()}
-    return mean_conf, total, pcts
+    mean = sum(confs) / len(confs) if confs else 0.0
+    return mean, total, prov
 
-def main():
-    start_time = datetime.now(timezone.utc).isoformat()
-    
-    # Verify inputs
-    replay_hash = sha256_file(REPLAY_PATH)
-    canonical_hash = sha256_file(CANONICAL_PATH)
-    print(f"Replay hash: {replay_hash[:16]}...")
-    print(f"Canonical hash: {canonical_hash[:16]}...")
-    
-    replay = json.load(open(REPLAY_PATH))
-    canonical = json.load(open(CANONICAL_PATH))
-    
-    # Classify cases into tiers
-    all_cases = list(replay["results"].keys())
+
+def aggregate_stats(case_ids: list[str], features_by_case: dict[str, dict]) -> dict:
+    confs: list[float] = []
+    prov = {"direct_evidence": 0, "rule_derived": 0,
+            "imputed_from_context": 0, "uncertain_estimate": 0}
+    total = 0
+    for cid in case_ids:
+        feats = features_by_case[cid]
+        for fk, fv in feats.items():
+            if isinstance(fv, dict) and "confidence_level" in fv:
+                cl = fv["confidence_level"]
+                pc = fv.get("provenance_class", "unknown")
+                if cl > 0:
+                    confs.append(cl)
+                if pc in prov:
+                    prov[pc] += 1
+                total += 1
+    mean = sum(confs) / len(confs) if confs else 0.0
+    return {"mean_conf": mean, "total_feats": total, "prov": prov}
+
+
+def main() -> None:
+    canonical = json.loads(CANONICAL_PATH.read_text(encoding="utf-8"))
+    verdicts = load_verdicts_from_csv(REPLAY_CSV, PROFILE)
+
+    all_cases = sorted(verdicts.keys())
     tier1_ids = [c for c in all_cases if c in CORE_12]
     tier3_ids = [c for c in all_cases if c.startswith("control_")]
     tier2_ids = [c for c in all_cases if c not in CORE_12 and not c.startswith("control_")]
-    
-    assert len(tier1_ids) == 12, f"Expected 12 Tier 1, got {len(tier1_ids)}"
-    assert len(tier1_ids) + len(tier2_ids) + len(tier3_ids) == 91, f"Total != 91"
-    
-    print(f"\nTier 1: {len(tier1_ids)} cases")
-    print(f"Tier 2: {len(tier2_ids)} cases")
-    print(f"Tier 3: {len(tier3_ids)} cases")
-    
-    # --- Tier 1: Verdicts from replay, confidence from CANONICAL ---
-    t1_reject = sum(1 for c in tier1_ids if replay["results"][c]["profiles"][PROFILE]["governance_outcome"] == "REJECT")
+
+    if len(tier1_ids) != 12:
+        sys.exit(f"HALT: Tier 1 has {len(tier1_ids)} cases (expected 12)")
+    if len(tier1_ids) + len(tier2_ids) + len(tier3_ids) != 91:
+        sys.exit(f"HALT: total {len(tier1_ids) + len(tier2_ids) + len(tier3_ids)} != 91")
+
+    # Tier 1 confidence/provenance from CANONICAL dataset
+    tier1_features = {cid: canonical["cases"][cid]["features"] for cid in CORE_12}
+    t1_stats = aggregate_stats(CORE_12, tier1_features)
+
+    # Tier 2/3 confidence/provenance from benchmark
+    tier2_features = {cid: json.loads((BENCHMARK_DIR / f"{cid}.json").read_text(encoding="utf-8"))["features"]
+                      for cid in tier2_ids}
+    tier3_features = {cid: json.loads((BENCHMARK_DIR / f"{cid}.json").read_text(encoding="utf-8"))["features"]
+                      for cid in tier3_ids}
+    t2_stats = aggregate_stats(tier2_ids, tier2_features)
+    t3_stats = aggregate_stats(tier3_ids, tier3_features)
+
+    # Verdict counts (from canonical replay_results.csv)
+    t1_reject = sum(1 for c in tier1_ids if verdicts[c] == "REJECT")
     t1_approve = len(tier1_ids) - t1_reject
-    
-    # Confidence from canonical
-    all_t1_features = {}
-    for cid in CORE_12:
-        for fk, fv in canonical["cases"][cid]["features"].items():
-            if cid not in all_t1_features:
-                all_t1_features[cid] = {}
-            all_t1_features[cid][fk] = fv
-    
-    t1_confs = []
-    t1_prov = {"direct_evidence": 0, "rule_derived": 0, "imputed_from_context": 0, "uncertain_estimate": 0}
-    t1_total = 0
-    for cid in CORE_12:
-        mc, tot, pcts = compute_confidence_stats(canonical["cases"][cid]["features"])
-        for fk, fv in canonical["cases"][cid]["features"].items():
-            if isinstance(fv, dict) and "confidence_level" in fv:
-                cl = fv["confidence_level"]
-                pc = fv.get("provenance_class", "unknown")
-                if cl > 0:
-                    t1_confs.append(cl)
-                if pc in t1_prov:
-                    t1_prov[pc] += 1
-                t1_total += 1
-    
-    t1_mean_conf = sum(t1_confs) / len(t1_confs) if t1_confs else 0
-    
-    # Verify matches manuscript claim
-    assert abs(t1_mean_conf - 0.591) < 0.001, f"HALT: Tier 1 mean confidence {t1_mean_conf} != 0.591"
-    print(f"\nTier 1 mean confidence: {t1_mean_conf:.3f} (manuscript: 0.591) ✓")
-    
-    # --- Tier 2: Verdicts from replay, confidence from benchmark ---
-    t2_reject = sum(1 for c in tier2_ids if replay["results"][c]["profiles"][PROFILE]["governance_outcome"] == "REJECT")
+    t2_reject = sum(1 for c in tier2_ids if verdicts[c] == "REJECT")
     t2_approve = len(tier2_ids) - t2_reject
-    
-    t2_confs = []
-    t2_prov = {"direct_evidence": 0, "rule_derived": 0, "imputed_from_context": 0, "uncertain_estimate": 0}
-    t2_total = 0
-    for cid in tier2_ids:
-        fp = os.path.join(BENCHMARK_DIR, f"{cid}.json")
-        d = json.load(open(fp))
-        for fk, fv in d.get("features", {}).items():
-            if isinstance(fv, dict) and "confidence_level" in fv:
-                cl = fv["confidence_level"]
-                pc = fv.get("provenance_class", "unknown")
-                if cl > 0:
-                    t2_confs.append(cl)
-                if pc in t2_prov:
-                    t2_prov[pc] += 1
-                t2_total += 1
-    
-    t2_mean_conf = sum(t2_confs) / len(t2_confs) if t2_confs else 0
-    
-    # --- Tier 3: Same from benchmark ---
-    t3_reject = sum(1 for c in tier3_ids if replay["results"][c]["profiles"][PROFILE]["governance_outcome"] == "REJECT")
+    t3_reject = sum(1 for c in tier3_ids if verdicts[c] == "REJECT")
     t3_approve = len(tier3_ids) - t3_reject
-    
-    t3_confs = []
-    t3_prov = {"direct_evidence": 0, "rule_derived": 0, "imputed_from_context": 0, "uncertain_estimate": 0}
-    t3_total = 0
-    for cid in tier3_ids:
-        fp = os.path.join(BENCHMARK_DIR, f"{cid}.json")
-        d = json.load(open(fp))
-        for fk, fv in d.get("features", {}).items():
-            if isinstance(fv, dict) and "confidence_level" in fv:
-                cl = fv["confidence_level"]
-                pc = fv.get("provenance_class", "unknown")
-                if cl > 0:
-                    t3_confs.append(cl)
-                if pc in t3_prov:
-                    t3_prov[pc] += 1
-                t3_total += 1
-    
-    t3_mean_conf = sum(t3_confs) / len(t3_confs) if t3_confs else 0
-    
-    end_time = datetime.now(timezone.utc).isoformat()
-    
-    # --- Write CSV ---
+
     tiers = [
-        {"tier": 1, "label": "Expert-triangulated core", "n": 12,
-         "reject": t1_reject, "approve": t1_approve,
-         "metric": t1_reject / 12,  # sensitivity
-         "mean_conf": t1_mean_conf, "total_feats": t1_total, "prov": t1_prov},
-        {"tier": 2, "label": "Additional documented failures", "n": len(tier2_ids),
-         "reject": t2_reject, "approve": t2_approve,
-         "metric": t2_reject / len(tier2_ids) if tier2_ids else 0,  # sensitivity
-         "mean_conf": t2_mean_conf, "total_feats": t2_total, "prov": t2_prov},
-        {"tier": 3, "label": "FDA-cleared controls", "n": len(tier3_ids),
-         "reject": t3_reject, "approve": t3_approve,
-         "metric": t3_approve / len(tier3_ids) if tier3_ids else 0,  # specificity
-         "mean_conf": t3_mean_conf, "total_feats": t3_total, "prov": t3_prov},
+        {"tier": 1, "label": "Expert-triangulated core (canonical-source verdicts)",
+         "n": 12, "reject": t1_reject, "approve": t1_approve,
+         "metric": t1_reject / 12, "stats": t1_stats},
+        {"tier": 2, "label": "Additional documented failures",
+         "n": len(tier2_ids), "reject": t2_reject, "approve": t2_approve,
+         "metric": t2_reject / len(tier2_ids) if tier2_ids else 0.0,
+         "stats": t2_stats},
+        {"tier": 3, "label": "FDA-cleared controls",
+         "n": len(tier3_ids), "reject": t3_reject, "approve": t3_approve,
+         "metric": t3_approve / len(tier3_ids) if tier3_ids else 0.0,
+         "stats": t3_stats},
     ]
-    
-    with open(os.path.join(OUTPUT_DIR, "tier_stratified_results.csv"), "w") as f:
-        f.write("tier,tier_label,n_cases,n_reject,n_approve,sensitivity_or_specificity,mean_confidence,pct_direct_evidence,pct_rule_derived,pct_imputed,pct_uncertain\n")
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    # tier_stratified_results.csv (deterministic; LF line endings as before)
+    csv_path = OUTPUT_DIR / "tier_stratified_results.csv"
+    with open(csv_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write("tier,tier_label,n_cases,n_reject,n_approve,sensitivity_or_specificity,"
+                "mean_confidence,pct_direct_evidence,pct_rule_derived,pct_imputed,pct_uncertain\n")
         for t in tiers:
-            prov = t["prov"]
-            tot = t["total_feats"]
+            prov = t["stats"]["prov"]
+            tot = t["stats"]["total_feats"]
             f.write(f"{t['tier']},{t['label']},{t['n']},{t['reject']},{t['approve']},"
-                    f"{t['metric']:.3f},{t['mean_conf']:.3f},"
+                    f"{t['metric']:.3f},{t['stats']['mean_conf']:.3f},"
                     f"{prov['direct_evidence']/tot*100:.1f},"
                     f"{prov['rule_derived']/tot*100:.1f},"
                     f"{prov['imputed_from_context']/tot*100:.1f},"
                     f"{prov['uncertain_estimate']/tot*100:.1f}\n")
-    
-    # --- Write report ---
-    with open(os.path.join(OUTPUT_DIR, "tier_report.md"), "w") as f:
+
+    # tier_report.md
+    canonical_hash = sha256_file(CANONICAL_PATH)
+    replay_hash = sha256_file(REPLAY_CSV)
+    md_path = OUTPUT_DIR / "tier_report.md"
+    with open(md_path, "w", encoding="utf-8", newline="\n") as f:
         f.write("# A03 Provenance-Tier Sensitivity Report\n\n")
-        f.write(f"Replay source hash: {replay_hash[:16]}...\n")
-        f.write(f"Canonical source hash: {canonical_hash[:16]}...\n\n")
+        f.write(f"Verdict source: outputs/tables/replay_results.csv "
+                f"(layer=expanded, profile={PROFILE}; sha256: {replay_hash[:16]}...)\n")
+        f.write(f"Canonical source: data/canonical/canonical_dataset.json "
+                f"(sha256: {canonical_hash[:16]}...)\n\n")
         for t in tiers:
-            f.write(f"## Tier {t['tier']}: {t['label']} (n={t['n']})\n")
             metric_name = "Sensitivity" if t["tier"] <= 2 else "Specificity"
+            prov = t["stats"]["prov"]
+            tot = t["stats"]["total_feats"]
+            f.write(f"## Tier {t['tier']}: {t['label']} (n={t['n']})\n")
             f.write(f"- {metric_name}: {t['metric']:.3f}\n")
-            f.write(f"- Mean confidence: {t['mean_conf']:.3f}\n")
-            prov = t["prov"]; tot = t["total_feats"]
+            f.write(f"- Mean confidence: {t['stats']['mean_conf']:.3f}\n")
             f.write(f"- Direct evidence: {prov['direct_evidence']/tot*100:.1f}%\n")
             f.write(f"- Rule-derived: {prov['rule_derived']/tot*100:.1f}%\n")
             f.write(f"- Imputed: {prov['imputed_from_context']/tot*100:.1f}%\n")
             f.write(f"- Uncertain: {prov['uncertain_estimate']/tot*100:.1f}%\n\n")
-    
-    # --- Print summary ---
-    print(f"\n=== A03 EXECUTION COMPLETE ===")
+
+    # Console summary
+    print("=== A03 (canonical-source) ===")
     for t in tiers:
         metric_name = "Sensitivity" if t["tier"] <= 2 else "Specificity"
-        print(f"  Tier {t['tier']} ({t['label']}): n={t['n']}, {metric_name}={t['metric']:.3f}, mean_conf={t['mean_conf']:.3f}")
+        print(f"  Tier {t['tier']} ({t['label']}): n={t['n']}, "
+              f"{metric_name}={t['metric']:.3f}, mean_conf={t['stats']['mean_conf']:.3f}")
+    print(f"\nWrote {md_path}")
+    print(f"Wrote {csv_path}")
+
 
 if __name__ == "__main__":
     main()

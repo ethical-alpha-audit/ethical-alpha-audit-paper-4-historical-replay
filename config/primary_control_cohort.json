@@ -1,0 +1,60 @@
+{
+  "description": "Primary 12-control cohort for the 12+12 confusion matrix (manuscript paragraph 39, supplement paragraph 18).",
+  "selection_criteria": {
+    "source_pool": "data/benchmark/cases/control_*.json (n=30)",
+    "pre_specified_inclusion": [
+      "explicit FDA clearance",
+      "AI/ML-enabled",
+      "sufficient evidence for gate encoding (all 15 features encoded)"
+    ],
+    "exclusion_screening": [
+      "no MAUDE safety event match",
+      "no recall database match"
+    ],
+    "target_distribution": {
+      "De Novo": 7,
+      "510(k)": 4,
+      "PMA": 1
+    },
+    "clinical_domain_target": 10,
+    "tie_breaking_rule": "alphabetical by case_id within each pathway class, after filtering to APPROVE-under-moderate cases"
+  },
+  "case_ids": [
+    "control_caption_guidance",
+    "control_gi_genius",
+    "control_heartflow_ffrct",
+    "control_idx_dr_lumineticscore",
+    "control_osteodetect",
+    "control_paige_prostate",
+    "control_viz_lvo",
+    "control_accipioix",
+    "control_ai_cvd",
+    "control_aidoc_briefcase",
+    "control_air_recon_dl",
+    "control_guardian_connect_medtronic"
+  ],
+  "fda_pathway_assignments": {
+    "control_caption_guidance": "De Novo",
+    "control_gi_genius": "De Novo",
+    "control_heartflow_ffrct": "De Novo",
+    "control_idx_dr_lumineticscore": "De Novo",
+    "control_osteodetect": "De Novo",
+    "control_paige_prostate": "De Novo",
+    "control_viz_lvo": "De Novo",
+    "control_accipioix": "510(k)",
+    "control_ai_cvd": "510(k)",
+    "control_aidoc_briefcase": "510(k)",
+    "control_air_recon_dl": "510(k)",
+    "control_guardian_connect_medtronic": "PMA"
+  },
+  "verification": {
+    "all_approve_under_moderate": true,
+    "tn_count": 12,
+    "fp_count": 0,
+    "verified_against": "outputs/tables/replay_results.csv (sha256 prefix 29bcdd26)"
+  },
+  "constructed_from": {
+    "method": "parse citation field of each control_*.json; classify pathway by FDA document type (DEN = De Novo, K = 510(k), P = PMA); filter to moderate-approved; alphabetical tie-break within each pathway class",
+    "constructor_script": "scripts/build_primary_control_cohort.py"
+  }
+}

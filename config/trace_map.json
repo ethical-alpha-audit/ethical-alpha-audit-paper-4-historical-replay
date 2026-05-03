@@ -1,18 +1,62 @@
 {
   "outputs/tables/dataset_inventory.csv": {
     "notebook": "notebooks/01_dataset_intake.ipynb",
-    "rtm_targets": ["Q21", "Q22", "Q23", "Q24", "Q25", "Q26", "Q27", "Q28", "Q36"],
+    "rtm_targets": [
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q36"
+    ],
     "role": "Data provenance audit"
   },
   "outputs/tables/replay_results.csv": {
     "notebook": "notebooks/02_historical_replay_execution.ipynb",
-    "rtm_targets": ["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8", "Q9", "Q10", "Q11", "Q12", "Q13", "Q18", "Q19", "Q20", "Q34", "Q35"],
+    "rtm_targets": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q34",
+      "Q35"
+    ],
     "role": "All governance decisions across all layers"
   },
   "outputs/tables/confusion_matrix.csv": {
     "notebook": "notebooks/02_historical_replay_execution.ipynb",
-    "rtm_targets": ["Q15", "Q16", "Q17"],
-    "role": "TP=20 confusion matrix"
+    "rtm_targets": [
+      "Q15",
+      "Q16",
+      "Q17"
+    ],
+    "metric_layer": "secondary_core_extended",
+    "role": "TP=20 core-extended confusion matrix (12 core + 8 core-equivalent failures vs 12 controls; secondary)"
+  },
+  "outputs/tables/confusion_matrix_primary.csv": {
+    "notebook": "notebooks/02_historical_replay_execution.ipynb",
+    "rtm_targets": [
+      "Q15",
+      "Q16",
+      "Q17"
+    ],
+    "metric_layer": "primary_authoritative",
+    "role": "TP=11 primary 12+12 confusion matrix (12 canonical core failures vs 12 controls per config/primary_control_cohort.json; authoritative)"
   },
   "outputs/logs/replay_run_log.txt": {
     "notebook": "notebooks/02_historical_replay_execution.ipynb",
@@ -21,37 +65,67 @@
   },
   "outputs/tables/metrics_summary.csv": {
     "notebook": "notebooks/03_metrics_and_calibration.ipynb",
-    "rtm_targets": ["Q14", "Q29", "Q30", "Q31", "Q32", "Q33", "Q37", "Q38", "Q39", "Q40"],
+    "rtm_targets": [
+      "Q14",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33",
+      "Q37",
+      "Q38",
+      "Q39",
+      "Q40"
+    ],
     "role": "All stability and invariance metrics"
   },
   "outputs/figures/calibration_summary.txt": {
     "notebook": "notebooks/03_metrics_and_calibration.ipynb",
-    "rtm_targets": ["Q29"],
+    "rtm_targets": [
+      "Q29"
+    ],
     "role": "Monte Carlo summary narrative"
   },
   "outputs/figures/figure1_gate_failure.png": {
     "notebook": "notebooks/04_figures_and_tables.ipynb",
-    "rtm_targets": ["F1"],
+    "rtm_targets": [
+      "F1"
+    ],
     "role": "Gate failure distribution + governance matrix"
   },
   "outputs/figures/figure2_ablation.png": {
     "notebook": "notebooks/04_figures_and_tables.ipynb",
-    "rtm_targets": ["F2", "A1", "A2", "A3", "A4"],
+    "rtm_targets": [
+      "F2",
+      "A1",
+      "A2",
+      "A3",
+      "A4"
+    ],
     "role": "Ablation analysis"
   },
   "outputs/figures/figure3_provenance_stability.png": {
     "notebook": "notebooks/04_figures_and_tables.ipynb",
-    "rtm_targets": ["F3"],
+    "rtm_targets": [
+      "F3"
+    ],
     "role": "Provenance + stability"
   },
   "outputs/figures/figure4_compensation.png": {
     "notebook": "notebooks/04_figures_and_tables.ipynb",
-    "rtm_targets": ["F4"],
+    "rtm_targets": [
+      "F4"
+    ],
     "role": "Non-compensatory vs compensatory comparison"
   },
   "outputs/tables/ablation_matrix.csv": {
     "notebook": "notebooks/04_figures_and_tables.ipynb",
-    "rtm_targets": ["A1", "A2", "A3", "A4"],
+    "rtm_targets": [
+      "A1",
+      "A2",
+      "A3",
+      "A4"
+    ],
     "role": "Full ablation results"
   },
   "outputs/figures/paper4_figure_manifest.txt": {

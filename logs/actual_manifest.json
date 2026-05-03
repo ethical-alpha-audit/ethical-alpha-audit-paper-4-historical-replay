@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-19T08:25:28.310490+00:00",
+  "generated_at": "2026-04-27T12:13:46.039599+00:00",
   "files": [
     {
       "path": "outputs/tables/dataset_inventory.csv",
@@ -17,8 +17,13 @@
       "exists": true
     },
     {
+      "path": "outputs/tables/confusion_matrix_primary.csv",
+      "sha256": "da542b036fe468c0d459cbbd9111ad4240ce1aea2dbcc2e2f1954b45ceb89255",
+      "exists": true
+    },
+    {
       "path": "outputs/logs/replay_run_log.txt",
-      "sha256": "2a32e83d7d8d1207385bf7aee702244997854d8482490e304309dac1833a893e",
+      "sha256": "fbb9e3e8ef4fa41b97743d25bb25b6926544ef90ed394a9541e86431ee8094c1",
       "exists": true
     },
     {
@@ -63,7 +68,7 @@
     },
     {
       "path": "outputs/tables/paper4_table_manifest.csv",
-      "sha256": "f4df6a230a21ab85553d441e0cb90c3557021f50d1b9b38195aecb7231d3d95b",
+      "sha256": "77f4bce8adedbb8504d48df92e93b7f2d866000eaf99f7e2d249f5fd6c960e62",
       "exists": true
     }
   ]
