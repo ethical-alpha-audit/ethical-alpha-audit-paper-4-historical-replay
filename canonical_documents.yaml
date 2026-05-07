@@ -1,0 +1,215 @@
+# canonical_documents.yaml — P4 (historical replay)
+# Schema version: 1.0
+# Workstream: WS-CANONICAL-SOURCE-AUTOMATION
+# Disposition (per Phase 2 P4 forensics): NEEDS-CAPTURE + PARTIALLY-CURRENT
+
+paper:
+  identifier: P4
+  repo_directory: ethical-alpha-audit-paper-4-historical-replay
+  procedural_storage_subdir: paper-4-historical-replay
+
+editorial_commitments:
+  target_journal: JMIR Medical Informatics
+  submission_status: harmonised
+  variant_lock_history:
+    - locked_at: 2026-05-06
+      variant: "Paper4_Manuscript_v7.1.docx"
+      sha: a5b6417ea448f5e2eee5fac2bb64d8b1005e0c00e1feb4518701d7556bd2c902
+      target_journal_at_lock: JMIR Medical Informatics
+      decision_basis: "Phase 2 Q2 supersession diff confirmed v7.1 builds on v7 with 4 minor changes (target journal switch + contribution rewrite + 2 stylistic word-swaps); 97% paragraph identity; 1h 46min revision interval; Walter ack on lock + JMIR target"
+      retired_variants:
+        - filename: "Paper4_Manuscript_v7.docx"
+          sha: 65c3c1811815d545710ce14b610684912a9d0e0afd0c4261b35bb34b3a946d30
+          retention_location: "ethical-alpha-audit-paper-4-historical-replay-final.zip (source ZIP; forensic-trace retention only)"
+
+axes:
+  manuscript:
+    structure: single-file
+    axis_status_summary: needs-deployment
+    documents:
+      - filename: manuscript.docx
+        canonical_path: inputs/manuscript.docx
+        source_location: inputs-direct
+        canonical_sha256: 4d9f3e452d359b6cd36549fc7ab4283380bb75325531fe42bedca91900f0acba
+        size_bytes: 31490
+        last_known_modified: 2026-04-18T21:37:32
+        status: present-elsewhere-needs-deployment
+        candidate_source_location: "Desktop/May Bank Holiday/Paper 4/Paper4 Manuscript v7.1 (no .docx extension on disk; valid .docx by content; rename + deploy at WS-Sub-P4)"
+        notes: "v6-era at canonical path; v7.1 LOCKED as canonical replacement (per Phase 2 Q2); deployment includes confusion_matrix.csv to confusion_matrix_primary.csv reference fix per Phase 2 Q3"
+
+  supplementary:
+    structure: single-file
+    axis_status_summary: needs-deployment
+    documents:
+      - filename: supplementary.docx
+        canonical_path: inputs/supplementary.docx
+        source_location: inputs-direct
+        canonical_sha256: 1e08d848b4eaa5735aeb45859e5bfb9381ea56e114d3723bdeefa47907df7e83
+        size_bytes: 22763
+        last_known_modified: 2026-04-12T09:35:44
+        status: present-elsewhere-needs-deployment
+        candidate_source_location: "Desktop/May Bank Holiday/Paper 4/Paper4 Extended Data and Supplementary v2 revised.docx (sha 3f1b0e83f7b9bdd5... 18132 B)"
+        notes: "v1-era at canonical path; v2 revised (combined Extended Data + Supplementary) sits unredeemed in inbox since 2026-05-01"
+
+  notebook:
+    structure: standard-notebooks-directory
+    axis_status_summary: clean
+    documents:
+      - filename: notebooks/01_dataset_intake.ipynb
+        canonical_path: notebooks/01_dataset_intake.ipynb
+        source_location: inputs-direct
+        canonical_sha256: d05944fa9d12728eeb9d4c676f79b89f3a1419839384966921abc53152d6cd8c
+        size_bytes: 14160
+        last_known_modified: 2026-04-19T09:25:12
+        status: present-in-canonical
+        candidate_source_location: null
+        notes: "Step 4b clean per Phase 2"
+      - filename: notebooks/02_historical_replay_execution.ipynb
+        canonical_path: notebooks/02_historical_replay_execution.ipynb
+        source_location: inputs-direct
+        canonical_sha256: e528fbb1575d50a334275384968ac53000188e5effcaa40b008080fe00b9429d
+        size_bytes: 28209
+        last_known_modified: 2026-05-03T14:05:18
+        status: present-in-canonical
+        candidate_source_location: null
+        notes: "WS-2.5 substantive content change; outputs preserved per ZIP authoritative rule; Step 4b clean"
+      - filename: notebooks/03_metrics_and_calibration.ipynb
+        canonical_path: notebooks/03_metrics_and_calibration.ipynb
+        source_location: inputs-direct
+        canonical_sha256: 40ab33e552c0f7960e64e890b39ef251d4973b3d0b24dc7f134d0633265a7b9c
+        size_bytes: 19782
+        last_known_modified: 2026-04-19T09:25:19
+        status: present-in-canonical
+        candidate_source_location: null
+        notes: "Step 4b clean per Phase 2"
+      - filename: notebooks/04_figures_and_tables.ipynb
+        canonical_path: notebooks/04_figures_and_tables.ipynb
+        source_location: inputs-direct
+        canonical_sha256: ccdaa39b2bc3b1fb50036a81c6a422a9058499e5df8b737891dbc212c7c8146c
+        size_bytes: 25068
+        last_known_modified: 2026-04-19T09:25:27
+        status: present-in-canonical
+        candidate_source_location: null
+        notes: "Step 4b clean per Phase 2"
+
+  multimedia:
+    structure: not-applicable
+    axis_status_summary: needs-deployment
+    documents:
+      - filename: figure1_gate_failure.png
+        canonical_path: null
+        source_location: inbox-staged
+        canonical_sha256: d0bea134f05f4249ee9f52e547eba0941dbf27a4c19fdb87b96dff10744e4775
+        size_bytes: 503010
+        last_known_modified: 2026-05-01T15:23:35
+        status: present-elsewhere-needs-deployment
+        candidate_source_location: "Desktop/May Bank Holiday/Paper 4/figure1 gate failure.png"
+        notes: "Inbox filename has spaces; canonical filename normalised with underscores per Item 15"
+      - filename: figure2_ablation.png
+        canonical_path: null
+        source_location: inbox-staged
+        canonical_sha256: c6f3b6ae836286dcac4f440e5f95202aa9ef2c178dd27d64719b942a42461bca
+        size_bytes: 432413
+        last_known_modified: 2026-05-01T15:23:36
+        status: present-elsewhere-needs-deployment
+        candidate_source_location: "Desktop/May Bank Holiday/Paper 4/figure2 ablation.png"
+        notes: "Inbox filename has spaces; canonical filename normalised with underscores per Item 15"
+      - filename: figure3_provenance_stability.png
+        canonical_path: null
+        source_location: inbox-staged
+        canonical_sha256: 6d793f993248fa2ee5e9bce95271d56e060a50c29c112ea8f1def978f59df483
+        size_bytes: 438197
+        last_known_modified: 2026-05-01T15:23:36
+        status: present-elsewhere-needs-deployment
+        candidate_source_location: "Desktop/May Bank Holiday/Paper 4/figure3 provenance stability.png"
+        notes: "Inbox filename has spaces; canonical filename normalised with underscores per Item 15"
+      - filename: figure4_compensation.png
+        canonical_path: null
+        source_location: inbox-staged
+        canonical_sha256: 45e942cb0b7deba76e650afb98ab1fb3e5611360297042e15266c4882d595c1d
+        size_bytes: 402599
+        last_known_modified: 2026-05-01T15:23:35
+        status: present-elsewhere-needs-deployment
+        candidate_source_location: "Desktop/May Bank Holiday/Paper 4/figure4 compensation.png"
+        notes: "Inbox filename has spaces; canonical filename normalised with underscores per Item 15"
+      - filename: paper4_figure_manifest.pdf
+        canonical_path: null
+        source_location: inbox-staged
+        canonical_sha256: 6549186f830f1373dda150d31432a1a37698f8d3d112ca95a3a0c2572cf51555
+        size_bytes: 19750
+        last_known_modified: 2026-05-01T15:23:35
+        status: present-elsewhere-needs-deployment
+        candidate_source_location: "Desktop/May Bank Holiday/Paper 4/paper4 figure manifest.pdf"
+        notes: "Inbox filename has spaces; canonical filename normalised with underscores per Item 15"
+
+destination_workstreams:
+  - workstream: WS-Sub-P4
+    class: F.vague
+    consolidated_template_applies: true
+    paper_specific_gate_iii: "WS-Release-P4 lifecycle traversal completes (post-WS-AUDIT-DOF P4 full forensics + remediation per WS-2.3-pattern); Walter chooses manuscript variant LOCKED to v7.1 per Phase 2 Q2; gate (iv) satisfied"
+    obligations_routed_here:
+      - "Deploy v7.1 manuscript to inputs/manuscript.docx (rename + extension fix)"
+      - "Deploy v2 revised supplementary to inputs/supplementary.docx"
+      - "Deploy 4 figure PNGs + figure manifest to outputs/figures/ or inputs/multimedia/ per Pattern alpha"
+      - "Fix v7.1 reference outputs/tables/confusion_matrix.csv to confusion_matrix_primary.csv (Phase 2 Q3 reconciliation; preserves both cohort files)"
+      - "Update procedural storage with new P4 state"
+      - "Phase regression interpretive call (Phase 2 open Q1; Walter judgment): WS-2.5 added provenance scaffolding + methodology refactor producing same numerics already in v6-era"
+    blocking_status: blocked-pending-trigger-remediation
+  - workstream: WS-Release-P4
+    class: E-inherited
+    obligations_routed_here:
+      - "Lifecycle traversal hardening to released"
+      - "DO2 cross-reference: trigger satisfied but downstream initiation pending"
+    blocking_status: trigger-satisfied-initiation-pending
+  - workstream: WS-6
+    class: A
+    obligations_routed_here:
+      - "P4 legacy-tracked manuscripts cleanup (2 files: inputs/manuscript.pdf, inputs/supplementary.pdf; per memo line 199-201)"
+    blocking_status: in-progress
+
+sync_metadata:
+  procedural_storage_match_required: true
+  last_sync_check: null
+  paper_drift_summary: missing-in-storage
+  per_axis_drift_summary:
+    manuscript: clean
+    supplementary: clean
+    notebook: clean
+    multimedia: missing-in-storage
+  per_document_drift_detail:
+    - axis: multimedia
+      filename: figure1_gate_failure.png
+      category: missing-in-storage
+      detected_at: 2026-05-04T21:20:00
+      remediation_todo_id: null
+    - axis: multimedia
+      filename: figure2_ablation.png
+      category: missing-in-storage
+      detected_at: 2026-05-04T21:20:00
+      remediation_todo_id: null
+    - axis: multimedia
+      filename: figure3_provenance_stability.png
+      category: missing-in-storage
+      detected_at: 2026-05-04T21:20:00
+      remediation_todo_id: null
+    - axis: multimedia
+      filename: figure4_compensation.png
+      category: missing-in-storage
+      detected_at: 2026-05-04T21:20:00
+      remediation_todo_id: null
+    - axis: multimedia
+      filename: paper4_figure_manifest.pdf
+      category: missing-in-storage
+      detected_at: 2026-05-04T21:20:00
+      remediation_todo_id: null
+
+provenance:
+  schema_version: "1.0"
+  authored_at: 2026-05-06T20:30:00
+  authored_by: "WS-CANONICAL-SOURCE-AUTOMATION Task 1 STEP 1 deployment"
+  audit_basis:
+    - "WS-AUDIT-DOF Pass 1 P4 provisional (closure summary Section 1 row 5)"
+    - "Phase 2 P4 full forensics audit (v7.1 lock + JMIR target + confusion_matrix reconciliation)"
+    - "Phase 1 R4 audit"
+    - "Live SHA metadata gathered 2026-05-06"
+  last_revision_basis: "Initial deployment authoring per Task 1 STEP 1"
